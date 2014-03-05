@@ -9,13 +9,7 @@
 
   <!-- Less -->
   <script type="text/javascript">
-    less = {
-        env: "development",
-        async: false,         // load imports async
-        fileAsync: false,     // load imports async when in a page under
-        poll: 1000,           // when in watch mode, time in ms between polls
-        relativeUrls: false,  // whether to adjust url's to be relative
-      };
+    less = { env: "development" }; 
   </script>
   <link rel="stylesheet/less" href="assets/less/style.less" />
 
@@ -26,5 +20,11 @@
 </head>
   
 <body>
-    
-  
+
+<div class="header"></div> <!-- // End of .header -->
+
+<div class="nav">
+  <div class="ad-leaderboard"></div> <!-- // End of .ad-leaderboard -->
+</div> <!-- // End of .nav -->
+
+<div class="main">

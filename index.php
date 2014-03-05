@@ -1,5 +1,9 @@
 <?php include ('header.php') ?>
 
-<p>Testing Content</p>
+<div class="promoWidget"></div>
+
+<div class="content"></div>
+
+<div class="sidebar"></div>
 
 <?php include ('footer.php') ?>
