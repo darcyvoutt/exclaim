@@ -21,7 +21,7 @@
 
   <!-- Scripts -->
   <script src="assets/js/libraries/less-1.5.0.min.js"></script>
-  <script src="assets/js/libraries/jquery-1.11.0.js"></script>
+  <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>
   
 </head>
   
