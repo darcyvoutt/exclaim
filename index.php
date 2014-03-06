@@ -8,35 +8,22 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
     posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
     metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-    sapien vel ultricies. Donec porttitor magna a ipsum eleifend, luctus dapibus nibh pulvinar. Sed mattis 
-    sem at lorem pretium, in tincidunt ante aliquam. Suspendisse sed mollis dolor, at malesuada tortor. 
-    Sed molestie et nibh eu ullamcorper. Vivamus vehicula tincidunt dictum. Morbi malesuada porttitor auctor. 
-    Suspendisse vehicula tristique magna, sed rhoncus enim. Phasellus elementum lectus ac condimentum iaculis. 
-    Ut sit amet risus condimentum, ultrices lorem vel, molestie urna. Nulla congue nulla eu nisl fermentum 
-    egestas vel at eros.</p>
+    sapien vel ultricies.</p>
   </div>
+
   <div class="stream" style="height: 500px;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
     posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
     metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-    sapien vel ultricies. Donec porttitor magna a ipsum eleifend, luctus dapibus nibh pulvinar. Sed mattis 
-    sem at lorem pretium, in tincidunt ante aliquam. Suspendisse sed mollis dolor, at malesuada tortor. 
-    Sed molestie et nibh eu ullamcorper. Vivamus vehicula tincidunt dictum. Morbi malesuada porttitor auctor. 
-    Suspendisse vehicula tristique magna, sed rhoncus enim. Phasellus elementum lectus ac condimentum iaculis. 
-    Ut sit amet risus condimentum, ultrices lorem vel, molestie urna. Nulla congue nulla eu nisl fermentum 
-    egestas vel at eros.</p>
+    sapien vel ultricies.</p>
   </div>
-  <!-- <div class="stream" style="height: 350px;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
+  
+  <div class="stream" style="height: 350px;">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
     posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
     metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-    sapien vel ultricies. Donec porttitor magna a ipsum eleifend, luctus dapibus nibh pulvinar. Sed mattis 
-    sem at lorem pretium, in tincidunt ante aliquam. Suspendisse sed mollis dolor, at malesuada tortor. 
-    Sed molestie et nibh eu ullamcorper. Vivamus vehicula tincidunt dictum. Morbi malesuada porttitor auctor. 
-    Suspendisse vehicula tristique magna, sed rhoncus enim. Phasellus elementum lectus ac condimentum iaculis. 
-    Ut sit amet risus condimentum, ultrices lorem vel, molestie urna. Nulla congue nulla eu nisl fermentum 
-    egestas vel at eros.</p>
-  </div> -->
+    sapien vel ultricies.</p>
+  </div>
 
   <script src="assets/js/streams_counter.js"></script>
 

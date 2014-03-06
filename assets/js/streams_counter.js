@@ -1,13 +1,11 @@
 $(document).ready(function() {
-  var numberStreams = $('.streams').length;
+  var numberStreams = $('.stream').length;
 
-  $('.output').text("There are " + numberStreams + " streams.")
-
-  // if (numberStreams == 3) {
-  //   $(.streams).css('max-width','185px');
-  // } else if (numberStreams == 2) {
-  //   $(.streams).css('width','45%');
-  // } else {
-  //   $(.streams).css('width','100%');
-  // }
+  if (numberStreams == 1) {
+    $('.stream').css('max-width','100%');
+  } else if (numberStreams == 2) {
+    $('.stream').css('max-width','48.5%');
+  } else {
+    $('.stream').css('max-width','180px');
+  }
 });
