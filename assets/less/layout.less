@@ -1,3 +1,7 @@
+// File Imports for mixins and classes
+@import "mixins.less";
+
+// Variables gloabl to the document
 @siteWidth: 960px;
 
 .header {
@@ -15,24 +19,30 @@
 .main {
   background: #1c1c1c;
   max-width: @siteWidth;
+  overflow: hidden;
   margin: 0 auto;
 }
 
 .content {
   background: #cccccc;
-  display: inline-block;
-  margin-right: 4.5%;
-  min-width: 360px;
-  height: 500px;
+  margin-right: 5%;
+  float: left;
   width: 60%;
+
+  @media (max-width: @tablet) {
+    margin-right: none;
+    width: 100%;
+  }
 }
 
 .sidebar {
   background: #737373;
-  display: inline-block;
-  min-width: 200px;
-  height: 400px;
+  float: left;
   width: 35%;
+  
+  @media (max-width: @tablet) {
+    width: 100%;
+  }
 }
 
 .footer {
