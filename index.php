@@ -17,7 +17,7 @@
     metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
     sapien vel ultricies.</p>
   </div>
-  
+
   <div class="stream" style="height: 350px;">
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
     posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
@@ -25,7 +25,7 @@
     sapien vel ultricies.</p>
   </div>
 
-  <script src="assets/js/streams_counter.js"></script>
+  <script src="assets/js/streams.js"></script>
 
 </div>
 

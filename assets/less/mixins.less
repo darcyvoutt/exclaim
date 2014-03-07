@@ -1,3 +1,11 @@
-// Variables to import for media queires
-@mobile: 480px;
-@tablet: 768px;
+//////////////////////////////////////////////////////
+// Mixins for @media queries
+//////////////////////////////////////////////////////
+
+.displayTables(@rules) {
+  @media screen and (max-width: 768px) { @rules(); }
+} // Use: .displayTables({ .. }); 
+
+.displayMobile(@rules) {
+  @media screen and (max-width: 480px) { @rules(); }
+} // Use: .displayMobile({ .. });

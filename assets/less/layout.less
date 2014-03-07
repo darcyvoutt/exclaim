@@ -1,8 +1,18 @@
+//////////////////////////////////////////////////////
 // File Imports for mixins and classes
+//////////////////////////////////////////////////////
+
 @import "mixins.less";
 
+//////////////////////////////////////////////////////
 // Variables gloabl to the document
+//////////////////////////////////////////////////////
+
 @siteWidth: 960px;
+
+//////////////////////////////////////////////////////
+// Classes
+//////////////////////////////////////////////////////
 
 .header {
   background: #3f3f3f;
@@ -29,10 +39,10 @@
   float: left;
   width: 60%;
 
-  @media (max-width: @tablet) {
+  .displayTables({
     margin-right: none;
     width: 100%;
-  }
+  });
 }
 
 .sidebar {
@@ -40,9 +50,9 @@
   float: left;
   width: 35%;
   
-  @media (max-width: @tablet) {
+  .displayTables({
     width: 100%;
-  }
+  });
 }
 
 .footer {

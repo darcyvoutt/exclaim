@@ -9,3 +9,5 @@ $(document).ready(function() {
     $('.stream').css('max-width','182px');
   }
 });
+
+// Note: Code needs to respect browser width, logic to be more complex

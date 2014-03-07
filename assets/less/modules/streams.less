@@ -1,5 +1,15 @@
-.stream {
-  // max-width: controlled by streams_counter.js
+//////////////////////////////////////////////////////
+// File Imports for mixins and classes
+//////////////////////////////////////////////////////
+
+@import "../mixins.less";
+
+//////////////////////////////////////////////////////
+// Classes
+//////////////////////////////////////////////////////
+
+.stream { 
+  // The width is set by the streams.js file
   background: pink;
   margin: 0 1.8% 20px 0;
   display: inline-block;
@@ -9,4 +19,8 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  .displayTables({ 
+    width: 100%;
+  });
 }
