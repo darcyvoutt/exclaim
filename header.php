@@ -23,8 +23,13 @@
 
 <div class="header"></div> <!-- // End of .header -->
 
+<div class="ad-leaderboard"></div> <!-- // End of .ad-leaderboard -->
+
 <div class="nav">
-  <div class="ad-leaderboard"></div> <!-- // End of .ad-leaderboard -->
+  
+  <div class="nav-menu"></div>
+  <div class="nav-filters"></div>
+
 </div> <!-- // End of .nav -->
 
 <div class="main">
