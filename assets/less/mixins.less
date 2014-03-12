@@ -1,8 +1,19 @@
 //////////////////////////////////////////////////////
+// Browser Prefix
+//////////////////////////////////////////////////////
+
+.browserPrefix(@property; @value) {
+  -webkit-@{property}:  @value;
+  -moz-@{property}:     @value;
+  -ms-@{property}:      @value;
+  @{property}:          @value;
+}
+
+//////////////////////////////////////////////////////
 // Mixins for @media queries
 //////////////////////////////////////////////////////
 
-.displayTables(@rules) {
+.displayTablets(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
 } // Use: .displayTables({ .. }); 
 
