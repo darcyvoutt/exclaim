@@ -13,10 +13,10 @@
 // Mixins for @media queries
 //////////////////////////////////////////////////////
 
-.displayTablets(@rules) {
+.tabletSupport(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
 } // Use: .displayTables({ .. }); 
 
-.displayMobile(@rules) {
+.mobileSupport(@rules) {
   @media screen and (max-width: 480px) { @rules(); }
 } // Use: .displayMobile({ .. });
