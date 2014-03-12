@@ -21,15 +21,48 @@
   
 <body>
 
-<div class="header"></div> <!-- // End of .header -->
+<div class="header">
+</div> <!-- // End of .header -->
 
-<div class="ad-leaderboard"></div> <!-- // End of .ad-leaderboard -->
+<div class="subHeader">
 
-<div class="nav">
-  
-  <div class="nav-menu"></div>
-  <div class="nav-filters"></div>
+  <div class="ad-leaderboard">
+    <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+  </div> <!-- // End of .ad-leaderboard -->
 
-</div> <!-- // End of .nav -->
+  <div class="nav">
+    
+    <div class="nav-menu">
+      <ul>
+        <li><a href="index.php">News</a></li>
+        <li><a href="article.php">Article</a></li>
+        <li><a href="artist.php">Artist Profile</a></li>
+        <li><a href="search.php">Search Results</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-filters">
+      <div class="nav-filters-selected">
+        <ul>
+          <li>Filter #1</li>
+          <li>Filter #2</li>
+          <li>Filter #3</li>
+        </ul>
+      </div>
+
+      <div class="nav-filters-list">
+        <label>Filters</label>
+        <ul>
+          <li>Featured Tags</li>
+          <li>Genres</li>
+          <li>Artists</li>
+          <li>Date</li>
+          <li>Keyword</li>
+        </ul>
+      </div>
+    </div>
+
+  </div> <!-- // End of .nav -->
+</div>
 
 <div class="main">

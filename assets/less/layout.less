@@ -5,10 +5,12 @@
 @import "mixins.less";
 
 //////////////////////////////////////////////////////
-// Variables gloabl to the document
+// Local variables and mixins
 //////////////////////////////////////////////////////
 
-@siteWidth: 960px;
+.siteWidth {
+  max-width: 960px;
+}
 
 //////////////////////////////////////////////////////
 // Classes
@@ -20,15 +22,20 @@
   width: 100%;
 }
 
+.subHeader {
+  .siteWidth;
+  margin: 0 auto;
+}
+
 .nav {
+  .siteWidth;
   background: grey;
-  max-width: @siteWidth;
   margin: 0 auto;
 }
 
 .main {
+  .siteWidth;
   background: #1c1c1c;
-  max-width: @siteWidth;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -48,7 +55,7 @@
 .sidebar {
   background: #737373;
   float: left;
-  width: 33.3333%;
+  width: 33.3334%;
   
   .tabletSupport({
     width: 100%;
