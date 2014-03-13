@@ -27,7 +27,9 @@
 <div class="subHeader">
 
   <div class="ad-leaderboard">
-    <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+    <a href="#">
+      <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+    </a>    
   </div>  <!-- // End of .ad-leaderboard -->
 
   <div class="nav">
