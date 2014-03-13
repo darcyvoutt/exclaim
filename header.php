@@ -42,22 +42,49 @@
     </div>
 
     <div class="nav-filters">
+      
       <div class="nav-filters-selected">
-        <ul>
-          <li>Filter #1</li>
-          <li>Filter #2</li>
-          <li>Filter #3</li>
-        </ul>
-      </div>
+          <ul>
+            <li>Filter #1</li>
+            <li>Filter #2</li>
+            <li>Filter #3</li>
+          </ul>
+        </div>
 
       <div class="nav-filters-list">
+
         <label>Filters</label>
         <ul>
-          <li>Featured Tags</li>
-          <li>Genres</li>
-          <li>Artists</li>
-          <li>Date</li>
-          <li>Keyword</li>
+          <li>Featured Tags
+            <ul>
+              <li>New List</li>
+            </ul>
+          </li>
+
+          <li>Genres
+            <ul>
+              <li>New List</li>
+              <li>Second List</li>
+            </ul>
+          </li>
+
+          <li>Artists
+            <ul>
+              <li>New List</li>
+            </ul>
+          </li>
+
+          <li>Date
+            <ul>
+              <li>New List</li>
+            </ul>
+          </li>
+
+          <li>Keyword
+            <ul>
+              <li>New List</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

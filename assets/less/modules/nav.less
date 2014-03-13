@@ -71,8 +71,8 @@
 
 // The entire filtering sections
 .nav-filters {
-  height: @navHeight;
-  overflow: hidden;  
+  position: relative;
+  height: @navHeight; 
   float: left;
   width: 72%;
 }
@@ -80,26 +80,53 @@
 
 // The filters that have been chosen
 .nav-filters-selected {
-  display: none;
+  // display: none;
+  background: lightgrey;
+  height: @navHeight;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+
+  li {
+    background: #FFF;    
+    border: 1px solid #DDD;
+    line-height: @navHeight;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 15px;    
+    display: inline;
+    cursor: pointer;
+    padding: 3px 20px 3px 3px;
+
+    &:after {
+      position: absolute;
+      font-weight: bold;      
+      display: block;
+      content: "x";
+      right: 5px;
+      top: -52%;
+    }
+  }
 }
 
 
 // The list of filters
 .nav-filters-list {
   line-height: @navHeight;
+  width: auto;
 
   label {
     background: #fff;
     height: @navHeight;
     text-align: center;
     min-width: 55px;
-    width: 11.5%;
+    width: 12%;
     display: block;
     float: left;
   }
 
   ul {
-    width: 85%;
+    width: 98%;
   }
 
   li {
@@ -111,6 +138,25 @@
 
     &:hover {
       background: #FFF;
+    }
+
+    &:hover > ul {
+      display: block;
+    }
+
+    ul {
+      background: grey;
+      position: absolute;
+      min-width: 120px;
+      display: none;
+      width: 100%;
+      top: 100%;
+      left: 0;
+
+      li {
+        display: block;
+        width: inherit;
+      }
     }
   }
 }
