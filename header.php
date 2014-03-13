@@ -44,12 +44,14 @@
     <div class="nav-filters">
       
       <div class="nav-filters-selected">
-          <ul>
-            <li>Filter #1</li>
-            <li>Filter #2</li>
-            <li>Filter #3</li>
-          </ul>
-        </div>
+        <ul>
+          <li class="nav-filters-selected-item">Filter #1</li>
+          <li class="nav-filters-selected-item">Filter #2</li>
+          <li class="nav-filters-selected-item">Filter #3</li>
+        </ul>
+      </div>
+
+      <script src="assets/js/filters.js"></script>
 
       <div class="nav-filters-list">
 
