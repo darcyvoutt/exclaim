@@ -8,7 +8,10 @@
 // Styles
 //////////////////////////////////////////////////////
 
+// Entire navigation styling and wrapping
 .nav {
+  background: grey;
+  height: @navHeight;
 
   a {
     text-decoration: none;
@@ -18,57 +21,70 @@
   li {
     list-style-type: none;
   }
+  
+  .tabletSupport ({
+      font-size: 14px;
+    });
+
+  .mobileSupport({
+    display: none;  
+    });
 }
 
+
+// The dropdown list navigation between sections
 .nav-menu {
-  display: inline-block;
   margin-right: 1.5625%;
   position: relative;
   height: @navHeight;
   text-indent: 15px;
+  float: left;
   width: 26%;
 
   ul {
     line-height: @navHeight;
 
     &:hover > li {
-      display: block;
-    }
-  }
-
-  li {
-    display: none;
-    background: lightgrey;
-
-    &:first-child {
-      background: white;
-      display: block;
+      display: block; 
     }
 
-    a {
-      display: block;
+    li {
+      display: none;
+      background: lightgrey;
 
-      &:hover {
-        background: #fff;
+      &:first-child {
+        background: tomato;
+        display: block;
+      }
+
+      a {
+        display: block;
+
+        &:hover {
+          background: #fff;
+        }
       }
     }
   }
 }
 
-.nav-filters {
-  display: inline-block;
-  height: @navHeight;
-  width: 72%;
 
-  label, ul, li {
-    display: inline-block;
-  }
+// The entire filtering sections
+.nav-filters {
+  height: @navHeight;
+  overflow: hidden;  
+  float: left;
+  width: 72%;
 }
 
+
+// The filters that have been chosen
 .nav-filters-selected {
   display: none;
 }
 
+
+// The list of filters
 .nav-filters-list {
   line-height: @navHeight;
 
@@ -76,29 +92,25 @@
     background: #fff;
     height: @navHeight;
     text-align: center;
-    width: 80px;
+    min-width: 55px;
+    width: 11.5%;
+    display: block;
+    float: left;
+  }
+
+  ul {
+    width: 85%;
   }
 
   li {
-    display: block;
-    float: left;
     position: relative;
     cursor: pointer;
     padding: 0 15px;
+    display: block;
+    float: left;
 
     &:hover {
       background: #FFF;
-    }
-
-    &:after {
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;      
-      border-top: 20px solid #000;    
-      position: absolute; 
-      height: 0;
-      width: 0; 
-      right: 0;      
-      top: 0;
     }
   }
 }

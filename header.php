@@ -28,7 +28,7 @@
 
   <div class="ad-leaderboard">
     <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
-  </div> <!-- // End of .ad-leaderboard -->
+  </div>  <!-- // End of .ad-leaderboard -->
 
   <div class="nav">
     
@@ -63,6 +63,6 @@
     </div>
 
   </div> <!-- // End of .nav -->
-</div>
+</div> <!-- // End of .subHeader -->
 
 <div class="main">
