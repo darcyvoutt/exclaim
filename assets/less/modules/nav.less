@@ -84,19 +84,20 @@
   background: lightgrey;
   height: @navHeight;
   position: absolute;
+  padding-left: 15px;
   bottom: 100%;
   width: 100%;
 
   li {
     background: #FFF;    
-    border: 1px solid #DDD;
+    padding: 4px 20px 4px 6px;
     line-height: @navHeight;
+    font-size: 13px;
     border-radius: 4px;
     position: relative;
-    margin-left: 15px;    
+    margin-right: 5px;    
     display: inline;
     cursor: pointer;
-    padding: 3px 20px 3px 3px;
 
     &:after {
       position: absolute;
@@ -104,7 +105,7 @@
       display: block;
       content: "x";
       right: 5px;
-      top: -52%;
+      top: -53%;
     }
   }
 }
@@ -113,7 +114,6 @@
 // The list of filters
 .nav-filters-list {
   line-height: @navHeight;
-  width: auto;
 
   label {
     background: #fff;
@@ -126,7 +126,7 @@
   }
 
   ul {
-    width: 98%;
+    .clearfix;
   }
 
   li {

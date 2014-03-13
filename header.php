@@ -45,9 +45,9 @@
       
       <div class="nav-filters-selected">
         <ul>
-          <li class="nav-filters-selected-item">Filter #1</li>
-          <li class="nav-filters-selected-item">Filter #2</li>
-          <li class="nav-filters-selected-item">Filter #3</li>
+          <li class="nav-filters-selected-item">Arcade Fire</li>
+          <li class="nav-filters-selected-item">Bars</li>
+          <li class="nav-filters-selected-item">Toronto</li>
         </ul>
       </div>
 

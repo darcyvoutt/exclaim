@@ -20,3 +20,19 @@
 .mobileSupport(@rules) {
   @media screen and (max-width: 480px) { @rules(); }
 } // Use: .displayMobile({ .. });
+
+
+.clearfix() {
+  zoom: 1;
+  
+  &:before { 
+    content: ''; 
+    display: block; 
+  }
+  
+  &:after { 
+    content: ''; 
+    display: table; 
+    clear: both; 
+  }
+}
