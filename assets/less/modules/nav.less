@@ -10,8 +10,9 @@
 
 // Entire navigation styling and wrapping
 .nav {
-  background: grey;
-  height: @navHeight;
+  .debug; // only used during testing
+  min-height: @navHeight;
+  position: relative;
 
   a {
     text-decoration: none;
@@ -27,7 +28,7 @@
     });
 
   .mobileSupport({
-    display: none;  
+    // display: none;  
     });
 }
 
@@ -85,21 +86,21 @@
 
 // The entire filtering sections
 .nav-filters {
+  background: grey;
   position: relative;
   height: @navHeight; 
-  float: left;
-  width: 72%;
+  display: inline-block;
+  width: 72.4375%;
 }
 
 
 // The filters that have been chosen
 .nav-filters-selected {
-  // display: none;
+  display: none;
+  position: relative;
   background: lightgrey;
   height: @navHeight;
-  position: absolute;
   padding-left: 15px;
-  bottom: 100%;
   width: 100%;
 }
 

@@ -14,15 +14,19 @@
 //////////////////////////////////////////////////////
 
 .tabletSupport(@rules) {
-  @media screen and (max-width: 768px) { @rules(); }
+  @media screen and (max-width: 768px), (device-aspect-ratio: 3/4) { @rules(); }
 } // Use: .displayTables({ .. }); 
 
 .mobileSupport(@rules) {
-  @media screen and (max-width: 480px) { @rules(); }
+  @media screen and (device-aspect-ratio: 2/3), (device-aspect-ratio: 40/71) { @rules(); }
 } // Use: .displayMobile({ .. });
 
 
-.clearfix() {
+//////////////////////////////////////////////////////
+// Clearfix & Debugs
+//////////////////////////////////////////////////////
+
+.clearfix {
   zoom: 1;
   
   &:before { 
@@ -35,4 +39,11 @@
     display: table; 
     clear: both; 
   }
+}
+
+.debug {
+  &:before, &:after {
+    border: 1px solid red;
+  }
+  border: 1px solid red;
 }

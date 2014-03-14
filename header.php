@@ -44,7 +44,7 @@
     </div>
 
     <div class="nav-filters">
-      
+
       <div class="nav-filters-selected">
         <ul>
           <li class="nav-filters-selected-item">Arcade Fire</li>
@@ -90,8 +90,9 @@
             </ul>
           </li>
         </ul>
-      </div>
-    </div>
+      </div> <!-- // End of .nav-filters-list -->
+
+    </div> <!-- // End of .nav-filters -->
 
   </div> <!-- // End of .nav -->
 </div> <!-- // End of .subHeader -->
