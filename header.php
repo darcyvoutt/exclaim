@@ -16,7 +16,7 @@
   <!-- Scripts -->
   <script src="assets/js/libraries/less-1.7.0.min.js"></script>
   <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>
-  
+  <script src="assets/js/nav.js"></script>
 </head>
   
 <body>
@@ -57,39 +57,19 @@
 
       <div class="nav-filters-list">
 
-        <label>Filters</label>
-        <ul>
-          <li>Featured Tags
-            <ul>
-              <li>New List</li>
-            </ul>
-          </li>
-
-          <li>Genres
-            <ul>
-              <li>New List</li>
-              <li>Second List</li>
-            </ul>
-          </li>
-
-          <li>Artists
-            <ul>
-              <li>New List</li>
-            </ul>
-          </li>
-
-          <li>Date
-            <ul>
-              <li>New List</li>
-            </ul>
-          </li>
-
-          <li>Keyword
-            <ul>
-              <li>New List</li>
-            </ul>
-          </li>
+      <!-- TEST -->
+      <nav class="group">
+        <h2 class="navheader slide-trigger">Menu <span></span></h2>
+        <ul class="navigation group">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+      </nav>
+
+
       </div> <!-- // End of .nav-filters-list -->
 
     </div> <!-- // End of .nav-filters -->
