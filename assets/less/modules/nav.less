@@ -46,6 +46,10 @@
   z-index: 999;
   .flex(1);
 
+  // IE 8 Hack
+  width: 100%;
+  display: block;
+
   .tabletSupport ({
     max-width: 100%;
     margin-right: 0;
@@ -95,12 +99,12 @@
 
 // The entire filtering sections
 .nav-filters {
-  background: grey;
+  background: red;
   vertical-align: top;
   position: relative;
   height: @navHeight; 
   .flex(2);
-
+  
   .mobileSupport({
     width: 100%;
     .flex(0);
