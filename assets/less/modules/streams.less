@@ -9,27 +9,22 @@
 //////////////////////////////////////////////////////
 
 .streams {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  
-  justify-content: flex-end;
+  .flexbox(row, wrap, justify-content, flex-start);
 
   .tabletSupport({
-    -webkit-flex-flow: column wrap; 
+     .flexbox(column, wrap, align-items, flex-start);
+     
+     // Firefox fallback as it does not support wrap
+     // wrap issue to be fixed March 18, 2014 in v28
+     display: block; 
+     width: 100%; 
   });
 }
 
 .stream { 
   background: pink;
   margin: 0 2.5% 20px 0;
-  -webkit-flex: 1;
-          flex: 1;
+  .flex(1);
 
   &:last-of-type {
     margin-right: 0;

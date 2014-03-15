@@ -53,10 +53,16 @@
 //////////////////////////////////////////////////////
 
 .flexbox(@direction, @wrap, @align, @val) {
+  // Older Implementation
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
+
+  // Modern Implementation
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
   
   -webkit-flex-flow: @direction @wrap;
@@ -72,10 +78,10 @@
 
 .flex(@values) {
   -webkit-box-flex: @values;
-  -moz-box-flex:  @values;
-  -webkit-flex:  @values;
-  -ms-flex:  @values;
-  flex:  @values;
+  -moz-box-flex: @values;
+  -webkit-flex: @values;
+  -ms-flex: @values;
+  flex: @values;
 }
 
 .order(@val) {

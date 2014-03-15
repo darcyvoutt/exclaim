@@ -10,7 +10,6 @@
 
 // Entire navigation styling and wrapping
 .nav {
-  .debug; // only used during testing
   min-height: @navHeight;
   position: relative;
 
@@ -26,11 +25,12 @@
   }
   
   .tabletSupport ({
-      font-size: 14px;
-    });
-
-  .mobileSupport({
-    // display: none;  
+    .flexbox(column, wrap, align-item, flex-start);
+    
+    // Firefox fallback as it does not support wrap
+    // wrap issue to be fixed March 18, 2014 in v28
+    display: block; 
+    width: 100%; 
     });
 }
 
@@ -43,11 +43,12 @@
   height: @navHeight;
   text-indent: 15px;
   max-width: 250px;
+  z-index: 999;
   .flex(1);
 
-  .mobileSupport({
-    width: 100%;
-    box-flex: 0;
+  .tabletSupport ({
+    max-width: 100%;
+    margin-right: 0;
     });
 
   &:after {
