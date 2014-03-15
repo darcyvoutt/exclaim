@@ -14,6 +14,8 @@
   min-height: @navHeight;
   position: relative;
 
+  .flexbox(row, nowrap, justify-content, flex-start);
+
   a {
     text-decoration: none;
     color: #333;
@@ -35,12 +37,18 @@
 
 // The dropdown list navigation between sections
 .nav-menu {
+  vertical-align: top;
   margin-right: 1.5625%;
   position: relative;
   height: @navHeight;
   text-indent: 15px;
-  float: left;
-  width: 26%;
+  max-width: 250px;
+  .flex(1);
+
+  .mobileSupport({
+    width: 100%;
+    box-flex: 0;
+    });
 
   &:after {
     @triangle: 10px;
@@ -87,10 +95,15 @@
 // The entire filtering sections
 .nav-filters {
   background: grey;
+  vertical-align: top;
   position: relative;
   height: @navHeight; 
-  display: inline-block;
-  width: 72.4375%;
+  .flex(2);
+
+  .mobileSupport({
+    width: 100%;
+    .flex(0);
+    });
 }
 
 
