@@ -48,15 +48,14 @@
   .flex(1);
 
   // IE 9 Hack
-  float: left\9;
   display: block\9;
+  float: left\9;  
   width: 100%\9;
 
   .tabletSupport ({
     max-width: 100%;
-    margin-right: 0;
+    margin: 0 0 5px 0;
     });
-
 
   &:after { // Triangle Dropdown
     border-left: @triangle solid transparent;
@@ -74,24 +73,19 @@
   ul {
     line-height: @navHeight;
 
-    &:hover > li {
-      display: block; 
-    }
-
     li {
-      display: none;
       background: lightgrey;
-
-      &:first-child {
-        display: block;
-      }
 
       a {
         display: block;
 
         &:hover {
-          background: #fff;
+          background: #0fcaf2;          
         }
+      }      
+
+      ul {
+        display: none;
       }
     }
   }
@@ -149,60 +143,10 @@
 }
 
 
-// // The list of filters
-// .nav-filters-list {
-//   line-height: @navHeight;
-
-//   label {
-//     background: #fff;
-//     height: @navHeight;
-//     text-align: center;
-//     min-width: 55px;
-//     width: 12%;
-//     display: block;
-//     float: left;
-//   }
-
-//   ul {
-//     // .clearfix;
-//     width: 100%;
-//   }
-
-//   li {
-//     position: relative;
-//     cursor: pointer;
-//     padding: 0 15px;
-//     display: block;
-//     float: left;
-
-//     &:hover {
-//       background: #FFF;
-//     }
-
-//     &:hover > ul {
-//       display: block;
-//     }
-
-//     ul {
-//       background: grey;
-//       position: absolute;
-//       min-width: 120px;
-//       display: none;
-//       width: 100%;
-//       top: 100%;
-//       left: 0;
-
-//       li {
-//         display: block;
-//         width: inherit;
-//       }
-//     }
-//   }
-// }
-
-.navigation {
-  max-width: none;
+// Navigation
+.nav-filters-list {
   background: grey;
+  max-width: none;
   padding: 0;
 
   .tabletSupport({
@@ -210,11 +154,12 @@
     });
 
   li {
+    position: relative;
     float: left;
 
-      .tabletSupport({
-          float: none;
-        });
+    .tabletSupport({
+        float: none;
+      });
 
     a {
       line-height: @navHeight;
@@ -222,22 +167,38 @@
       display: block;
       color: #fff;
 
-        .tabletSupport({
-          border-bottom: 1px solid #fff;
-          });
+      .tabletSupport({
+        border-bottom: 1px solid #fff;
+        });
 
       &:hover {
         background: #0fcaf2;
       }
     }
+
+    ul {
+      position: absolute;
+      background: grey;  
+      min-width: 120px;
+      display: none;
+      top: 100%;
+      left: 0;
+
+      li {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 }
 
-.navheader { 
+// Need to rename
+.nav-filters-title { 
   font-size: 14px;
   color: #FFFFFF;
 }
 
+// Need to rename ".slide-trigger"
 .slide-trigger {
   line-height: @navHeight;
   text-indent: 15px;
@@ -248,7 +209,7 @@
     display: block;
     });
 
-  span {
+  &:after {
     border-left: @triangle solid transparent;
     border-right: @triangle solid transparent;    
     border-top: @triangle solid #000000;
@@ -259,18 +220,5 @@
     width: 0;  
     right: 10px;
     top: 50% - @triangle;
-  }
-}
-
-.no-js {
-  .slider-trigger {
-    .tabletSupport({
-      display: none;
-    });  
-  }
-  .navigation {
-    .tabletSupport({
-      display: block;
-    });
   }
 }

@@ -36,11 +36,15 @@
     
     <div class="nav-menu">
       <ul>
-        <li><a href="index.php">News</a></li>
-        <li><a href="article.php">Article</a></li>
-        <li><a href="artist.php">Artist Profile</a></li>
-        <li><a href="search.php">Search Results</a></li>
-      </ul>
+        <li class="nav-menu-item"><a href="#">Menu</a>
+          <ul>
+            <li><a href="index.php">News</a></li>
+            <li><a href="article.php">Article</a></li>
+            <li><a href="artist.php">Artist Profile</a></li>
+            <li><a href="search.php">Search Results</a></li>
+          </ul>
+        </li>          
+      </ul>      
     </div>
 
     <div class="nav-filters">
@@ -55,22 +59,19 @@
 
       <script src="assets/js/filters.js"></script>
 
-      <div class="nav-filters-list">
-
-      <!-- TEST -->
-      <nav class="group">
-        <h2 class="navheader slide-trigger">Filters <span></span></h2>
-        <ul class="navigation group">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-
-      </div> <!-- // End of .nav-filters-list -->
+      <h2 class="nav-filters-title slide-trigger">Filters</h2>
+      <ul class="nav-filters-list">
+        <li><a href="#">Genre</a>
+          <ul>
+            <li><a href="#">Sub-Home</a></li>
+            <li><a href="#">Sub-Home</a></li>
+            <li><a href="#">Sub-Home</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Tags</a></li>
+        <li><a href="#">Date</a></li>
+        <li><a href="#">Order</a></li>
+      </ul> <!-- // End of .nav-filters-list -->
 
     </div> <!-- // End of .nav-filters -->
 
