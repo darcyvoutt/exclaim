@@ -202,17 +202,29 @@
 
 .navigation {
   max-width: none;
-  background: #000;
+  background: grey;
   padding: 0;
+
+  .tabletSupport({
+    display: none;
+    });
 
   li {
     float: left;
+
+      .tabletSupport({
+          float: none;
+        });
 
     a {
       line-height: @navHeight;
       padding: 0 15px;
       display: block;
       color: #fff;
+
+        .tabletSupport({
+          border-bottom: 1px solid #fff;
+          });
 
       &:hover {
         background: #0fcaf2;
@@ -232,6 +244,10 @@
   cursor: pointer;
   display: none;
 
+  .tabletSupport({
+    display: block;
+    });
+
   span {
     border-left: @triangle solid transparent;
     border-right: @triangle solid transparent;    
@@ -246,13 +262,15 @@
   }
 }
 
-
-@media only screen and (max-width: 560px) {
-  .slide-trigger { display: block; }
-    .no-js .slide-trigger { display: none; }
-  .navigation { display: none; }
-    .no-js .navigation { display: block; }
-  .navigation { }
-  .navigation li { float: none; }
-  .navigation li a { border-bottom: 1px solid #fff; }
+.no-js {
+  .slider-trigger {
+    .tabletSupport({
+      display: none;
+    });  
+  }
+  .navigation {
+    .tabletSupport({
+      display: block;
+    });
+  }
 }

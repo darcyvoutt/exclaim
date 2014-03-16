@@ -59,7 +59,7 @@
 
       <!-- TEST -->
       <nav class="group">
-        <h2 class="navheader slide-trigger">Menu <span></span></h2>
+        <h2 class="navheader slide-trigger">Filters <span></span></h2>
         <ul class="navigation group">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
