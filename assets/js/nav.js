@@ -2,6 +2,7 @@
 // Variable for the speed of the menus
 //////////////////////////////////////////////////////
 var slideSpeed = 70;
+var tabletSize = 768;
 
 
 //////////////////////////////////////////////////////
@@ -18,12 +19,13 @@ var slideSpeed = 70;
         if( obj.is(':visible') ) { tree.slideToggle( slideSpeed ); }
       });
       $(window).resize(function(){
-        if ( $(window).width() <= 768 ) { tree.attr('style',''); };
+        if ( $(window).width() <= tabletSize ) { tree.attr('style',''); };
       });
     });
   };
 })(jQuery);
 
+// Run the script
 $(document).ready(function(){
   $('.slide-trigger').collapsable();
 });
@@ -43,18 +45,20 @@ $(document).ready(function() {
 // Nav Filters Dropdown
 //////////////////////////////////////////////////////
 $(document).ready(function () {
-  if ( $(window).width() >= 768 ) {
-    
-    // Slide down when clicked
-    $('.nav-filters-list-item a').on("click", function () {
-        $(this).next('ul').slideToggle( slideSpeed );
-    });
-  
-    // Slide up when mouse leaves
-    // Need to replace with clicking away instead
-    // $('.nav-filters-list-item ul').mouseleave(function () {
-    //     $(this).slideToggle( slideSpeed );
-    // });
 
-  };
+    if ( $(window).width() >= tabletSize ) {
+    
+      // Slide down when clicked
+      $('.nav-filters-list-item a').on("click", function () {
+          $(this).next('ul').slideToggle( slideSpeed );
+      });
+    
+      // Slide up when mouse leaves
+      // Need to replace with clicking away instead
+      // $('.nav-filters-list-item ul').mouseleave(function () {
+      //     $(this).slideToggle( slideSpeed );
+      // });
+
+    };
+
 });

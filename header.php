@@ -58,7 +58,7 @@
         </ul>
       </div>
       
-      <h2 class="nav-filters-title slide-trigger">Filters</h2>
+      <h2 class="nav-filters-mobileTitle slide-trigger">Filters</h2>
 
       <ul class="nav-filters-list">
         <li class="nav-filters-list-item"><a href="#">Genre</a>
