@@ -1,11 +1,16 @@
+//////////////////////////////////////////////////////
 // Removal of selected list items
+//////////////////////////////////////////////////////
 $(document).ready(function() {
   $(".nav-filters-selected-item").click(function() {
     $(this).remove();
   });
 });
 
-// Remove Code, only for markup.
+
+//////////////////////////////////////////////////////
+// TEMP FOR TYPEAHEAD TESTING
+//////////////////////////////////////////////////////
 var substringMatcher = function(strs) {
   return function findMatches(q, cb) {
     var matches, substringRegex;
@@ -41,8 +46,7 @@ var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
   'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 ];
 
-
-// Typeahead Script
+// Script to run typeahead
 $('.typeahead').typeahead({
   hint: true,
   minLength: 2,
