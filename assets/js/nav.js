@@ -44,6 +44,12 @@ $(document).ready(function() {
 //////////////////////////////////////////////////////
 // Nav Filters Dropdown
 //////////////////////////////////////////////////////
+
+// Notes:
+// - Not respecting resizing of page, but works on load
+// - Needs some state of clicking away from the dropdown in mobile (potentially)
+
+
 $(document).ready(function () {
 
     if ( $(window).width() >= tabletSize ) {
@@ -52,12 +58,6 @@ $(document).ready(function () {
       $('.nav-filters-list-item a').on("click", function () {
           $(this).next('ul').slideToggle( slideSpeed );
       });
-    
-      // Slide up when mouse leaves
-      // Need to replace with clicking away instead
-      // $('.nav-filters-list-item ul').mouseleave(function () {
-      //     $(this).slideToggle( slideSpeed );
-      // });
 
     };
 
