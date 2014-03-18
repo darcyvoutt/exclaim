@@ -17,6 +17,7 @@
   <script src="assets/js/libraries/less-1.7.0.min.js"></script>
   <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/bootstrap/typeahead.js"></script>
 </head>
   
 <body>
@@ -56,26 +57,56 @@
           <li class="nav-filters-selected-item">Toronto</li>
         </ul>
       </div>
-
-      <script src="assets/js/filters.js"></script>
-
+      
       <h2 class="nav-filters-title slide-trigger">Filters</h2>
+
       <ul class="nav-filters-list">
-        <li><a href="#">Genre</a>
+        <li class="nav-filters-list-item"><a href="#">Genre</a>
           <ul>
-            <li><a href="#">Sub-Home</a></li>
-            <li><a href="#">Sub-Home</a></li>
-            <li><a href="#">Sub-Home</a></li>
+            <li class="nav-filters-list-search">
+              <input type="text" class="typeahead" placeholder="Genre" />
+            </li>
+            <li><a href="#">Genre Option</a></li>
+            <li><a href="#">Genre Option</a></li>
           </ul>
         </li>
-        <li><a href="#">Tags</a></li>
-        <li><a href="#">Date</a></li>
-        <li><a href="#">Order</a></li>
+
+        <li class="nav-filters-list-item"><a href="#">Tags</a>
+          <ul>
+            <li class="nav-filters-list-search">
+              <input type="text" class="typeahead" placeholder="Tags" />
+            </li>
+            <li><a href="#">Tag Option</a></li>
+            <li><a href="#">Tag Option</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-filters-list-item"><a href="#">Date</a>
+          <ul>
+            <li class="nav-filters-list-search">
+              <input type="text" class="typeahead" placeholder="Date" />
+            </li>
+            <li><a href="#">Date Option</a></li>
+            <li><a href="#">Date Option</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-filters-list-item"><a href="#">Order</a>
+          <ul>
+            <li class="nav-filters-list-search">
+              <input type="text" class="typeahead" placeholder="Order" />
+            </li>
+            <li><a href="#">Order Option</a></li>
+            <li><a href="#">Order Option</a></li>
+          </ul>
+        </li>
       </ul> <!-- // End of .nav-filters-list -->
 
     </div> <!-- // End of .nav-filters -->
 
   </div> <!-- // End of .nav -->
 </div> <!-- // End of .subHeader -->
+
+<script src="assets/js/filters.js"></script>
 
 <div class="main">

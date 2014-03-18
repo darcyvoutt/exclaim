@@ -121,16 +121,16 @@
   width: 100%;
 }
 
-.nav-filters-selected-item {
-  background: #FFF;    
+.nav-filters-selected-item {    
   padding: 4px 20px 4px 6px;
   line-height: @navHeight;
-  font-size: 13px;
   border-radius: 4px;
   position: relative;
-  margin-right: 5px;    
+  margin-right: 5px;
+  background: #FFF;    
   display: inline;
   cursor: pointer;
+  font-size: 13px;
 
   &:after {
     position: absolute;
@@ -152,6 +152,10 @@
   .tabletSupport({
     display: none;
     });
+  
+  input[type=text] {
+    width: 100%;    
+  }
 
   li {
     position: relative;
@@ -179,14 +183,18 @@
     ul {
       position: absolute;
       background: grey;  
-      min-width: 120px;
       display: none;
       top: 100%;
       left: 0;
 
       li {
+        min-width: 150px;
         display: block;
         width: 100%;
+
+        &:first-child {
+          padding: 10px;
+        }
       }
     }
   }
