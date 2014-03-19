@@ -41,24 +41,24 @@ $(document).ready(function() {
 });
 
 
-//////////////////////////////////////////////////////
-// Nav Filters Dropdown
-//////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////
+// // Nav Filters Dropdown
+// //////////////////////////////////////////////////////
 
-// Notes:
-// - Not respecting resizing of page, but works on load
-// - Needs some state of clicking away from the dropdown in mobile (potentially)
+// // Notes:
+// // - Not respecting resizing of page, but works on load
+// // - Needs some state of clicking away from the dropdown in mobile (potentially)
 
 
-$(document).ready(function () {
+// // $(document).ready(function () {
 
-    if ( $(window).width() >= tabletSize ) {
+// //     if ( $(window).width() >= tabletSize ) {
     
-      // Slide down when clicked
-      $('.nav-filters-list-item a').on("click", function () {
-          $(this).next('ul').slideToggle( slideSpeed );
-      });
+// //       // Slide down when clicked
+// //       $('.nav-filters-list-item a').on("click", function () {
+// //           $(this).next('ul').slideToggle( slideSpeed );
+// //       });
 
-    };
+// //     };
 
-});
+// // });

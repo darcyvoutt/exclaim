@@ -177,12 +177,16 @@
     }
 
     ul {
-      position: absolute;
-      background: grey;  
+      background: black;  
       display: none;
       z-index: 99999;
       top: 100%;
       left: 0;
+
+      .tabletSupport({
+        display: none;
+        width: 100%;
+      });
 
       li {
         min-width: 150px;
@@ -197,10 +201,25 @@
   }
 }
 
+.dropdown-menu {
+  .browserPrefix(border-radius, 0px);
+  .browserPrefix(box-shadow, none);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-filters-list-search {
+  span {
+    width: 100%;
+  }
+}
+
 // Title when the menu becomes full width for tablet/mobile
-.nav-filters-mobileTitle { 
+h2.nav-filters-mobileTitle { 
   font-size: 14px;
   color: #FFFFFF;
+  margin: 0;
 }
 
 // Need to rename ".slide-trigger"
