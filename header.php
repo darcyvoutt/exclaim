@@ -51,11 +51,12 @@
 
       <!-- Filters Selected -->
       <div class="nav-filters-selected">
-        <ul>
+        <ul class="nav-filters-selected-list">
           <li class="nav-filters-selected-item">Arcade Fire</li>
           <li class="nav-filters-selected-item">Bars</li>
           <li class="nav-filters-selected-item">Toronto</li>
         </ul>
+        <button class="nav-filters-selected-button">Filter</button>
       </div>
       
       <!-- Filter Options -->

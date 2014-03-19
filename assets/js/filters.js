@@ -1,9 +1,35 @@
 //////////////////////////////////////////////////////
-// Removal of selected list items
+// Filtered Options
 //////////////////////////////////////////////////////
+
+// Remove filter options
 $(document).ready(function() {
   $(".nav-filters-selected-item").click(function() {
     $(this).remove();
+  });
+});
+
+// Reveal the filtered options
+$(document).ready(function () {
+  // Clicking on an option in the dropdown
+  $('.dropdown-menu li a').on('click', function () {
+    $('.nav-filters-selected').fadeIn( '150' , function () {
+      $(this).css({display : 'block'});
+    });
+  });
+
+  // Keypress in the autocomplete
+  $('.nav-filters-list-search input').on('keypress', function () {
+    $('.nav-filters-selected').fadeIn( '150' , function () {
+      $(this).css({display : 'block'});
+    });
+  });
+});
+
+// Remove the filtered options
+$(document).ready(function () {
+  $('.nav-filters-selected-button').on('click', function () {
+    $('.nav-filters-selected').css({display: 'none'});
   });
 });
 

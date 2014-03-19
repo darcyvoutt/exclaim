@@ -11,7 +11,7 @@
 
 // Entire navigation styling and wrapping
 .nav {
-  min-height: @navHeight;
+  min-height: auto;
   position: relative;
 
   .flexbox(row, nowrap, justify-content, flex-start);
@@ -50,9 +50,11 @@
   // IE 9 Hack
   display: block\9;
   float: left\9;  
-  width: 100%\9;
+  width: 26%\9;
 
   .tabletSupport ({
+    .flex(0);
+    
     max-width: 100%;
     margin: 0 0 5px 0;
     });
@@ -97,28 +99,38 @@
   background: red;
   vertical-align: top;
   position: relative;
-  height: @navHeight; 
+  height: auto; 
   .flex(2);
 
   // IE 9 Hacks
-  width: 500px\9;
+  width: 72.395%\9;
+  display: block\9;
   float: left\9;
 
   .mobileSupport({
-    width: 100%;
     .flex(0);
+    width: 100%;
     });
 }
 
 
 // The filters that have been chosen
 .nav-filters-selected {
-  display: none;
   position: relative;
   background: lightgrey;
   height: @navHeight;
   padding-left: 15px;
+  display: none;
   width: 100%;
+}
+
+.nav-filters-selected-button {
+  position: absolute;
+  height: @navHeight;
+  padding: 0 15px;
+  display: block;
+  right: 0;
+  top: 0;
 }
 
 .nav-filters-selected-item {    
@@ -225,6 +237,7 @@ h2.nav-filters-mobileTitle {
 // Need to rename ".slide-trigger"
 .slide-trigger {
   line-height: @navHeight;
+  position: relative;
   text-indent: 15px;
   cursor: pointer;
   display: none;

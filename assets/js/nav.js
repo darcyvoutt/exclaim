@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////
 // Variable for the speed of the menus
 //////////////////////////////////////////////////////
-var slideSpeed = 70;
+var slideSpeed = 0;
 var tabletSize = 768;
 
 
@@ -39,26 +39,3 @@ $(document).ready(function() {
     $( '.nav-menu-item ul' ).slideToggle( slideSpeed );
   });
 });
-
-
-// //////////////////////////////////////////////////////
-// // Nav Filters Dropdown
-// //////////////////////////////////////////////////////
-
-// // Notes:
-// // - Not respecting resizing of page, but works on load
-// // - Needs some state of clicking away from the dropdown in mobile (potentially)
-
-
-// // $(document).ready(function () {
-
-// //     if ( $(window).width() >= tabletSize ) {
-    
-// //       // Slide down when clicked
-// //       $('.nav-filters-list-item a').on("click", function () {
-// //           $(this).next('ul').slideToggle( slideSpeed );
-// //       });
-
-// //     };
-
-// // });
