@@ -46,4 +46,6 @@
 
   <?php include('filters.php'); ?>
 
+</div> <!-- // End of .subHeader -->
+
 <div class="main">

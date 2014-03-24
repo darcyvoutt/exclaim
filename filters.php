@@ -87,6 +87,5 @@
     </div> <!-- // End of .filters-tags -->
 
   </div> <!-- // End of .filters -->
-</div> <!-- // End of .subHeader -->
 
 <script src="assets/js/filters.js"></script>
