@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////
 
 .header {
-
+  background: #3f3f3f;
 }
 
 .subHeader {
@@ -22,5 +22,21 @@
 
 .logo {
   margin: 0;
-  padding: 0;  
+  
+  a {
+    background: url("../images/logo.png"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: @marginRight;
+    text-indent: -999em;
+    width: 28.6458333%;
+    display: block;
+    height: 60px;
+    float: left;
+
+    .tabletSupport({
+      margin-right: 0;
+      width: 100%;
+      });
+  }
 }

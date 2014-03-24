@@ -26,7 +26,12 @@
   
     <h1 class="logo">
       <a href="/">Exclaim!</a>
-    </h1> <!-- // End of .;pgp -->
+    </h1> <!-- // End of .logo -->
+
+    <div class="navigation">
+      <div class="search"></div>
+      <div class="menu"></div>
+    </div>
 
   </div> <!-- // End of .header-content -->
 </div> <!-- // End of .header -->
