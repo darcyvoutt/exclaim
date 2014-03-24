@@ -4,7 +4,7 @@
 
 // Remove filter options
 $(document).ready(function() {
-  $(".nav-filters-selected-item").click(function() {
+  $(".filters-tags-selected-item").click(function() {
     $(this).remove();
   });
 });
@@ -13,14 +13,14 @@ $(document).ready(function() {
 $(document).ready(function () {
   // Clicking on an option in the dropdown
   $('.dropdown-menu li a').on('click', function () {
-    $('.nav-filters-selected').fadeIn( '150' , function () {
+    $('.filters-tags-selected').fadeIn( '150' , function () {
       $(this).css({display : 'block'});
     });
   });
 
   // Keypress in the autocomplete
-  $('.nav-filters-list-search input').on('keypress', function () {
-    $('.nav-filters-selected').fadeIn( '150' , function () {
+  $('.filters-tags-list-search input').on('keypress', function () {
+    $('.filters-tags-selected').fadeIn( '150' , function () {
       $(this).css({display : 'block'});
     });
   });
@@ -28,8 +28,8 @@ $(document).ready(function () {
 
 // Remove the filtered options
 $(document).ready(function () {
-  $('.nav-filters-selected-button').on('click', function () {
-    $('.nav-filters-selected').css({display: 'none'});
+  $('.filters-tags-selected-button').on('click', function () {
+    $('.filters-tags-selected').css({display: 'none'});
   });
 });
 

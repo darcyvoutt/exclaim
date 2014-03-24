@@ -14,7 +14,7 @@ var tabletSize = 768;
     return this.each(function() {
       // cache this:
       var obj = $(this);
-      var tree = obj.next('.nav-filters-list');
+      var tree = obj.next('.filters-tags-list');
       obj.click(function(){
         if( obj.is(':visible') ) { tree.slideToggle( slideSpeed ); }
       });
@@ -35,7 +35,7 @@ $(document).ready(function(){
 // Nav Menu Dropdown
 //////////////////////////////////////////////////////
 $(document).ready(function() {
-  $( '.nav-menu-item a' ).click(function() {
-    $( '.nav-menu-item ul' ).slideToggle( slideSpeed );
+  $( '.filters-menu-item a' ).click(function() {
+    $( '.filters-menu-item ul' ).slideToggle( slideSpeed );
   });
 });

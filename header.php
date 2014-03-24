@@ -23,10 +23,15 @@
 
 <div class="header">
   <div class="header-content">
-  
+
     <h1 class="logo">
       <a href="/">Exclaim!</a>
     </h1> <!-- // End of .;pgp -->
+
+    <div class="navigation">
+      <div class="search"></div>
+      <div class="nav"></div>
+    </div>
 
   </div> <!-- // End of .header-content -->
 </div> <!-- // End of .header -->
@@ -39,6 +44,6 @@
     </a>    
   </div>  <!-- // End of .ad-leaderboard -->
 
-  <?php include('nav.php'); ?>
+  <?php include('filters.php'); ?>
 
 <div class="main">
