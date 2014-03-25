@@ -74,7 +74,7 @@
       </ul>
 
       <script src="assets/js/nav.js"></script>
-      <script src="assets/js/bootstrap/bootstrap.js"></script>
+      
       <script>
         // Stop dropdown from closing on clicked or keydown (used by typeahead)
         $('.nav-filters-list-search').on("click keydown", function(event) {

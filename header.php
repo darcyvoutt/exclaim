@@ -17,6 +17,8 @@
   <script src="assets/js/libraries/less-1.7.0.min.js"></script>
   <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>
   <script src="assets/js/bootstrap/typeahead.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.js"></script>
+
 </head>
   
 <body>
@@ -25,7 +27,7 @@
   <div class="header-content">
   
     <h1 class="logo">
-      <a href="/">Exclaim!</a>
+      <a href="index.php">Exclaim!</a>
     </h1> <!-- // End of .logo -->
 
     <div class="navigation">

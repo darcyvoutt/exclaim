@@ -4,6 +4,8 @@
 
 <div class="content">
 
+  <?php include('carousel.php'); ?>
+
   <div class="streams">
     
     <div class="stream" style="height: 400px;">
