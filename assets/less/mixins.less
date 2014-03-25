@@ -2,7 +2,6 @@
 // Global Variables
 //////////////////////////////////////////////////////
 
-
 @marginRight: 1.5625%;
 
 //////////////////////////////////////////////////////
@@ -97,4 +96,21 @@
   -ms-flex-order: @val;     
   -webkit-order: @val;  
   order: @val;
+}
+
+//////////////////////////////////////////////////////
+// Arrow Down
+//////////////////////////////////////////////////////
+
+.arrowDown(@triangle: 10px) {
+    border-left: @triangle solid transparent;
+    border-right: @triangle solid transparent;    
+    border-top: @triangle solid #000000;
+    position: absolute;
+    display: block;
+    content: "";    
+    height: 0;
+    width: 0;  
+    right: 10px;
+    top: 50% - @triangle;
 }

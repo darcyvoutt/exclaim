@@ -8,3 +8,36 @@
     width: 100%;
     });
 }
+
+.menu {
+  width: 200px;
+  background: #efefef;
+  position: relative;
+  display: block;
+  padding: 10px;
+
+  &:after { .arrowDown(); }
+}
+
+.menu-list {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 0;
+  }
+
+  li a { 
+    padding: 10px 15px; // reset bootstrap
+  }
+
+  ul {
+    position: absolute;
+    background: green;
+    width: 100%;
+    top: 100%;
+    left: 0;  
+  }
+}

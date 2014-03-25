@@ -3,7 +3,6 @@
 //////////////////////////////////////////////////////
 
 @navHeight:   45px;
-@triangle:    10px;
 
 //////////////////////////////////////////////////////
 // Styles
@@ -64,16 +63,7 @@
     });
 
   &:after { // Triangle Dropdown
-    border-left: @triangle solid transparent;
-    border-right: @triangle solid transparent;    
-    border-top: @triangle solid #000000;
-    position: absolute;
-    display: block;
-    content: "";    
-    height: 0;
-    width: 0;  
-    right: 10px;
-    top: 50% - @triangle;
+    .arrowDown();
   }
 
   ul {
@@ -175,6 +165,7 @@
 
   li {
     position: relative;
+    display: block;
     float: left;
 
     .tabletSupport({
@@ -251,15 +242,6 @@ h2.nav-filters-mobileTitle {
     });
 
   &:after {
-    border-left: @triangle solid transparent;
-    border-right: @triangle solid transparent;    
-    border-top: @triangle solid #000000;
-    position: absolute;
-    display: block;
-    content: "";    
-    height: 0;
-    width: 0;  
-    right: 10px;
-    top: 50% - @triangle;
+    .arrowDown();
   }
 }
