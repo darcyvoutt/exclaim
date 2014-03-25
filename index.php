@@ -4,7 +4,9 @@
 
 <div class="content">
 
-  <?php include('carousel.php'); ?>
+  <div id="articleCarousel">
+    <?php include('carousel.php'); ?>
+  </div>
 
   <div class="streams">
     

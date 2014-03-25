@@ -1,10 +1,24 @@
 <div class="sidebar">
-  <p>Donec porttitor magna a ipsum eleifend, luctus dapibus nibh pulvinar. Sed mattis 
-    sem at lorem pretium, in tincidunt ante aliquam. Suspendisse sed mollis dolor, at malesuada tortor. 
-    Sed molestie et nibh eu ullamcorper. Vivamus vehicula tincidunt dictum. Morbi malesuada porttitor auctor. 
-    Suspendisse vehicula tristique magna, sed rhoncus enim. Phasellus elementum lectus ac condimentum iaculis. 
-    Ut sit amet risus condimentum, ultrices lorem vel, molestie urna. Nulla congue nulla eu nisl fermentum 
-    egestas vel at eros.</p>
 
-  <?php include('carousel.php'); ?>
+  <!-- Carousel Widget -->
+  <div class="widget">
+    <div class="widget-title">
+      <h3>Picks</h3>
+    </div>
+    <div class="widget-content">
+      <?php include('carousel.php'); ?>
+    </div>
+  </div>
+
+
+  <!-- Standard Widget -->
+  <div class="widget">
+    <div class="widget-title">
+      <h3>Title Here<span>March 2014</span></h3>
+    </div>
+    <div class="widget-content">
+      <p>Content goes here.</p>
+    </div>
+  </div>
+
 </div>

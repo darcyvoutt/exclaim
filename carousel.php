@@ -1,4 +1,3 @@
-<div id="carousel-example-generic">
   <div class="carousel slide">
       
     <!-- Indicators -->
@@ -36,7 +35,6 @@
     </a>
 
   </div>
-</div>
 
 
 <script type="text/javascript">

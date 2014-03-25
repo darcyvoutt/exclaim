@@ -57,21 +57,23 @@
         </li>
       </ul>
 
-      .
+      <!-- Horizontal menu -->
 
     </div> <!-- // End of .navigation -->
 
   </div> <!-- // End of .header-content -->
 </div> <!-- // End of .header -->
 
-<div class="subHeader">
+<div class="wrap">
 
-  <div class="ad-leaderboard">
-    <a href="#">
-      <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
-    </a>    
-  </div>  <!-- // End of .ad-leaderboard -->
+  <div class="subHeader">
 
-  <?php include('nav.php'); ?>
+    <div class="ad-leaderboard">
+      <a href="#">
+        <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+      </a>    
+    </div>  <!-- // End of .ad-leaderboard -->
 
-<div class="main">
+    <?php include('nav.php'); ?>
+
+  <div class="main">
