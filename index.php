@@ -27,25 +27,26 @@
 
   <div class="streams">
     
-    <div class="stream" style="height: 400px;">
+    <div class="stream">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
+      posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
+      metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
+      sapien vel ultricies.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
       posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
       metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
       sapien vel ultricies.</p>
     </div>
 
-    <div class="stream" style="height: 500px;">
+    <div class="stream">
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
       posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
-      metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-      sapien vel ultricies.</p>
+      metus vitae sapien placerat.</p>
     </div>
 
-    <div class="stream" style="height: 350px;">
+    <div class="stream">
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
-      posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
-      metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-      sapien vel ultricies.</p>
+      posuere vel eget metus.</p>
     </div>
 
   </div>
