@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////
 
 .tabletSupport(@rules) {
-  @media screen and (max-width: 768px), (device-aspect-ratio: 3/4) { @rules(); }
+  @media screen and (max-width: 768px) { @rules(); }
 } // Use: .displayTables({ .. }); 
 
 .mobileSupport(@rules) {
-  @media screen and (device-aspect-ratio: 2/3), (device-aspect-ratio: 40/71) { @rules(); }
+  @media screen and (max-width: 480px) { @rules(); }
 } // Use: .displayMobile({ .. });
 
 
@@ -54,7 +54,7 @@
   border: 1px solid red;
 }
 
-//////////////////////////////////////////////////////
+//////////////////////////////////////////4////////////
 // Flexbox Mixins
 //////////////////////////////////////////////////////
 

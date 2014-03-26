@@ -1,6 +1,23 @@
 <?php include ('header.php') ?>
 
-<div class="relatedArticles-headline"></div>
+<div class="relatedArticles">
+  <div class="widget">
+    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-title"><h3>Title Here //</h3></div>
+  </div>
+  <div class="widget">    
+    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-title"><h3>Title Here //</h3></div>
+  </div>
+  <div class="widget">    
+    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-title"><h3>Title Here //</h3></div>
+  </div>
+  <div class="widget">    
+    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-title"><h3>Title Here //</h3></div>
+  </div>
+</div>
 
 <div class="content">
 

@@ -9,7 +9,11 @@
 
   <!-- Less -->
   <script type="text/javascript">
-    less = { env: "development" }; 
+    less = {
+      env: "development",
+      async: false,
+      fileAsync: false,
+    };
   </script>
   <link rel="stylesheet/less" href="assets/less/style.less" />
 
@@ -24,30 +28,42 @@
 <body>
 
 <div class="header">
-  <div class="header-content">
-  
+  <div class="headerBar">
+    <div class="headerBar-content">
+      <div class="search">
+        <input type="text" />
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>     
+
+  <div class="header-content">  
+    
     <h1 class="logo">
       <a href="index.php">Exclaim!</a>
     </h1> <!-- // End of .logo -->
 
     <div class="navigation">
-      <div class="navigation-search">
-        <div class="search">
-          <input type="text" />
-        </div>
-        <div class="social">
-          <ul>
-            <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-            <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-            <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-            <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-            <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-          </ul>
-        </div>        
-      </div>
       
-      <ul class="menu-dropdown">
-        <li class="menu-dropdown-list">
+      <!-- Main Nav -->
+      <ul class="menu">
+        <li class="menu-item"><a href="#">News</a></li>
+        <li class="menu-item"><a href="#">Features</a></li>
+        <li class="menu-item"><a href="#">Reviews</a></li>
+        <li class="menu-item"><a href="#">Streams</a></li>
+      </ul>
+      
+      <!-- Sections Select -->
+      <ul class="sections">
+        <li class="sections-list">
           <a data-toggle="dropdown" href="#" class="dropdown-toggle">Music</a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li><a href="#">Videogames</a></li>
@@ -56,8 +72,6 @@
           </ul>
         </li>
       </ul>
-
-      <!-- Horizontal menu -->
 
     </div> <!-- // End of .navigation -->
 
@@ -74,6 +88,6 @@
       </a>    
     </div>  <!-- // End of .ad-leaderboard -->
 
-    <?php include('nav.php'); ?>
+    <?php include('filters.php'); ?>
 
   <div class="main">

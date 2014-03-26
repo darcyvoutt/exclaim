@@ -6,89 +6,18 @@
   background: #FFFFFF;
 }
 
-.subHeader {
-  
+//////////////////////////////////////////////////////
+// Header Search
+//////////////////////////////////////////////////////
+
+.headerBar {
+  background: #000000;
 }
 
-.ad-leaderboard {
-  img {
-    max-width: 100%;
-    min-height: 80px;
-    margin: 0 auto 10px auto;
-    display: block;
-  }
-}
-
-.logo {
-  margin: 0;
-  
-  a {
-    background: url("../images/logo.png"); 
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-right: @marginRight;
-    text-indent: -999em;
-    width: 28.6458333%;
-    max-width: 275px;
-    display: block;
-    height: 60px;
-    float: left;
-
-    .tabletSupport({
-      margin-right: 0;
-      width: 100%;
-      });
-  }
-}
-
-.navigation {
-  background: orange;
-  width: 69.7916667%;
-  height: auto;
-  float: left;
-
-  .tabletSupport({
-    width: 100%;
-    });
-}
-
-
-@searchHeight: 30px;
-
-.navigation-search {
-  overflow: hidden;
-  background: pink; 
-  display: block;
-  width: 100%;
-  height: 30px;
-
+.headerBar-content {
   input {
-    width: 150px;
-    height: @searchHeight;
-  }
-}
-
-.social {
-  margin-right: 5px;
-  display: block;
-  float: right;
-
-  li {
-    line-height: @searchHeight - 2px;
-    list-style-type: none;
-    display: block;
-    float: right;
-    margin-left: 5px;
-
-    &:last-child {
-      margin-left: 0px;
-    }
-
-    img {
-      @size: 22px;
-      height: @size;
-      width: @size;
-    }
+    height: 25px;
+    width: 205px;
   }
 }
 
@@ -112,36 +41,68 @@
   }
 }
 
-
-.menu-dropdown {
-  width: 200px;
-  background: #efefef;
-  position: relative;
+.social {
+  line-height: 24px;
   display: block;
-  padding: 10px;
+  float: right;
 
-  &:after { .arrowDown(); }
+  li {
+    list-style-type: none;
+    margin-right: 8px;
+    display: block;
+    float: right;
+
+    &:last-child {
+      margin-left: 0px;
+    }
+
+    img {
+      @size: 22px;
+      height: @size;
+      width: @size;
+    }
+  }
 }
 
-.menu-dropdown-list {
-  list-style-type: none;
+//////////////////////////////////////////////////////
+// Header Logo & Navigation
+//////////////////////////////////////////////////////
 
+.logo {
+  margin: 0;
+  
   a {
-    text-decoration: none;
-    position: relative;
+    background: url("../images/logo.png"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: @marginRight;
+    text-indent: -999em;
+    width: 28.6458333%;
+    max-width: 275px;
     display: block;
-    padding: 0;
-  }
+    height: 60px;
+    float: left;
 
-  li a { 
-    padding: 10px 15px; // reset bootstrap
+    .tabletSupport({
+      margin-right: 0;
+      width: 100%;
+      });
   }
+}
 
-  ul {
-    position: absolute;
-    background: green;
-    width: 100%;
-    top: 100%;
-    left: 0;  
+//////////////////////////////////////////////////////
+// Subheader - Ads and Filtering
+//////////////////////////////////////////////////////
+
+.subHeader {
+  .clearfix();
+}
+
+.ad-leaderboard {
+  img {
+    max-width: 100%;
+    min-height: 80px;
+    margin: 0 auto 10px auto;
+    display: block;
   }
 }

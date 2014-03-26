@@ -1,7 +1,11 @@
+//////////////////////////////////////////////////////
+// Navigation Wrap
+//////////////////////////////////////////////////////
+
 .navigation {
   background: orange;
   width: 69.7916667%;
-  height: 60px;
+  height: auto;
   float: left;
 
   .tabletSupport({
@@ -9,17 +13,59 @@
     });
 }
 
+//////////////////////////////////////////////////////
+// Nav
+//////////////////////////////////////////////////////
+
 .menu {
-  width: 200px;
+  background: white;
+  width: 77%;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+
+  .tabletSupport({
+    width: 100%;
+    });
+}
+
+.menu-item {
+  list-style-type: none;
+  float: right;
+
+  a {
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+    padding: 0 15px;
+
+    &:hover {
+      background: yellow;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////
+// Sections List
+//////////////////////////////////////////////////////
+
+.sections {
+  width: 23%;
   background: #efefef;
   position: relative;
   display: block;
   padding: 10px;
+  float: left;
+
+  .tabletSupport({
+    width: 100%;
+    });
 
   &:after { .arrowDown(); }
 }
 
-.menu-list {
+.sections-list {
   list-style-type: none;
 
   a {
@@ -40,4 +86,16 @@
     top: 100%;
     left: 0;  
   }
+}
+
+//////////////////////////////////////////////////////
+// Dropdown Fixes - Bootstrap Issues
+//////////////////////////////////////////////////////
+
+.dropdown-menu {
+  .browserPrefix(border-radius, 0px);
+  .browserPrefix(box-shadow, none);
+  border: none;
+  padding: 0;
+  margin: 0;
 }

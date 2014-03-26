@@ -9,11 +9,14 @@
 //////////////////////////////////////////////////////
 
 // Entire navigation styling and wrapping
-.nav {
+.filters {
   min-height: auto;
   position: relative;
+  background: red;
 
   .flexbox(row, nowrap, justify-content, flex-start);
+  // Required causing issue with streams flexbox
+  // Need to debug this issue
 
   a {
     text-decoration: none;
@@ -28,88 +31,38 @@
     list-style-type: none;
   }
   
-  .tabletSupport ({
-    .flexbox(column, wrap, align-item, flex-start);
+  // .tabletSupport ({
+  //   .flexbox(column, wrap, align-item, flex-start);
     
-    // Firefox fallback as it does not support wrap
-    // wrap issue to be fixed March 18, 2014 in v28
-    display: block; 
-    width: 100%; 
-    });
+  //   // Firefox fallback as it does not support wrap
+  //   // wrap issue to be fixed March 18, 2014 in v28
+  //   display: block; 
+  //   width: 100%; 
+  //   });
 }
-
-
-// The dropdown list navigation between sections
-.nav-menu {
-  vertical-align: top;
-  margin-right: 1.5625%;
-  position: relative;
-  height: @navHeight;
-  text-indent: 15px;
-  max-width: 250px;
-  z-index: 999;
-  .flex(1);
-
-  // IE 9 Hack
-  display: block\9;
-  float: left\9;  
-  width: 26%\9;
-
-  .tabletSupport ({
-    .flex(0);
-    
-    max-width: 100%;
-    margin: 0 0 5px 0;
-    });
-
-  &:after { // Triangle Dropdown
-    .arrowDown();
-  }
-
-  ul {
-    line-height: @navHeight;
-
-    li {
-      background: white;
-
-      a {
-        display: block;
-
-        &:hover {
-          background: #0fcaf2;          
-        }
-      }      
-
-      ul {
-        display: none;
-      }
-    }
-  }
-}
-
 
 // The entire filtering sections
-.nav-filters {
-  background: red;
-  vertical-align: top;
-  position: relative;
-  height: auto; 
-  .flex(2);
+.filters-content {
+  display: block;
+  width: 100%;
+  // position: relative;
+  // height: auto; 
+  // .flex(2);
 
   // IE 9 Hacks
-  width: 72.395%\9;
-  display: block\9;
-  float: left\9;
+  // width: 72.395%\9;
+  // display: block\9;
+  // float: left\9;
 
-  .mobileSupport({
-    .flex(0);
-    width: 100%;
-    });
+  // .mobileSupport({
+  //   .flex(0);
+  //   width: 100%;
+  //   });
 }
 
 
 // The filters that have been chosen
-.nav-filters-selected {
+.filters-selected {
   position: relative;
   background: lightgrey;
   height: @navHeight;
@@ -118,7 +71,7 @@
   width: 100%;
 }
 
-.nav-filters-selected-button {
+.filters-selected-button {
   position: absolute;
   height: @navHeight;
   padding: 0 15px;
@@ -127,7 +80,7 @@
   top: 0;
 }
 
-.nav-filters-selected-item {    
+.filters-selected-item {    
   padding: 4px 20px 4px 6px;
   line-height: @navHeight;
   border-radius: 4px;
@@ -150,7 +103,7 @@
 
 
 // Filter options as part of navigation
-.nav-filters-list {
+.filters-options {
   background: grey;
   max-width: none;
   padding: 0;
@@ -208,22 +161,14 @@
   }
 }
 
-.dropdown-menu {
-  .browserPrefix(border-radius, 0px);
-  .browserPrefix(box-shadow, none);
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-filters-list-search {
+.filters-options-search {
   span {
     width: 100%;
   }
 }
 
 // Title when the menu becomes full width for tablet/mobile
-h2.nav-filters-mobileTitle { 
+h2.filters-mobileTitle { 
   font-size: 14px;
   color: #FFFFFF;
   margin: 0;

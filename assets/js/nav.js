@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////
 // Variable for the speed of the menus
 //////////////////////////////////////////////////////
+
 var slideSpeed = 0;
 var tabletSize = 768;
 
@@ -14,7 +15,7 @@ var tabletSize = 768;
     return this.each(function() {
       // cache this:
       var obj = $(this);
-      var tree = obj.next('.nav-filters-list');
+      var tree = obj.next('.filters-options');
       obj.click(function(){
         if( obj.is(':visible') ) { tree.slideToggle( slideSpeed ); }
       });
@@ -28,14 +29,4 @@ var tabletSize = 768;
 // Run the script
 $(document).ready(function(){
   $('.slide-trigger').collapsable();
-});
-
-
-//////////////////////////////////////////////////////
-// Nav Menu Dropdown
-//////////////////////////////////////////////////////
-$(document).ready(function() {
-  $( '.nav-menu-item a' ).click(function() {
-    $( '.nav-menu-item ul' ).slideToggle( slideSpeed );
-  });
 });
