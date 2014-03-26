@@ -6,7 +6,7 @@
     <div class="widget-title"><h3>Title Here //</h3></div>
   </div>
   <div class="widget">    
-    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-content"><img src="http://www.thesheridanband.com/blog/http://thesheridanband.com/blog/wp-content/uploads/2013/07/sheridan-band-62.jpg" alt="Image" /></div>
     <div class="widget-title"><h3>Title Here //</h3></div>
   </div>
   <div class="widget">    
@@ -14,7 +14,7 @@
     <div class="widget-title"><h3>Title Here //</h3></div>
   </div>
   <div class="widget">    
-    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
+    <div class="widget-content"><img src="http://www.themeshband.co.uk/images/function-bands-for-hire.jpg" alt="Image" /></div>
     <div class="widget-title"><h3>Title Here //</h3></div>
   </div>
 </div>

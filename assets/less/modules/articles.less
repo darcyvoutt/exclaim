@@ -1,25 +1,33 @@
 .relatedArticles {
   .widget {
     margin-right: @marginRight;
+    max-height: 180px;
     width: 23.828%;
-    height: auto;
+    height: auto;    
     float: left;
 
     &:last-child {
       margin-right: 0px;
     }
 
-    .mobileSupport({
-      width: 100%;
+    .mobileSupport({      
       margin-right: 0px;
+      max-height: none;
+      height: auto;
+      width: 100%;
       });
   }
 
   .widget-content {
 
-    img {
-      width: 100%;
+    img {      
+      max-height: 142px;      
       height: auto;
+      width: 100%;
+
+      .mobileSupport({
+        max-height: none;
+        });
     }
   }
 }
