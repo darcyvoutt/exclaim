@@ -4,6 +4,7 @@
 
 .siteWidth {
   max-width: 960px;
+  margin: 0 auto;
 
   .tabletSupport({
     padding: 0 3%;
@@ -13,8 +14,7 @@
 .wrap {
   .siteWidth();
   background: white;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: calc(980px + (10px * 2));
 
   .tabletSupport({
     padding: 0px;
@@ -37,19 +37,17 @@
 
   &-content {
     .siteWidth();
-    margin: 0 auto;
   }
 }
 
 .header-content {
   .siteWidth();
   .clearfix();
-  margin: 0 auto;
 }
 
 .subHeader {
   .siteWidth();
-  margin: 0 auto 10px auto;
+  margin-bottom: 10px;
 }
 
 //////////////////////////////////////////////////////
@@ -59,7 +57,7 @@
 .main {
   .siteWidth();
   overflow: hidden;
-  margin: 0 auto 5px auto;
+  margin-bottom: 5px;
   background: #ffffff;
 }
 
