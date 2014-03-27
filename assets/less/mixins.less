@@ -21,11 +21,13 @@
 
 .tabletSupport(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
-} // Use: .displayTables({ .. }); 
+} // Use: .tabletSupport({ .. }); 
 
 .mobileSupport(@rules) {
-  @media screen and (max-width: 480px) { @rules(); }
-} // Use: .displayMobile({ .. });
+  @media screen and (max-width: 568px) { @rules(); }
+  // Setup for iPhone 5 in landscape
+} // Use: .mobileSupport({ .. });
+
 
 
 //////////////////////////////////////////////////////
