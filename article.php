@@ -1,35 +1,6 @@
 <?php include ('header.php') ?>
 
-<div class="relatedArticles">
-  <div class="widget">
-    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
-    <div class="widget-title">
-      <h3>Title Here</h3>
-      <span>Excerpt from the article.</span>
-    </div>
-  </div>
-  <div class="widget">    
-    <div class="widget-content"><img src="http://www.thesheridanband.com/blog/http://thesheridanband.com/blog/wp-content/uploads/2013/07/sheridan-band-62.jpg" alt="Image" /></div>
-    <div class="widget-title">
-      <h3>Title Here Longer</h3>
-      <span>Excerpt from the article.</span>
-    </div>
-  </div>
-  <div class="widget">    
-    <div class="widget-content"><img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Image" /></div>
-    <div class="widget-title">
-      <h3>Title Here</h3>
-      <span>Excerpt from the article.</span>
-    </div>
-  </div>
-  <div class="widget">    
-    <div class="widget-content"><img src="http://www.themeshband.co.uk/images/function-bands-for-hire.jpg" alt="Image" /></div>
-    <div class="widget-title">
-      <h3>Title Here</h3>
-      <span>Excerpt from the article.</span>
-    </div>
-  </div>
-</div>
+<?php include('relatedArticles.php'); ?>
 
 <div class="content">
 
@@ -63,6 +34,43 @@
       </li>
       <li class="comment"><?php include('comment.php') ?></li>
     </ul>
+
+    <div class="comments-form">
+      <ul class="comments-login">
+        <li class="comments-login-item"><span>Login</span></li>
+        <li class="comments-login-item"><button>Facebook</button></li>
+        <li class="comments-login-item"><button>Twitter</button></li>
+        <li class="comments-login-item"><button>Exclaim</button></li>
+      </ul>
+      <div class="formRow">
+        <div class="formRow-label"><label for="username">Name:</label></div>
+        <div class="formRow-input">
+          <input id="username" name="username" type="text" placeholder="Your Name" />
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formRow-label"><label for="email">Email:</label></div>
+        <div class="formRow-input">
+          <input id="email" name="email" type="text" placeholder="example@email.com" />
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formRow-label"><label for="website">Website:</label></div>
+        <div class="formRow-input">
+          <input id="website" name="website" type="text" placeholder="www.example.com" />
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formRow-textarea">
+          <textarea name="message" id="message" placeholder="Join the conversation..."></textarea>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formRow-submit">
+          <input type="submit" class="submit" name="Submit" />
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

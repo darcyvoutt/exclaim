@@ -3,8 +3,9 @@
 //////////////////////////////////////////////////////
 
 input {
-  padding: 8px 10px;  
   border: 1px solid #999;
+  padding: 8px 10px;  
+  font-size: 12px;
 }
 
 //////////////////////////////////////////////////////
@@ -29,4 +30,38 @@ input {
 .tt-suggestion.tt-cursor {
   background: pink;
   cursor: pointer;
+}
+
+//////////////////////////////////////////////////////
+// FormRow
+//////////////////////////////////////////////////////
+
+.formRow {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.formRow-label {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.formRow-input {
+  .formRow-label();
+  width: 74%; 
+
+  input {
+    width: 100%;
+  }
+}
+
+.formRow-textarea {
+  display: block;
+  width: 99.8%;
+
+  textarea {
+    min-height: 120px;
+    width: 100%;
+  }
 }

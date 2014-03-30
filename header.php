@@ -86,6 +86,4 @@
         <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
       </a> <!-- // End of .ad-leaderboard -->
 
-    <?php include('filters.php'); ?>
-
   <div class="main">

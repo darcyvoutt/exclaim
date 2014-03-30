@@ -29,7 +29,7 @@
 } // Use: .mobileSupport({ .. });
 
 .mobilePortrait(@rules) {
-  @media screen and (max-width: 320px) { @rules(); }
+  @media screen and (min-width: 320px), (max-width: 567px) { @rules(); }
 } // Use: .mobilePortrait({ .. });
 
 

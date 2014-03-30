@@ -1,10 +1,16 @@
 //////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
+
+@dottedBorder: 1px dotted #000;
+
+//////////////////////////////////////////////////////
 // Commenting Structure
 //////////////////////////////////////////////////////
 
 .comments {
-  .doubleBorder();
   .clearfix();
+  .doubleBorder();
   display: block;
   padding: 30px;
   width: 100%;
@@ -13,15 +19,13 @@
     list-style-type: none;
     padding: 0;
 
-    li {
-      .clearfix();
-
-      ol, ul {
-        @spacing: 10px;
-        margin: @spacing 0 0 10%;
-        padding-top: @spacing;
-        clear: both;
-      }
+    li ol, 
+    li ul {  
+      @spacing: 10px;
+      border-top: @dottedBorder;
+      padding: @spacing 0 0 8%;
+      margin-top: @spacing;
+      clear: both;
     }
   }
 }
@@ -31,7 +35,7 @@
 //////////////////////////////////////////////////////
 
 .comments-title {
-  border-bottom: 1px solid #000;
+  border-bottom: @dottedBorder;
   margin-bottom: 10px;
   position: relative;
 
@@ -76,53 +80,57 @@
 //////////////////////////////////////////////////////
 
 .comment {
-  border-bottom: 1px dotted #000000;
-  margin-bottom: 10px;
-  background: #dddddd;
+  border-bottom: @dottedBorder;
+  padding-top: 10px;
   display: block;
   width: 100%;
-
-  &:nth-child(odd) {
-    background: #efefef;
-  }
+  .clearfix();
 }
 
 .comment-reply {
   .comment();
-  background: tomato;
 
-  &:nth-child(odd) {
-    background: teal;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: none;
   }
 }
 
 //////////////////////////////////////////////////////
-// Avatar
+// Comment Layout
 //////////////////////////////////////////////////////
 
+@imgSize: 65px;
+
 .comment-avatar {
-  @size: 65px;
-  background: yellow;
-  margin-right: 4%;
   display: block;
   float: left;
-  width: 12%; 
+  width: @imgSize; 
   
   img {    
     border: 1px solid #000;
     border-radius: 100px;
     display: block;
-    height: @size;
-    width: @size;
+    height: @imgSize;
+    width: @imgSize;
+
+    .mobileSupport({
+      display: none;
+      });
   }
 }
 
-
 .comment-content {
+  margin-bottom: 10px;
   display: block;
-  float: left;
+  float: right;
   width: 84%;
+
+  .mobileSupport({
+    width: 100%;
+    });
 }
+
 //////////////////////////////////////////////////////
 // Meta Data: Name & Date
 //////////////////////////////////////////////////////
@@ -189,4 +197,45 @@
   font-size: 12px;
   border: none;
   float: right;
+}
+
+//////////////////////////////////////////////////////
+// Commenting Form
+//////////////////////////////////////////////////////
+
+.comments-form {
+  padding-top: 10px;
+
+  input {
+    padding: 0;
+
+    &[type=submit] {
+      box-shadow: inset 0 0 0 2px #fff;
+      border: 1px solid #999;
+      padding: 5px 10px;
+      background: #000;
+      float: right;
+      color: #fff;
+    }
+  }
+
+  textarea {
+    background: url("../images/commentsback.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.comments-login {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-login-item {
+  vertical-align: middle;
+  display: inline-block;
+
+  span {
+    margin-right: 5px;
+  }
 }
