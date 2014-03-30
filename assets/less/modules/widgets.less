@@ -5,7 +5,7 @@
 .widget {
   .doubleBorder();
   margin-bottom: 15px;
-  padding: 3px;
+  padding: 5px;
 
   &:last-child {
     margin-bottom: 0px;
@@ -13,6 +13,10 @@
 }
 
 .widget-title {
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
   margin: 0 10px;  
   padding: 5px 0;
 
@@ -26,20 +30,68 @@
 }
 
 .widget-content {
-
-  p {
-    padding: 10px;
-  }
+  padding: 10px;
 }
 
 //////////////////////////////////////////////////////
 // List Widget
 //////////////////////////////////////////////////////
 
-.widget-list {
-  .widget();
+.widgetList {
+  list-style-type: none;
+  margin: -8px 0 0 0;
+  padding: 0;
+}
 
-  .category {
-    
+.widgetList-item {
+  border-bottom: 1px dotted #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 5px 0;
+  
+  a {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    display: block;
+
+    &:hover {
+      background: @linkColor;
+    }
+  }
+}
+
+.widgetList-item-category {
+  text-transform: none;
+  font-style: italic;
+  font-weight: 300;
+
+  &:after {
+    .contentAfter("//");
+  }
+}
+
+.widgetList-item-details {
+  text-transform: none;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.widgetList-more {
+  text-transform: uppercase;
+  background: #000;
+  font-size: 11px;
+
+  a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .emphasis {
+    font-weight: 600;
+
+    &:after {
+      .contentAfter(">>");
+    }
   }
 }

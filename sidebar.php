@@ -26,15 +26,47 @@
   </a> <!-- // End of .ad-leaderboard -->
 
   <!-- List Widget -->
-  <div class="widget-list">
+  <div class="widget">
     <div class="widget-title">List Widget</div>
     <div class="widget-content">
-      <ul class="articleList">
-        <li class="articleList-item">
+      <ul class="widgetList">
+        <li class="widgetList-item">
           <!-- List Item -->
-          <div class="articleList-item-category">Reviews</div>
-          <p>CONCERT: How to Dress Well / Forest Swords Virgin Mod Club, 
-          <span class="articleList-item-date">Toronto ON, March 29</span></p>
+          <a href="#">
+            <div class="widgetList-item-category">Reviews</div>
+            <p>The Afghan Whigs / Crocodiles 
+              <span class="widgetList-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+            </p>
+          </a>
+        </li>
+
+        <li class="widgetList-item">
+          <!-- List Item -->
+          <a href="#">
+            <div class="widgetList-item-category">Reviews</div>
+            <p>The Afghan Whigs / Crocodiles 
+              <span class="widgetList-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+            </p>
+          </a>
+        </li>
+
+        <li class="widgetList-item">
+          <!-- List Item -->
+          <a href="#">
+            <div class="widgetList-item-category">Reviews</div>
+            <p>The Afghan Whigs / Crocodiles 
+              <span class="widgetList-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+            </p>
+          </a>
+        </li>
+        <li class="widgetList-more">
+          <a href="#">More <span class="emphasis">from artist</span></a>
         </li>
       </ul>
     </div>

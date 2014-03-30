@@ -14,9 +14,18 @@
 
     <img src="http://audioinkradio.com/wp-content/uploads/2012/01/Red-Hot-Chili-Peppers.jpg" alt="Red Hot" />
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui malesuada, imperdiet purus sed, fringilla velit. Ut id feugiat erat. Duis purus dui, vehicula eget erat eu, hendrerit dictum erat. Vivamus laoreet condimentum dapibus. Sed imperdiet eros id nunc pharetra, vel luctus sapien posuere. Curabitur venenatis odio sem, non fringilla orci lacinia non. Aliquam erat volutpat. Suspendisse interdum ipsum augue, in imperdiet nulla aliquam vel. Vestibulum vel elit eget augue iaculis semper. Maecenas sodales purus ullamcorper suscipit fringilla. Suspendisse a eleifend sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui malesuada, imperdiet purus sed, 
+    fringilla velit. Ut id feugiat erat. Duis purus dui, vehicula eget erat eu, hendrerit dictum erat. Vivamus 
+    laoreet condimentum dapibus. Sed imperdiet eros id nunc pharetra, vel luctus sapien posuere. Curabitur 
+    venenatis odio sem, non fringilla orci lacinia non. Aliquam erat volutpat. Suspendisse interdum ipsum augue, 
+    in imperdiet nulla aliquam vel. Vestibulum vel elit eget augue iaculis semper. Maecenas sodales purus 
+    ullamcorper suscipit fringilla. Suspendisse a eleifend sapien.</p>
 
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum sed tortor lobortis, convallis ligula sit amet, tincidunt nibh. Vestibulum rutrum lacus et mauris feugiat, vel imperdiet leo lobortis. In fermentum arcu sed tortor bibendum, eu aliquet dolor semper. Morbi ac blandit neque. Nullam ut facilisis lacus. Duis et blandit massa, eget ultricies lectus. Nulla ultricies odio sit amet turpis tincidunt, id congue mi laoreet.</p>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Vestibulum sed tortor lobortis, convallis ligula sit amet, tincidunt nibh. Vestibulum rutrum lacus et mauris 
+    feugiat, vel imperdiet leo lobortis. In fermentum arcu sed tortor bibendum, eu aliquet dolor semper. Morbi 
+    ac blandit neque. Nullam ut facilisis lacus. Duis et <a href="#">blandit massa</a>, eget ultricies lectus. 
+    Nulla ultricies odio sit amet turpis tincidunt, id congue mi laoreet.</p>
   </div>
 
   <div class="comments">
