@@ -21,4 +21,10 @@
     </div>
   </div>
 
+  <!-- Ads -->
+  <a href="#" alt="Ads" class="ad-sidebar">
+    <img src="assets/images/ad-sidebar.png" alt="Ad Test" />
+  </a> <!-- // End of .ad-leaderboard -->
+
 </div>
+

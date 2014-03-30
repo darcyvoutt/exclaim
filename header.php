@@ -82,11 +82,9 @@
 
   <div class="subHeader">
 
-    <div class="ad-leaderboard">
-      <a href="#">
+      <a href="#" alt="Ads" class="ad-leaderboard">
         <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
-      </a>    
-    </div>  <!-- // End of .ad-leaderboard -->
+      </a> <!-- // End of .ad-leaderboard -->
 
     <?php include('filters.php'); ?>
 
