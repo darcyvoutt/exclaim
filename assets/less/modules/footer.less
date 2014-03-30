@@ -26,19 +26,13 @@
   text-transform: uppercase;
   font-weight: 600;
   margin-left: 4px;
+  margin: 0;
 }
 
 .footer-content-category {
-  text-transform: uppercase;
-  position: relative;
-  font-weight: 600;
-  margin-left: 4px;
+  .footer-content-emphasis();
 
   &:after {
-    display: inline-block;
-    margin: 0 4px;
-    content: ">>";
-    left: 110%;
-    top: 0;
+    .contentAfter(">>");
   }
 }

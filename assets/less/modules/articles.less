@@ -50,11 +50,7 @@
       font-size: 14px;
 
       &:after {
-        display: inline-block;
-        margin-left: 4px;
-        content: "//";
-        left: 110%;
-        top: 0;
+        .contentAfter("//");
       }
     }
 
@@ -89,5 +85,10 @@
         max-height: none;
         });
     }
+  }
+
+  .widget-title {
+    padding: 0;
+    margin:  10px 0 0 0;
   }
 }
