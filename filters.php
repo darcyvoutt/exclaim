@@ -73,6 +73,5 @@
     </div> <!-- // End of .nav-filters -->
 
   </div> <!-- // End of .nav -->
-</div> <!-- // End of .subHeader -->
 
 <script src="assets/js/filters.js"></script>
