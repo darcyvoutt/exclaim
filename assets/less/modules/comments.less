@@ -3,26 +3,36 @@
 //////////////////////////////////////////////////////
 
 .comments {
-  display: block;
   .doubleBorder();
+  .clearfix();
+  display: block;
   padding: 30px;
   width: 100%;
 
-  ol {
-    display: block;
+  ol, ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 
-    li ol {
-      display: block;
-      margin-left: 10%;
+    li {
+      .clearfix();
+
+      ol, ul {
+        @spacing: 10px;
+        margin: @spacing 0 0 10%;
+        padding-top: @spacing;
+        clear: both;
+      }
     }
   }
 }
 
+//////////////////////////////////////////////////////
+// Comments Title Section
+//////////////////////////////////////////////////////
+
 .comments-title {
   border-bottom: 1px solid #000;
+  margin-bottom: 10px;
   position: relative;
 
   &:after {
@@ -46,15 +56,19 @@
 }
 
 .comments-number {
-  text-align: center;
+  @height: 20px; 
+  @width: 35px;
+
   vertical-align: middle;
   display: inline-block;
+  text-align: center;
   margin-left: 10px;
-  background: #000;
-  border-radius: 15px;
-  height: 20px;
-  width: 35px;
+  height: @height;
+  width: @width;
   color: #fff;
+
+  border-radius: 15px;
+  background: #000;
 }
 
 //////////////////////////////////////////////////////
@@ -62,11 +76,11 @@
 //////////////////////////////////////////////////////
 
 .comment {
-  display: block;
+  border-bottom: 1px dotted #000000;
+  margin-bottom: 10px;
   background: #dddddd;
+  display: block;
   width: 100%;
-
-  height: 200px; // Throw away
 
   &:nth-child(odd) {
     background: #efefef;
@@ -74,7 +88,7 @@
 }
 
 .comment-reply {
-  .comment();  
+  .comment();
   background: tomato;
 
   &:nth-child(odd) {
@@ -83,54 +97,96 @@
 }
 
 //////////////////////////////////////////////////////
-// Comment Properties
+// Avatar
 //////////////////////////////////////////////////////
 
 .comment-avatar {
   @size: 65px;
-
+  background: yellow;
+  margin-right: 4%;
   display: block;
-  height: 100%;
-  width: 25%;
   float: left;
-
-  img {
+  width: 12%; 
+  
+  img {    
     border: 1px solid #000;
-    border-radius: @size;
+    border-radius: 100px;
     display: block;
-    margin: 0 auto;
     height: @size;
     width: @size;
   }
 }
 
-.comment-meta {
+
+.comment-content {
   display: block;
+  float: left;
+  width: 84%;
+}
+//////////////////////////////////////////////////////
+// Meta Data: Name & Date
+//////////////////////////////////////////////////////
+
+.comment-meta {  
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
   float: left;
 }
 
-.comment-name {}
+.comment-name {
+  text-transform: uppercase;
+  vertical-align: bottom;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  font-size: 18px;
+  margin: 0;
+}
 
-.comment-date {}
+.comment-date {
+  vertical-align: bottom;
+  display: inline-block;
+  font-style: italic;
+  font-size: 12px;
+}
+
+//////////////////////////////////////////////////////
+// Comment Message
+//////////////////////////////////////////////////////
 
 .comment-message {
+  margin-bottom: 10px;
   display: block;
   float: left;
-
-  height: 50px;
-  width: 70%;
-  background: yellow;
+  width: 100%;
 }
+
+//////////////////////////////////////////////////////
+// Reply Button and Sub-buttons
+//////////////////////////////////////////////////////
 
 .comment-actions {
   display: block;
+  width: 100%;
   float: left;
-
-  height: 50px;
-  width: 70%;
-  background: green;
 }
 
-.comment-replies {}
+.comment-replies {
+  margin-right: 5px;
+  float: right;
 
-.comment-button {}
+  .comments-number {
+    margin-right: 5px;
+    height: 20px;
+    width: 25px;    
+  }    
+}
+
+.comment-button {
+  text-transform: uppercase;
+  background: yellow;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  float: right;
+}

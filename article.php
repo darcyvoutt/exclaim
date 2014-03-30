@@ -53,29 +53,16 @@
       <h3>Comments</h3>
       <span class="comments-number">35</span>
     </div>
-    <ol>
-      <li class="comment">
-        <div class="comment-avatar">
-          <img src="http://www.eonline.com/eol_images/Entire_Site/2014227/rs_634x718-140327145208-634.zoe-saldana.cm.32714.jpg" alt="Avatar" />
-        </div>
-        <div class="comment-meta">
-          <div class="comment-name"></div>
-          <div class="comment-date"></div>        
-        </div>
-        <div class="comment-message"></div>
-        <div class="comment-actions">
-          <span class="comment-replies"></span>
-          <button class="comment-button">Reply</button>
-        </div>
+    <ul>
+      <li class="comment"><?php include('comment.php') ?></li>
+      <li class="comment"><?php include('comment_replies.php') ?>
+        <ul>
+          <li class="comment-reply"><?php include('comment.php') ?></li>
+          <li class="comment-reply"><?php include('comment.php') ?></li>
+        </ul>
       </li>
-      <li class="comment">
-        <ol>
-          <li class="comment-reply"></li>
-          <li class="comment-reply"></li>
-        </ol>
-      </li>
-      <li class="comment"></li>
-    </ol>
+      <li class="comment"><?php include('comment.php') ?></li>
+    </ul>
   </div>
 
 </div>

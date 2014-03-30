@@ -28,6 +28,10 @@
   // Setup for iPhone 5 in landscape
 } // Use: .mobileSupport({ .. });
 
+.mobilePortrait(@rules) {
+  @media screen and (max-width: 320px) { @rules(); }
+} // Use: .mobilePortrait({ .. });
+
 
 
 //////////////////////////////////////////////////////
@@ -49,10 +53,7 @@
   }
 }
 
-.debug {
-  &:before, &:after {
-    border: 1px solid red;
-  }
+.debug, .debug:before, .debug:after {
   border: 1px solid red;
 }
 
@@ -125,8 +126,4 @@
   border: 1px double @border;
   box-shadow: inset 0 0 0 2px @background, 
               inset 0 0 0 3px @border;
-}
-
-.borderRadius {
-  
 }
