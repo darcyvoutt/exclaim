@@ -5,7 +5,7 @@
     <div class="widget-title">
       <h3>Picks</h3>
     </div>
-    <div class="widget-content">
+    <div class="widget-carousel">
       <?php include('carousel.php'); ?>
     </div>
   </div>
