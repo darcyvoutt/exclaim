@@ -34,7 +34,7 @@
 <div class="content">
 
   <div class="article">
-  
+
     <div class="breadcrumbs">Music > Music News > Mar 28, 2014</div>
 
     <h2>The Red Hot Chilli Pepers are back in Toronto May 24</h2>
@@ -46,6 +46,36 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui malesuada, imperdiet purus sed, fringilla velit. Ut id feugiat erat. Duis purus dui, vehicula eget erat eu, hendrerit dictum erat. Vivamus laoreet condimentum dapibus. Sed imperdiet eros id nunc pharetra, vel luctus sapien posuere. Curabitur venenatis odio sem, non fringilla orci lacinia non. Aliquam erat volutpat. Suspendisse interdum ipsum augue, in imperdiet nulla aliquam vel. Vestibulum vel elit eget augue iaculis semper. Maecenas sodales purus ullamcorper suscipit fringilla. Suspendisse a eleifend sapien.</p>
 
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum sed tortor lobortis, convallis ligula sit amet, tincidunt nibh. Vestibulum rutrum lacus et mauris feugiat, vel imperdiet leo lobortis. In fermentum arcu sed tortor bibendum, eu aliquet dolor semper. Morbi ac blandit neque. Nullam ut facilisis lacus. Duis et blandit massa, eget ultricies lectus. Nulla ultricies odio sit amet turpis tincidunt, id congue mi laoreet.</p>
+  </div>
+
+  <div class="comments">
+    <div class="comments-title">
+      <h3>Comments</h3>
+      <span class="comments-number">35</span>
+    </div>
+    <ol>
+      <li class="comment">
+        <div class="comment-avatar">
+          <img src="http://www.eonline.com/eol_images/Entire_Site/2014227/rs_634x718-140327145208-634.zoe-saldana.cm.32714.jpg" alt="Avatar" />
+        </div>
+        <div class="comment-meta">
+          <div class="comment-name"></div>
+          <div class="comment-date"></div>        
+        </div>
+        <div class="comment-message"></div>
+        <div class="comment-actions">
+          <span class="comment-replies"></span>
+          <button class="comment-button">Reply</button>
+        </div>
+      </li>
+      <li class="comment">
+        <ol>
+          <li class="comment-reply"></li>
+          <li class="comment-reply"></li>
+        </ol>
+      </li>
+      <li class="comment"></li>
+    </ol>
   </div>
 
 </div>

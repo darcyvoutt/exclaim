@@ -1,0 +1,136 @@
+//////////////////////////////////////////////////////
+// Commenting Structure
+//////////////////////////////////////////////////////
+
+.comments {
+  display: block;
+  .doubleBorder();
+  padding: 30px;
+  width: 100%;
+
+  ol {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li ol {
+      display: block;
+      margin-left: 10%;
+    }
+  }
+}
+
+.comments-title {
+  border-bottom: 1px solid #000;
+  position: relative;
+
+  &:after {
+    @size: 20px;
+    background: #000000;
+    position: absolute;
+    display: block;
+    height: @size;
+    width: @size;
+    content: "";
+    right: 0;
+    top: calc(@size * 0.25);
+  }
+
+  h3 {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.comments-number {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 10px;
+  background: #000;
+  border-radius: 15px;
+  height: 20px;
+  width: 35px;
+  color: #fff;
+}
+
+//////////////////////////////////////////////////////
+// Comment Styling
+//////////////////////////////////////////////////////
+
+.comment {
+  display: block;
+  background: #dddddd;
+  width: 100%;
+
+  height: 200px; // Throw away
+
+  &:nth-child(odd) {
+    background: #efefef;
+  }
+}
+
+.comment-reply {
+  .comment();  
+  background: tomato;
+
+  &:nth-child(odd) {
+    background: teal;
+  }
+}
+
+//////////////////////////////////////////////////////
+// Comment Properties
+//////////////////////////////////////////////////////
+
+.comment-avatar {
+  @size: 65px;
+
+  display: block;
+  height: 100%;
+  width: 25%;
+  float: left;
+
+  img {
+    border: 1px solid #000;
+    border-radius: @size;
+    display: block;
+    margin: 0 auto;
+    height: @size;
+    width: @size;
+  }
+}
+
+.comment-meta {
+  display: block;
+  float: left;
+}
+
+.comment-name {}
+
+.comment-date {}
+
+.comment-message {
+  display: block;
+  float: left;
+
+  height: 50px;
+  width: 70%;
+  background: yellow;
+}
+
+.comment-actions {
+  display: block;
+  float: left;
+
+  height: 50px;
+  width: 70%;
+  background: green;
+}
+
+.comment-replies {}
+
+.comment-button {}
