@@ -1,14 +1,64 @@
+//////////////////////////////////////////////////////
+// Articles
+//////////////////////////////////////////////////////
+
+.article {
+  .doubleBorder();
+  padding: 30px;
+  width: 100%;
+
+  img {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.author {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+//////////////////////////////////////////////////////
+// Related Articles
+//////////////////////////////////////////////////////
+
 .relatedArticles {
   .clearfix();
   display: block;
 
   .widget {
+    box-shadow: none;
     margin-right: @marginRight;
     margin-bottom: 15px;
-    max-height: 180px;
     width: 23.828%;
     height: auto;    
     float: left;
+
+    h3 {
+      position: relative;
+      text-transform: none;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 14px;
+
+      &:after {
+        display: inline-block;
+        margin-left: 4px;
+        content: "//";
+        left: 110%;
+        top: 0;
+      }
+    }
+
+    span {
+      font-weight: 700;
+    }
 
     &:last-child {
       margin-right: 0px;
