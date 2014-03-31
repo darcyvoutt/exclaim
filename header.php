@@ -80,8 +80,20 @@
 
 <div class="wrap">
 
-  <a href="#" alt="Ads" class="ad-leaderboard">
-    <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
-  </a> <!-- // End of .ad-leaderboard -->
+<div class="subHeader">
+
+  <div class="ad-wrap">
+    
+    <a href="#" alt="Ads" class="ad-leaderboard">
+      <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+    </a> 
+
+    <a href="#" alt="Ads" class="ad-leaderboard-2">
+      <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
+    </a> 
+
+  </div>
+
+</div>
 
   <div class="main">

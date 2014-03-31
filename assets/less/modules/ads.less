@@ -11,6 +11,22 @@
   }
 }
 
+.ad-leaderboard-2 img {
+  display: none;
+}
+
+.ad-wrap { // Center when two widgets available
+  .clearfix();
+  background: yellow;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+//////////////////////////////////////////////////////
+// Media Queries
+//////////////////////////////////////////////////////
+
 @media screen and (max-width: 960px) {
   .ad-leaderboard img {
     width: 790px;
@@ -18,11 +34,42 @@
 }
 
 @media screen and (max-width: 790px) {
+  .ad-wrap {
+    width: 610px;
+    margin: 0 auto 10px auto;
+  }
+
   .ad-leaderboard img {
+    display: block;
+    float: left;
     width: 300px;
     height: 50px;
   }
+
+  .ad-leaderboard-2 img {
+    margin-left: 10px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    float: left;
+  }
+}  
+
+@media screen and (max-width: 650px) {
+  .ad-wrap {
+    width: 100%;
+  }
+
+  .ad-leaderboard img {
+    margin: 0 auto 10px;
+    float: none;
+  }
+
+  .ad-leaderboard-2 img {
+    display: none;
+  }
 }
+
 
 //////////////////////////////////////////////////////
 // Ads Sidebar 
