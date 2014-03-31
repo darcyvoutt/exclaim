@@ -2,6 +2,10 @@
 
     <div class="filters-content">
 
+    <div class="filters-label">
+      Filters
+    </div>
+
       <!-- Filters Selected -->
       <div class="filters-selected">
         <ul class="filters-selected-list">

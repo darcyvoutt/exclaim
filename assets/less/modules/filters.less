@@ -10,57 +10,45 @@
 
 // Entire navigation styling and wrapping
 .filters {
-  margin-bottom: 10px;
-  min-height: auto;
+  .clearfix();
+  margin: 0 0 10px 0;
   position: relative;
-  background: red;
+  padding: 0;
 
-  .flexbox(row, nowrap, justify-content, flex-start);
-  // Required causing issue with streams flexbox
-  // Need to debug this issue
+  border-bottom: 1px solid #000;
+  border-top: 2px solid #000;
 
   a {
     text-decoration: none;
-    color: #333;
+    color: #000;
   }
 
   ul {
+    .clearfix();
     padding: 0;
   }
 
   li {
     list-style-type: none;
   }
-  
-  // .tabletSupport ({
-  //   .flexbox(column, wrap, align-item, flex-start);
-    
-  //   // Firefox fallback as it does not support wrap
-  //   // wrap issue to be fixed March 18, 2014 in v28
-  //   display: block; 
-  //   width: 100%; 
-  //   });
+}
+
+
+.filters-label {
+  text-transform: uppercase;
+  line-height: @navHeight;
+  padding: 0 25px 0 0;
+  font-weight: 600;
+  font-size: 11px;
+  display: block;
+  float: left;
 }
 
 // The entire filtering sections
 .filters-content {
   display: block;
   width: 100%;
-  // position: relative;
-  // height: auto; 
-  // .flex(2);
-
-  // IE 9 Hacks
-  // width: 72.395%\9;
-  // display: block\9;
-  // float: left\9;
-
-  // .mobileSupport({
-  //   .flex(0);
-  //   width: 100%;
-  //   });
 }
-
 
 // The filters that have been chosen
 .filters-selected {
@@ -105,9 +93,9 @@
 
 // Filter options as part of navigation
 .filters-options {
-  background: grey;
   max-width: none;
   padding: 0;
+  margin: 0;
 
   .tabletSupport({
     display: none;
@@ -118,6 +106,7 @@
   }
 
   li {
+    border-right: 1px solid #000;
     position: relative;
     display: block;
     float: left;
@@ -128,12 +117,23 @@
 
     a {
       line-height: @navHeight;
-      padding: 0 15px;
+      padding: 0 45px;
       display: block;
-      color: #fff;
+
+      &:after {
+        @size: 20px;
+        background: #000000;
+        position: absolute;
+        display: block;
+        height: @size;
+        width: @size;
+        content: "";
+        right: 10px;
+        top: 28%;
+      }
 
       &:hover {
-        background: #0fcaf2;
+        background: @linkColor;
       }
     }
 
@@ -153,10 +153,6 @@
         min-width: 150px;
         display: block;
         width: 100%;
-
-        &:first-child {
-          padding: 10px;
-        }
       }
     }
   }
