@@ -41,4 +41,18 @@
   $('.carousel').carousel({
     interval: 3000
   });
+    
+  // Previous
+  $('a[data-slide="prev"]').click(function() {
+    $('.carousel').each(function() {
+      $(this).carousel('prev');
+    });
+  });
+
+  // Next
+  $('a[data-slide="next"]').click(function() {
+    $('.carousel').each(function() {
+      $(this).carousel('next');
+    });
+  });
 </script>
