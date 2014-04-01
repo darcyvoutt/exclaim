@@ -37,7 +37,7 @@
 .stream-title {
   border-bottom: 1px solid #000;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding: 10px 0 5px 0;
   margin-bottom: 10px;
   position: relative;
 
@@ -56,7 +56,7 @@
     width: @size;
     content: "";
     right: 0;
-    top: 5px;
+    top: 10px;
   }
 }
 
@@ -185,5 +185,20 @@
 
   &-item {
     border-bottom: 1px solid #000;
+
+    &-details {
+      display: block;
+      margin: 8px 0 5px 0;
+    }
+
+    &-title {
+      text-transform: none;
+      margin: 0;
+    }
+
+    &-excerpt {
+      text-transform: none;
+      font-weight: 300;
+    }
   }
 }
