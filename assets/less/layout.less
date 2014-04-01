@@ -29,6 +29,11 @@
   .clearfix();
   height: 120px;
   width: 100%;
+
+  &-content {
+    .siteWidth();
+    .clearfix();
+  }
 }
 
 .subHeader {
@@ -43,11 +48,6 @@
   &-content {
     .siteWidth();
   }
-}
-
-.header-content {
-  .siteWidth();
-  .clearfix();
 }
 
 //////////////////////////////////////////////////////
@@ -93,8 +93,8 @@
 .footer {
   height: 150px;
   width: 100%;
-}
 
-.footer-content {
-  .siteWidth();
+  &-content {
+    .siteWidth();
+  }
 }

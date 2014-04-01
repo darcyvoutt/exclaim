@@ -10,27 +10,27 @@
   &:last-child {
     margin-bottom: 0px;
   }
-}
 
-.widget-title {
-  border-bottom: 1px solid #000;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  margin: 0 10px;  
-  padding: 10px 0 5px 0;
-
-  h3 {
+  &-title {
+    border-bottom: 1px solid #000;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;    
-  }
-}
+    font-size: 16px;
+    margin: 0 10px;  
+    padding: 10px 0 5px 0;
 
-.widget-content {
-  padding: 10px;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0;
+      margin: 0;    
+    }
+  }
+
+  &-content {
+    padding: 10px;
+  }
 }
 
 //////////////////////////////////////////////////////
@@ -49,58 +49,58 @@
   list-style-type: none;
   margin: -8px 0 0 0;
   padding: 0;
-}
 
-.widgetList-item {
-  border-bottom: 1px dotted #000;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 5px 0;
-  
-  a {
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    display: block;
+  &-item {
+    border-bottom: 1px dotted #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px 0;
+    
+    a {
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      display: block;
 
-    &:hover {
-      background: @linkColor;
+      &:hover {
+        background: @linkColor;
+      }
     }
   }
-}
 
-.widgetList-item-category {
-  text-transform: none;
-  font-style: italic;
-  font-weight: 300;
-
-  &:after {
-    .contentAfter("//"; 0px 4px);
-  }
-}
-
-.widgetList-item-details {
-  text-transform: none;
-  font-style: italic;
-  font-size: 10px;
-}
-
-.widgetList-more {
-  text-transform: uppercase;
-  margin-top: 10px;
-  background: #000;
-  font-size: 11px;
-
-  a {
-    display: block;
-    padding: 5px;
-    color: #fff;
+  &-item-category {
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
 
     &:after {
-      .contentAfter(">>"; 0px 4px);
+      .contentAfter("//"; 0px 4px);
     }
   }
 
-  .emphasis {
-    font-weight: 600;
+  &-item-details {
+    text-transform: none;
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  &-more {
+    text-transform: uppercase;
+    margin-top: 10px;
+    background: #000;
+    font-size: 11px;
+
+    a {
+      display: block;
+      padding: 5px;
+      color: #fff;
+
+      &:after {
+        .contentAfter(">>"; 0px 4px);
+      }
+    }
+
+    .emphasis {
+      font-weight: 600;
+    }
   }
 }

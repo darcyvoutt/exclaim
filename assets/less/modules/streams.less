@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////
-// Classes
+// Structure
 //////////////////////////////////////////////////////
 
 .streams {
@@ -29,6 +29,10 @@
     margin-right: 0;
   });
 }
+
+//////////////////////////////////////////////////////
+// Title Style
+//////////////////////////////////////////////////////
 
 .stream-title {
   border-bottom: 1px solid #000;
@@ -102,57 +106,79 @@
       left: 0;
       });
   }
-}
 
-.streamItem-content {
-  background: rgba(0,0,0,0.8);
-  position: absolute;
-  overflow: hidden;
-  max-height: 80%;
-  color: #ffffff;
-  padding: 8px;
-  z-index: 999;
-  width: 100%;
-  bottom: 0;
+  &-content {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    overflow: hidden;
+    max-height: 80%;
+    color: #ffffff;
+    padding: 8px;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
 
-  span {
-    display: block;
-    max-height: 200px
+    span {
+      display: block;
+      max-height: 200px
+    }
+  }
+
+  &-category {
+    font-style: italic;
+
+    &:after {
+      .contentAfter("//"; 0px 3px);
+    }
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &-subtitle {
+    &:before {
+      .contentBefore(open-quote; 0px);
+    }
+
+    &:after {
+      .contentAfter(close-quote; 0px);
+    }
+  }
+
+  &-meta {
+    font-style: italic;
+    font-size: 11px;
+  }
+
+  &-noContent {
+    background: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px;
   }
 }
 
-.streamItem-category {
-  font-style: italic;
+//////////////////////////////////////////////////////
+// Synopsis Stream - Importing Normal Streams
+//////////////////////////////////////////////////////
 
-  &:after {
-    .contentAfter("//"; 0px 3px);
-  }
-}
+.streamSingle {
+  .widgetList();
 
-.streamItem-title {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.streamItem-subtitle {
-  &:before {
-    .contentBefore(open-quote; 0px);
+  a {
+    .clearfix();
+    padding: 10px
   }
 
-  &:after {
-    .contentAfter(close-quote; 0px);
+  img {
+    max-width: 20%;
+    min-height: 100px;
+    height: auto;
+
+    margin-right: @marginRight;
+    float: left;
   }
-}
-
-.streamItem-meta {
-  font-style: italic;
-  font-size: 11px;
-}
-
-.streamItem-noContent {
-  background: rgba(0,0,0,0.8);
-  font-style: italic;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 10px;
 }

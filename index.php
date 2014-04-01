@@ -1,7 +1,5 @@
 <?php include ('header.php') ?>
 
-<?php include('filters.php'); ?>
-
 <?php include('relatedArticles.php'); ?>
 
 <div class="content">
@@ -9,6 +7,8 @@
   <div id="articleCarousel">
     <?php include('carousel.php'); ?>
   </div>
+
+  <?php include('filters.php'); ?>
 
   <div class="streams">
 
@@ -102,7 +102,7 @@
 
   </div>
 
-  <script src="assets/js/streams.js"></script>
+  <!-- <script src="assets/js/streams.js"></script> -->
 
 </div>
 
