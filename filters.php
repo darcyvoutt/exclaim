@@ -14,8 +14,8 @@
       
       <!-- Filter Options -->
       <h2 class="filters-mobileTitle slide-trigger">Filters</h2>
-      <ul class="filters-options">
-        <span class="filters-label">Filters</span>
+      <span class="filters-label">Filters</span>
+      <ul class="filters-options">        
         <li class="filters-options-item">
           <a data-toggle="dropdown" href="#" class="dropdown-toggle">Genre</a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">

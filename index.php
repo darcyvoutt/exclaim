@@ -8,7 +8,6 @@
     <?php include('carousel.php'); ?>
   </div>
 
-  <?php include('filters.php'); ?>
 
   <div class="streams">
 
@@ -17,6 +16,8 @@
     <div class="stream-header"><h2>Top 20</h2></div>
 
   </div>
+
+  <?php include('filters.php'); ?>
 
   <div class="streams">
     

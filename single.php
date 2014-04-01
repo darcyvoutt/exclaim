@@ -8,13 +8,13 @@
     <?php include('carousel.php'); ?>
   </div>
 
-  <?php include('filters.php'); ?>
-
   <div class="streams">
 
     <div class="stream-header is-active"><h2>Concert Listings</h2></div>
 
   </div>
+
+  <?php include('filters.php'); ?>
 
   <div class="streams">
     
