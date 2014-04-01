@@ -17,6 +17,42 @@ button {
   appearance: none;
 }
 
+
+//////////////////////////////////////////////////////
+// FormRow
+//////////////////////////////////////////////////////
+
+.formRow {
+  margin-bottom: 10px;
+  width: 100%;
+
+  &-label {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+  }
+
+  &-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 74%; 
+
+    input {
+      width: 100%;
+    }
+  }
+
+  &-textarea {
+    display: block;
+    width: 99.8%;
+
+    textarea {
+      min-height: 120px;
+      width: 100%;
+    }
+  }
+}
+
 //////////////////////////////////////////////////////
 // Typeahead Style
 //////////////////////////////////////////////////////
@@ -39,38 +75,4 @@ button {
 .tt-suggestion.tt-cursor {
   background: pink;
   cursor: pointer;
-}
-
-//////////////////////////////////////////////////////
-// FormRow
-//////////////////////////////////////////////////////
-
-.formRow {
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.formRow-label {
-  display: inline-block;
-  vertical-align: top;
-  width: 25%;
-}
-
-.formRow-input {
-  .formRow-label();
-  width: 74%; 
-
-  input {
-    width: 100%;
-  }
-}
-
-.formRow-textarea {
-  display: block;
-  width: 99.8%;
-
-  textarea {
-    min-height: 120px;
-    width: 100%;
-  }
 }
