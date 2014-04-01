@@ -24,31 +24,80 @@
       <div class="stream-title">
         <h3>News</h3>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
-      posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
-      metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-      sapien vel ultricies.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
-      posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
-      metus vitae sapien placerat, quis blandit sem accumsan. Duis in lacinia arcu. Etiam sodales dignissim 
-      sapien vel ultricies.</p>
+
+      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream1.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
+      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
+      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
     </div>
 
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
       </div>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
-      posuere vel eget metus. Fusce tincidunt nisl nisi, ut pulvinar elit ullamcorper nec. Quisque sagittis 
-      metus vitae sapien placerat.</p>
+
+      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
+      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
     </div>
 
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
       </div>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est id urna venenatis 
-      posuere vel eget metus.</p>
+       
+      <div class="streamItem">
+        <div class="streamItem-noContent">
+          <p>There is no content available based on your current filters.</p>
+        </div>
+      </div>
     </div>
 
   </div>

@@ -130,13 +130,21 @@
 }
 
 //////////////////////////////////////////////////////
-// Display Content After
+// Styling Around Content
 //////////////////////////////////////////////////////
 
-.contentAfter (@content) {
+.contentBefore (@content; @margin) {
   display: inline-block;
-  content: "@{content}";
-  margin: 0 4px;
+  content: @content;
+  margin: @margin;
+  right: 110%;
+  top: 0;
+}
+
+.contentAfter (@content; @margin) {
+  display: inline-block;
+  content: @content;
+  margin: @margin;
   left: 110%;
   top: 0;
 }
