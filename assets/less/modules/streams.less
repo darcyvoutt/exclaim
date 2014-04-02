@@ -5,7 +5,7 @@
 .streams {
   .flexbox(row, wrap, align-items, flex-start);
 
-  .tabletSupport({
+  .tabletPortrait({
      .flexbox(column, wrap, align-items, flex-start);
      
      // Firefox fallback as it does not support wrap
@@ -25,7 +25,7 @@
     margin-right: 0;
   }
 
-  .tabletSupport({ 
+  .tabletPortrait({ 
     margin-right: 0;
   });
 }
@@ -101,7 +101,7 @@
     position: relative;
     left: -50%;
 
-    .tabletSupport({
+    .tabletPortrait({
       max-height: @height * 1.4;
       left: 0;
       });

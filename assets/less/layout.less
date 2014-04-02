@@ -6,7 +6,7 @@
   max-width: 960px;
   margin: 0 auto;
 
-  .tabletSupport({
+  .tabletPortrait({
     padding: 0 3%;
     });
 }
@@ -16,7 +16,7 @@
   background: white;
   max-width: calc(980px + (10px * 2));
 
-  .tabletSupport({
+  .tabletPortrait({
     padding: 0px;
     });
 }
@@ -67,7 +67,7 @@
   width: 65.625%;
   float: left;
 
-  .tabletSupport({
+  .tabletPortrait({
     margin-right: none;
     width: 100%;
   });
@@ -80,8 +80,9 @@
 .sidebar {
   float: left;
   width: 33.3334%;
+  margin-bottom: 15px;
   
-  .tabletSupport({
+  .tabletPortrait({
     width: 100%;
   });
 }
@@ -91,7 +92,7 @@
 //////////////////////////////////////////////////////
 
 .footer {
-  height: 150px;
+  min-height: 150px;
   width: 100%;
 
   &-content {

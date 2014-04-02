@@ -22,17 +22,20 @@
 // Mixins for @media queries
 //////////////////////////////////////////////////////
 
-.tabletSupport(@rules) {
+.tabletPortrait(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
-} // Use: .tabletSupport({ .. }); 
+  // Based on iPad portrait · width: 768px
+} // Use: .tabletPortrait({ .. }); 
 
-.mobileSupport(@rules) {
-  @media screen and (max-width: 568px) { @rules(); }
-  // Setup for iPhone 5 in landscape
-} // Use: .mobileSupport({ .. });
+.mobileLandscape(@rules) {
+  @media screen and (max-width: 600px) { @rules(); }
+  // Based on Android (Nexus 4) landscape · width: 600px
+} // Use: .mobileLandscape({ .. });
 
 .mobilePortrait(@rules) {
-  @media screen and (min-width: 320px), (max-width: 567px) { @rules(); }
+  @media screen and (max-width: 321px) { @rules(); }
+  // Based on iPhone 3+4 portrait · width: 320px
+  // The additional pixel is ensure 320px is included
 } // Use: .mobilePortrait({ .. });
 
 //////////////////////////////////////////////////////

@@ -1,7 +1,5 @@
 <?php include ('header.php') ?>
 
-<?php include('relatedArticles.php'); ?>
-
 <div class="content">
 
   <div id="articleCarousel">

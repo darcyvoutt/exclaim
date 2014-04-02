@@ -33,6 +33,10 @@
   .clearfix();
   display: block;
 
+  .mobileLandscape({
+    display: none;
+    });
+
   .widget {
     box-shadow: none;
     margin-right: @marginRight;
@@ -61,7 +65,7 @@
       margin-right: 0px;
     }
 
-    .mobileSupport({
+    .mobileLandscape({
       margin-right: 0px;
       max-height: none;
       height: auto;
@@ -74,7 +78,7 @@
         height: auto;
         width: 100%;
 
-        .mobileSupport({
+        .mobileLandscape({
           max-height: none;
           });
       }

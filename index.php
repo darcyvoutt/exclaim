@@ -1,7 +1,5 @@
 <?php include ('header.php') ?>
 
-<?php include('relatedArticles.php'); ?>
-
 <div class="content">
 
   <div id="articleCarousel">
@@ -21,45 +19,7 @@
 
   <div class="streams">
     
-    <div class="stream">
-      <div class="stream-title">
-        <h3>News</h3>
-      </div>
-
-      <!-- Stream Item -->
-      <div class="streamItem">
-        <img src="assets/images/stream1.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-      <!-- Stream Item -->
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-      <!-- Stream Item -->
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-    </div>
+   
 
     <div class="stream">
       <div class="stream-title">
