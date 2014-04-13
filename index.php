@@ -9,24 +9,22 @@
 
   <div class="streams">
 
-    <div class="stream-header is-active"><h2>Concert Listings</h2></div>
-    <div class="stream-header"><h2>Release Dates</h2></div>
-    <div class="stream-header"><h2>Top 20</h2></div>
+    <div class="stream-button"><a href="#">Concert Listings</a></div>
+    <div class="stream-button"><a href="#">Release Dates</a></div>
+    <div class="stream-button"><a href="#">Top 20</a></div>
 
   </div>
 
   <?php include('filters.php'); ?>
 
   <div class="streams">
-    
    
-
+    <!-- Stream -->
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
       </div>
 
-      <!-- Stream Item -->
       <div class="streamItem">
         <img src="assets/images/stream2.jpg" alt="Image" />
         <div class="streamItem-content">
@@ -37,7 +35,43 @@
         </div>
       </div>
 
-      <!-- Stream Item -->
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+    </div> 
+   
+    <!-- Stream -->
+    <div class="stream">
+      <div class="stream-title">
+        <h3>News</h3>
+      </div>
+
+      <div class="streamItem">
+        <img src="assets/images/stream2.jpg" alt="Image" />
+        <div class="streamItem-content">
+          <span class="streamItem-category">Video</span>
+          <div class="streamItem-title">Angel Haze</div>
+          <span class="streamItem-subtitle">Drunk in Love</span>
+          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
+        </div>
+      </div>
+
       <div class="streamItem">
         <img src="assets/images/stream2.jpg" alt="Image" />
         <div class="streamItem-content">
@@ -49,6 +83,7 @@
       </div>
     </div>
 
+    <!-- Stream -->
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>

@@ -64,20 +64,25 @@
 // Header above the stream
 //////////////////////////////////////////////////////
 
-.stream-header {
+.stream-button {
   .stream();
   margin-bottom: 10px;
+  font-weight: 500;
+  background: #000;
+  padding: 3px;
 
-  &.is-active {
-    background: @linkColor;
-  }
-
-  h2 {
+  a {
     text-align: center;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-  }
+    font-size: 18px;    
+    display: block;
+    color: #FFF;  
+    width: 100%;
+
+    &:hover {
+      background: @linkColor;
+      color: @fontColor;
+    }
+  }  
 }
 
 //////////////////////////////////////////////////////
