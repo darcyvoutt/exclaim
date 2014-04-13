@@ -39,6 +39,20 @@
 } // Use: .mobilePortrait({ .. });
 
 //////////////////////////////////////////////////////
+// Retina Image Support
+//////////////////////////////////////////////////////
+
+.retinaImage(@rules) {
+  @media
+  screen and (-webkit-min-device-pixel-ratio: 1.5),
+  screen and (-moz-min-device-pixel-ratio: 1.5),
+  screen and (min-device-pixel-ratio: 1.5) { 
+    background-size: 100%;
+    @rules();     
+  }
+}
+
+//////////////////////////////////////////////////////
 // Clearfix & Debugs
 //////////////////////////////////////////////////////
 

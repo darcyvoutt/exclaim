@@ -118,10 +118,6 @@
     display: block;
     float: left;
 
-    &:last-child {
-      border-right: none; 
-    }
-
     .tabletPortrait({
         float: none;
       });
@@ -133,7 +129,7 @@
 
       &:after {
         @size: 20px;
-        background: #000000;
+        background: url("../images/icons/icon-arrowdown.png") center center no-repeat;        
         position: absolute;
         display: block;
         height: @size;
@@ -141,6 +137,10 @@
         content: "";
         right: 10px;
         top: 28%;
+
+        .retinaImage({
+          background-image: url("../images/icons/icon-arrowdown@2x.png");          
+          });
       }
 
       &:hover {
