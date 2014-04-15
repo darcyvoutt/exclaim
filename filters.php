@@ -59,20 +59,11 @@
             <li><a href="#">Option</a></li>
           </ul>
         </li>
-      </ul>
-
-      <script src="assets/js/nav.js"></script>
-      <script>
-        // Stop dropdown from closing on clicked or keydown (used by typeahead)
-        $('.filters-options-search').on("click keydown", function(event) {
-          event.stopPropagation();
-        });       
-      </script>
-
-
+      </ul>      
 
     </div> <!-- // End of .nav-filters -->
 
   </div> <!-- // End of .nav -->
 
+<script src="assets/js/nav.js"></script>
 <script src="assets/js/filters.js"></script>

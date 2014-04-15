@@ -25,35 +25,9 @@
         <h3>News</h3>
       </div>
 
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
+      <?php include("streamitem.php"); ?>
+      <?php include("streamitem.php"); ?>
+      <?php include("streamitem.php"); ?>
     </div> 
    
     <!-- Stream -->
@@ -61,26 +35,10 @@
       <div class="stream-title">
         <h3>News</h3>
       </div>
-
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
-
-      <div class="streamItem">
-        <img src="assets/images/stream2.jpg" alt="Image" />
-        <div class="streamItem-content">
-          <span class="streamItem-category">Video</span>
-          <div class="streamItem-title">Angel Haze</div>
-          <span class="streamItem-subtitle">Drunk in Love</span>
-          <span class="streamItem-meta">(Beyonce cover) (live in-studio)</span>
-        </div>
-      </div>
+      
+      <?php include("streamitem.php"); ?>
+      <?php include("streamitem.php"); ?>
+      
     </div>
 
     <!-- Stream -->
