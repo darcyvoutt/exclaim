@@ -9,8 +9,8 @@
 @fontColor: #000;
 
 // Fonts
-@standardFont: Arial, Helvetica, sans-serif;
-@emphasisFont: "Times New Roman", Times, serif;
+@headlineFont: 'Montserrat', sans-serif;
+@emphasisFont: 'Droid Serif', serif;
 
 //////////////////////////////////////////////////////
 // Browser Prefix
@@ -128,17 +128,22 @@
 // Arrow Down
 //////////////////////////////////////////////////////
 
-.arrowDown(@triangle: 10px) {
-    border-left: @triangle solid transparent;
-    border-right: @triangle solid transparent;    
-    border-top: @triangle solid #000000;
-    position: absolute;
-    display: block;
-    content: "";    
-    height: 0;
-    width: 0;  
-    right: 10px;
-    top: 50% - @triangle;
+.arrowDown() {
+  @size: 20px; 
+  @icon: "icon-dropdown";
+  background: url("../images/icons/@{icon}.png") center center no-repeat;
+  background-color: #000000;
+  position: absolute;          
+  display: block;  
+  height: 100%;
+  width: 40px;
+  content: "";
+  right: 0;
+  top: 0;
+
+  .retinaImage({
+    background-image: url("../images/icons/@{icon}@2x.png");          
+  });
 }
 
 //////////////////////////////////////////////////////

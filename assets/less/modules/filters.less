@@ -12,7 +12,11 @@
 .filters {
   .clearfix();
   margin: 0 0 @marginBottom 0;
+  font-family: @headlineFont;
+  text-transform: uppercase;  
   position: relative;
+  font-weight: 500;
+  font-size: 13px;  
   padding: 0;
 
   border-bottom: 1px solid #000;
@@ -129,7 +133,9 @@
 
       &:after {
         @size: 20px;
-        background: url("../images/icons/icon-arrowdown.png") center center no-repeat;
+        @icon: "icon-arrowdown";        
+        background: url("../images/icons/@{icon}.png") center center no-repeat;
+        background-size: 100%;
         position: absolute;
         display: block;
         height: @size;
@@ -139,7 +145,7 @@
         top: 12px;
 
         .retinaImage({
-          background-image: url("../images/icons/icon-arrowdown@2x.png");          
+          background-image: url("../images/icons/@{icon}@2x.png");          
           });
       }
 
@@ -195,7 +201,5 @@ h2.filters-mobileTitle {
     display: block;
     });
 
-  &:after {
-    .arrowDown();
-  }
+  &:after { .arrowDown(); }
 }

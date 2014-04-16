@@ -36,6 +36,7 @@
   }
 
   &-title {
+    font-family: @headlineFont;
     text-transform: uppercase;
     letter-spacing: 1px;    
     line-height: 24px;
@@ -64,6 +65,7 @@
 
 .sliderButtons(@icon; @size) {
   background: url("../images/icons/@{icon}.png") center center no-repeat;
+  background-size: 100%;
   z-index: 9999;
   height: @size;
   width: @size;  

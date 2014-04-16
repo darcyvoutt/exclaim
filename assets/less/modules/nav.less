@@ -2,12 +2,14 @@
 // Navigation Wrap
 //////////////////////////////////////////////////////
 
+@navHeight: 60px;
+
 .navigation {
   .clearfix();
   width: 69.7916667%;
+  height: @navHeight;
   padding: 10px 0;
-  display: block;
-  min-height: 60px;
+  display: block;  
   float: left;
 
   .tabletPortrait({
@@ -20,9 +22,14 @@
 //////////////////////////////////////////////////////
 
 .menu {
-  background: white;
+  font-family: @headlineFont;
+  text-transform: uppercase;
+  line-height: @navHeight;
+  height: @navHeight;
+  font-weight: 600;
+  font-size: 13px;
   display: block;
-  float: left;
+  float: left;  
   width: 77%;
   padding: 0;
   margin: 0;
@@ -32,8 +39,12 @@
     });
 
   &-item {
+    border-right: 1px solid #000;
     list-style-type: none;
+    display: block;
     float: right;
+
+    &:first-child { border-right: none; }
 
     a {
       text-decoration: none;
@@ -52,22 +63,31 @@
 // Sections List
 //////////////////////////////////////////////////////
 
-.sections {
-  width: 23%;
-  background: #efefef;
+.sections {    
+  border: 1px solid #000000;
+  font-family: @headlineFont;
+  text-transform: uppercase;
+  height: @navHeight - 5px;
   position: relative;
-  display: block;
-  padding: 10px;
-  float: left;
+  font-weight: 600;
+  font-size: 14px;  
+  display: block;  
+  float: left;  
+  padding: 0;
+  width: 23%;
 
   .tabletPortrait({
     width: 100%;
     });
 
-  &:after { .arrowDown(); }
+  &:after { 
+    .arrowDown();     
+  }
 
   &-list {
-    list-style-type: none;
+    line-height: @navHeight - 5px;
+    list-style-type: none;  
+    text-indent: 15px;  
 
     a {
       text-decoration: none;
@@ -76,14 +96,12 @@
       padding: 0;
     }
 
-    li a { 
-      padding: 10px 15px; // reset bootstrap
-    }
-
-    ul {
+    ul {      
       position: absolute;
       background: white;
+      text-indent: 0;
       width: 100%;
+      padding: 0;      
       top: 100%;
       left: 0;  
     }

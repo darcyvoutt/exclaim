@@ -54,12 +54,15 @@
 
     <div class="navigation">
       
-      <!-- Main Nav -->
+      <!-- Main Nav 
+      // Due to css constraints, this lists needs to be inserted inverted
+      -->
+
       <ul class="menu">
-        <li class="menu-item"><a href="#">News</a></li>
         <li class="menu-item"><a href="#">Features</a></li>
-        <li class="menu-item"><a href="#">Reviews</a></li>
-        <li class="menu-item"><a href="#">Streams</a></li>
+        <li class="menu-item"><a href="#">Reviews</a></li>        
+        <li class="menu-item"><a href="#">Streams</a></li>                
+        <li class="menu-item"><a href="#">News</a></li>        
       </ul>
       
       <!-- Sections Select -->
