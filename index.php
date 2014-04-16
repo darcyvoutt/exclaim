@@ -2,7 +2,7 @@
 
 <div class="content">
 
-  <?php include('carousel.php') ?>
+  <?php include('carousel.php') ?>  
 
   <div class="streams">
 

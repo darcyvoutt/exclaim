@@ -1,4 +1,5 @@
 .carousel {
+  margin-bottom: 10px;
   color: #ffffff;
   width: 100%;
 
@@ -12,57 +13,112 @@
     width: inherit;
   }
 
-  &-content {
+  &-content {    
     background: rgba(0,0,0,0.6);
     position: absolute;
-    padding: 10%;
+    overflow: hidden;
+    padding: 20px 8%;
     z-index: 999;
     width: 100%;
-    height: 50%;
+    height: 28%;
     bottom: 0;
   }
 
-  &-title {    
-  }
-
   &-category {
+    font-family: @emphasisFont;
+    margin-bottom: 4px;
+    font-style: italic;    
+    font-size: 18px;
+
     &:after {
       .contentAfter("//"; 0 0 0 5px);
     }
   }
+
+  &-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;    
+    line-height: 24px;
+    font-weight: 500;    
+    font-size: 22px;
+  } 
+
+  &-emphasis {
+    font-family: @emphasisFont;
+    font-style: italic;
+  }
+
+  &-meta {
+    font-family: @emphasisFont;
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 12px;
+  }
 }
 
 
 //////////////////////////////////////////////////////
-// Next or Prev Buttons
+// Slider Button Mixin
 //////////////////////////////////////////////////////
 
-.sliderButtons(@icon) {
-  @size: 22px;
+.sliderButtons(@icon; @size) {
   background: url("../images/icons/@{icon}.png") center center no-repeat;
   z-index: 9999;
   height: @size;
   width: @size;  
-  top: 75%;  
+  top: 85%;
 
   .retinaImage({
-    background-image: url("../images/icons/@{icon}.png");          
+    background-image: url("../images/icons/@{icon}@2x.png");          
   });
 
-  &:before {
-    content: "";
-  }
+  &:before { content: ""; }
 }
 
-// Slick Properties
-@buttonMargin: 3%;
+//////////////////////////////////////////////////////
+// Slider Button 
+//////////////////////////////////////////////////////
+
+@buttonMargin: 2%;
+@buttonSize: 22px;
 
 .slick-next {
-  .sliderButtons("icon-arrowright-white");
+  .sliderButtons("icon-arrowright-white"; @buttonSize);
   right: @buttonMargin;  
 }
 
 .slick-prev {
-  .sliderButtons("icon-arrowleft-white");
+  .sliderButtons("icon-arrowleft-white"; @buttonSize);
   left: @buttonMargin;  
+}
+
+//////////////////////////////////////////////////////
+// Customization for ".sidebar"
+//////////////////////////////////////////////////////
+
+.sidebar {
+  .carousel {    
+    max-height: 200px;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    &-content {          
+      padding: 15% 12% 0 12%;       
+      height: 100%;
+    }
+
+    &-category { font-size: 16px; }
+
+    &-title { 
+      font-size: 20px; 
+    }
+  }
+
+  .slick-slider { 
+    margin-bottom: 0; 
+  }
+
+  .slick-next, .slick-prev {
+    top: 11%;
+  }
 }
