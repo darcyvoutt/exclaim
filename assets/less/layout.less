@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////
 
 .siteWidth {
+  .clearfix();
   max-width: 960px;
   margin: 0 auto;
 
@@ -27,12 +28,11 @@
 
 .header {
   .clearfix();
-  height: 120px;
+  min-height: 120px;
   width: 100%;
 
   &-content {
     .siteWidth();
-    .clearfix();
   }
 }
 
@@ -61,20 +61,21 @@
   overflow: hidden;
 }
 
-.content {
-  margin-bottom: 15px;
-  margin-right: 1.0417%;
+.content {    
+  margin-bottom: @marginBottom;
+  margin-right: 1.0417%;  
   width: 65.625%;
-  float: left;
+  display: block;
+  float: left;  
 
   .tabletPortrait({
-    margin-right: 20px;
     min-width: 418px;
-    width: 50%;
+    width: 58.6%;
   });
 
   .mobileLandscape({
-    width: 100%;
+    min-width: 0;
+    width: 100%;    
   });
 }
 
@@ -82,10 +83,11 @@
 // Sidebar
 //////////////////////////////////////////////////////
 
-.sidebar {
-  float: left;
+.sidebar {    
+  margin-bottom: @marginBottom;
   width: 33.3334%;
-  margin-bottom: 15px;
+  display: block;
+  float: left;
   
   .tabletPortrait({
     min-width: 300px;

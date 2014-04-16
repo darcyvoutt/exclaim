@@ -2,24 +2,26 @@
 // Ads Leaderboard
 //////////////////////////////////////////////////////
 
-.ad-leaderboard {
-  img {
-    margin: 0 auto 10px auto;
-    display: block;    
-    width: 960px;
-    height: 90px;
-  }
-}
-
-.ad-leaderboard-2 img {
-  display: none;
-}
-
-.ad-wrap { // Center when two widgets available
+.ad-wrap {
   .clearfix();
+  overflow: hidden;
   margin: 0 auto;
   display: block;
   width: 100%;
+
+  background: yellow;
+}
+
+.ad-leaderboard {
+  margin: 0 auto @marginBottom auto;
+  display: block;    
+  width: 960px;
+  height: 90px;
+  
+  img {
+    height: 100%;
+    width: 100%;  
+  }
 }
 
 //////////////////////////////////////////////////////
@@ -27,28 +29,26 @@
 //////////////////////////////////////////////////////
 
 @media screen and (max-width: 960px) {
-  .ad-leaderboard img {
+ .ad-leaderboard {
     width: 790px;
   }
 }
 
 @media screen and (max-width: 790px) {
-  .ad-wrap {
-    margin: 0 auto 10px auto;
-    width: 610px;
-  }
-
-  .ad-leaderboard img {
-    margin: 0 auto 10px;
-    width: 300px;
+  .ad-leaderboard {
+    margin: 0 auto @marginBottom;    
     height: 50px;
+    width: 300px;    
+
+    img { 
+      display: block;
+      height: 100%; 
+      width: 100%;       
+    }
   }
 }  
 
 @media screen and (max-width: 650px) {
-  .ad-wrap {
-    width: 100%;
-  }
 }
 
 
@@ -57,7 +57,7 @@
 //////////////////////////////////////////////////////
 
 .ad-sidebar {
-  margin-bottom: 15px; 
+  margin-bottom: @marginBottom; 
   display: block;
 
   img {
