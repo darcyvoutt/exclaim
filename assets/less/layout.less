@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   .tabletPortrait({
-    padding: 0 3%;
+    padding: 0 1.5%;
     });
 }
 
@@ -55,10 +55,10 @@
 //////////////////////////////////////////////////////
 
 .main {
-  .siteWidth();
-  overflow: hidden;
-  margin-bottom: 5px;
+  .siteWidth();  
   background: #ffffff;
+  margin-bottom: 5px;  
+  overflow: hidden;
 }
 
 .content {
@@ -68,7 +68,12 @@
   float: left;
 
   .tabletPortrait({
-    margin-right: none;
+    margin-right: 20px;
+    min-width: 418px;
+    width: 50%;
+  });
+
+  .mobileLandscape({
     width: 100%;
   });
 }
@@ -83,6 +88,11 @@
   margin-bottom: 15px;
   
   .tabletPortrait({
+    min-width: 300px;
+    width: 40%;
+  });
+
+  .mobileLandscape({
     width: 100%;
   });
 }

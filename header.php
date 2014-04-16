@@ -89,10 +89,6 @@
       <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
     </a> 
 
-    <a href="#" alt="Ads" class="ad-leaderboard-2">
-      <img src="assets/images/banner-ad.jpg" alt="Ad Test" />
-    </a> 
-
   </div>
 
 </div>
