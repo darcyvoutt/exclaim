@@ -18,9 +18,9 @@
     position: absolute;
     overflow: hidden;
     padding: 20px 8%;
+    min-height: 26%;
     z-index: 999;
-    width: 100%;
-    height: 28%;
+    width: 100%;    
     bottom: 0;
   }
 
@@ -45,13 +45,14 @@
 
   &-emphasis {
     font-family: @emphasisFont;
+    text-transform: none;
     font-style: italic;
   }
 
-  &-meta {
-    font-family: @emphasisFont;
+  &-meta {    
+    font-family: @emphasisFont;    
     font-style: italic;
-    margin-top: 15px;
+    margin-top: 8px;
     font-size: 12px;
   }
 }
@@ -109,9 +110,9 @@
 
     &-category { font-size: 16px; }
 
-    &-title { 
-      font-size: 20px; 
-    }
+    &-title { font-size: 20px; }
+
+    &-meta { margin-top: 15px; }
   }
 
   .slick-slider { 

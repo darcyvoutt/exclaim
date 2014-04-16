@@ -3,7 +3,7 @@
     <img src="http://canyouhearthis.co.uk/wp-content/uploads/2012/09/Band-Of-Horses.jpg" alt="Slide 1" />
     <div class="carousel-content">
       <div class="carousel-category">Category Name</div>
-      <div class="carousel-title">Title of the article goes here <span class="carousel-emphasis">Emphasis</span></div>
+      <div class="carousel-title">Title of the article goes here <span class="carousel-emphasis">Emphasis text</span></div>
       <div class="carousel-meta">by Alex Hudson | January 27, 2014</div>
     </div>    
   </div>
@@ -12,7 +12,7 @@
     <img src="http://www.themeshband.co.uk/images/function-bands-for-hire.jpg" alt="Slide 2" />
     <div class="carousel-content">
       <div class="carousel-category">Category Name</div>
-      <div class="carousel-title">Title of the article goes here <span class="carousel-emphasis">Emphasis</span></div>
+      <div class="carousel-title">Title of the article goes here <span class="carousel-emphasis">Emphasis text</span></div>
       <div class="carousel-meta">by Alex Hudson | January 27, 2014</div>
     </div>    
   </div>
