@@ -4,12 +4,12 @@
 
 .article {
   .doubleBorder();
-  margin-bottom: 20px;
+  margin-bottom: @marginBottom;
   padding: 30px;
   width: 100%;
 
   img {
-    margin-bottom: 15px;
+    margin-bottom: @marginBottom - 5px;
     max-width: 100%;
   }
 }
@@ -41,7 +41,7 @@
   .widget {
     box-shadow: none;
     margin-right: @marginRight;
-    margin-bottom: 15px;
+    margin-bottom: @marginBottom;
     width: 23.828%;
     height: auto;    
     float: left;
