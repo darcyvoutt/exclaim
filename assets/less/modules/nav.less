@@ -39,7 +39,7 @@
     });
 
   &-item {
-    border-right: 1px solid #000;
+    border-right: @border;
     list-style-type: none;
     display: block;
     float: right;
@@ -64,7 +64,7 @@
 //////////////////////////////////////////////////////
 
 .sections {    
-  border: 1px solid #000000;
+  border: @border;
   font-family: @headlineFont;
   text-transform: uppercase;
   height: @navHeight - 5px;
@@ -74,14 +74,15 @@
   display: block;  
   float: left;  
   padding: 0;
-  width: 23%;
+  width: 23%;  
 
   .tabletPortrait({
     width: 100%;
-    });
+  });
 
   &:after { 
     .arrowDown();     
+    z-index: 1;
   }
 
   &-list {
@@ -93,6 +94,8 @@
       text-decoration: none;
       position: relative;
       display: block;
+      z-index: 10;
+      width: 100%;
       padding: 0;
     }
 
@@ -101,9 +104,14 @@
       background: white;
       text-indent: 0;
       width: 100%;
-      padding: 0;      
+      padding: 0;
+      margin: 0;      
       top: 100%;
       left: 0;  
+
+      li {
+        border: @border;
+      }
     }
   }
 }
