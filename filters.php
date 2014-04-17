@@ -1,16 +1,16 @@
 <div class="filters">
 
-    <div class="filters-content">
+    <!-- Filters Selected -->
+    <div class="filters-selected">
+      <ul class="filters-selected-list">
+        <li class="filters-selected-item">Arcade Fire</li>
+        <li class="filters-selected-item">Bars</li>
+        <li class="filters-selected-item">Toronto</li>
+      </ul>
+      <button class="filters-selected-button">Go</button>
+    </div>
 
-      <!-- Filters Selected -->
-      <div class="filters-selected">
-        <ul class="filters-selected-list">
-          <li class="filters-selected-item">Arcade Fire</li>
-          <li class="filters-selected-item">Bars</li>
-          <li class="filters-selected-item">Toronto</li>
-        </ul>
-        <button class="filters-selected-button">Filter</button>
-      </div>
+    <div class="filters-content">
       
       <!-- Filter Options -->
       <h2 class="filters-mobileTitle slide-trigger">Filters</h2>

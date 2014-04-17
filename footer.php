@@ -6,10 +6,11 @@
     <ul>
       <li class="footer-content-emphasis">December 13 </li>
       <li class="footer-content-category">News Features</li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+      <li><a href="#">Interviews</a></li>
+      <li><a href="#">Spark</a></li>
+      <li><a href="#">#Rocksmith60</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">School</a></li>
       <li class="footer-content-category">Reviews</li>
       <li><a href="#">Link</a></li>
       <li><a href="#">Link</a></li>

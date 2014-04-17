@@ -2,6 +2,9 @@
 // Global Variables
 //////////////////////////////////////////////////////
 
+// Navigation
+@navHeight: 45px;
+
 // Margins
 @marginRight: 1.5625%;
 @marginBottom: 10px;
@@ -201,4 +204,15 @@
   .retinaImage({
     background-image: url("../images/icons/@{icon}@2x.png");          
   });
+}
+
+//////////////////////////////////////////////////////
+// Input Placeholder Styling
+//////////////////////////////////////////////////////
+
+.placeholder(@rules) {
+  ::-webkit-input-placeholder { @rules(); }
+  :-moz-placeholder { @rules(); }
+  ::-moz-placeholder { @rules(); }
+  :-ms-input-placeholder { @rules(); }
 }

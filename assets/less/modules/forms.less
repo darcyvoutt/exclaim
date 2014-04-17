@@ -17,6 +17,11 @@ button {
   appearance: none;
 }
 
+::-webkit-input-placeholder { color: @fontColor; }
+:-moz-placeholder { color: @fontColor; }
+::-moz-placeholder { color: @fontColor; }
+:-ms-input-placeholder { color: @fontColor; }
+
 
 //////////////////////////////////////////////////////
 // FormRow
@@ -51,28 +56,4 @@ button {
       width: 100%;
     }
   }
-}
-
-//////////////////////////////////////////////////////
-// Typeahead Style
-//////////////////////////////////////////////////////
-
-.tt-hint {
-  color: #DDDDDD;
-  outline: none;
-}
-
-.tt-dropdown-menu {
-  background-color: #fff;
-  width: 100%;
-}
-
-.tt-suggestion {
-  padding: 5px 10px;
-  line-height: 28px;
-}
-
-.tt-suggestion.tt-cursor {
-  background: pink;
-  cursor: pointer;
 }

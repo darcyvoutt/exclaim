@@ -32,7 +32,7 @@
   <div class="headerBar">
     <div class="headerBar-content">
       <div class="search">
-        <input type="text" />
+        <input type="text" placeholder="Search Exclaim..." />
       </div>
       <div class="social">
       <!-- // Due to css constraints, this lists needs to be inserted inverted -->
