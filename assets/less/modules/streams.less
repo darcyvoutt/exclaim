@@ -49,21 +49,7 @@
   }
 
   &:after {
-    @size: 18px;
-    @icon: "icon-arrowright";    
-    background: url("../images/icons/@{icon}.png") center center no-repeat;
-    background-size: 100%;
-    position: absolute;
-    display: block;
-    height: @size;
-    width: @size;
-    content: "";
-    right: 0;
-    top: 10px;
-
-    .retinaImage({
-      background-image: url("../images/icons/@{icon}@2x.png");          
-    });
+    .iconAfter(18px; "icon-arrowright"; 10px; 0);
   }
 }
 

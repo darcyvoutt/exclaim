@@ -132,21 +132,7 @@
       display: block;
 
       &:after {
-        @size: 20px;
-        @icon: "icon-arrowdown";        
-        background: url("../images/icons/@{icon}.png") center center no-repeat;
-        background-size: 100%;
-        position: absolute;
-        display: block;
-        height: @size;
-        width: @size;
-        content: "";
-        right: 10px;
-        top: 12px;
-
-        .retinaImage({
-          background-image: url("../images/icons/@{icon}@2x.png");          
-        });
+        .iconAfter(20px; "icon-arrowdown"; 12px; 10px);       
       }
 
       &:hover {

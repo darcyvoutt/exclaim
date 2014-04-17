@@ -28,11 +28,14 @@
 
 .header {
   .clearfix();
-  min-height: 120px;
   width: 100%;
 
   &-content {
     .siteWidth();
+    margin-bottom: @marginBottom;
+    overflow: hidden;
+    display: block;
+    height: 45px;    
   }
 }
 
@@ -41,12 +44,14 @@
   margin: 0 auto;
 }
 
-.headerBar {
+.headerBar {   
+  margin-bottom: @marginBottom;
+  overflow: hidden;
   padding: 12px 0;
-  height: 48px;
+  height: 48px;  
 
   &-content {
-    .siteWidth();
+    .siteWidth();    
   }
 }
 

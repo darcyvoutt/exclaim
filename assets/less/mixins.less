@@ -181,3 +181,24 @@
   left: 110%;
   top: 0;
 }
+
+
+//////////////////////////////////////////////////////
+// Icons After
+//////////////////////////////////////////////////////
+
+.iconAfter(@size; @icon; @top; @right) {       
+  background: url("../images/icons/@{icon}.png") center center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  display: block;
+  height: @size;
+  width: @size;
+  content: "";
+  right: @right;
+  top: @top;
+
+  .retinaImage({
+    background-image: url("../images/icons/@{icon}@2x.png");          
+  });
+}
