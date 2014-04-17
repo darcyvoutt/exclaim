@@ -6,11 +6,11 @@
 
   <div class="article">
 
-    <div class="breadcrumbs">Music > Music News > Mar 28, 2014</div>
+    <div class="article-breadcrumbs">Music > Music News > Mar 28, 2014</div>
 
-    <h2>The Red Hot Chilli Pepers are back in Toronto May 24</h2>
+    <h1 class="article-title">The Red Hot Chilli Pepers are back in Toronto May 24</h1>
 
-    <div class="author">By Joseph Hose</div>
+    <div class="article-author">By Joseph Hose</div>
 
     <img src="http://audioinkradio.com/wp-content/uploads/2012/01/Red-Hot-Chili-Peppers.jpg" alt="Red Hot" />
 
@@ -26,7 +26,8 @@
     feugiat, vel imperdiet leo lobortis. In fermentum arcu sed tortor bibendum, eu aliquet dolor semper. Morbi 
     ac blandit neque. Nullam ut facilisis lacus. Duis et <a href="#">blandit massa</a>, eget ultricies lectus. 
     Nulla ultricies odio sit amet turpis tincidunt, id congue mi laoreet.</p>
-  </div>
+
+  </div> <!-- // End of .article -->
 
   <div class="comments">
     <div class="comments-title">

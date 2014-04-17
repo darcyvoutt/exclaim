@@ -1,4 +1,5 @@
 <div class="relatedArticles">
+  <!-- Article -->
   <div class="widget">
     <div class="widget-content">
       <a href="#">
@@ -7,10 +8,12 @@
       
     </div>
     <div class="widget-title">
-      <h3>Category Name</h3>
-      <span><a href="#">Excerpt from the article.</a></span>
+      <h3 class="widget-category">Category Name</h3>
+      <span class="widget-excerpt"><a href="#">Excerpt from the article.</a></span>
     </div>
   </div>
+
+  <!-- Article -->
   <div class="widget">    
     <div class="widget-content">
       <a href="#">
@@ -19,10 +22,12 @@
       
     </div>
     <div class="widget-title">
-      <h3>Category Name</h3>
-      <span><a href="#">Excerpt from the article.</a></span>
+      <h3 class="widget-category">Category Name</h3>
+      <span class="widget-excerpt"><a href="#">Excerpt from the article.</a></span>
     </div>
   </div>
+
+  <!-- Article -->
   <div class="widget">    
     <div class="widget-content">
       <a href="#">
@@ -31,10 +36,12 @@
       
     </div>
     <div class="widget-title">
-      <h3>Category Name</h3>
-      <span><a href="#">Excerpt from the article.</a></span>
+      <h3 class="widget-category">Category Name</h3>
+      <span class="widget-excerpt"><a href="#">Excerpt from the article.</a></span>
     </div>
   </div>
+
+  <!-- Article -->
   <div class="widget">    
     <div class="widget-content">
       <a href="#">
@@ -43,8 +50,8 @@
       
     </div>
     <div class="widget-title">
-      <h3>Category Name</h3>
-      <span><a href="#">Excerpt from the article.</a></span>
+      <h3 class="widget-category">Category Name</h3>
+      <span class="widget-excerpt"><a href="#">Excerpt from the article.</a></span>
     </div>
   </div>
 </div>

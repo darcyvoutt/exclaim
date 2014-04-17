@@ -12,18 +12,20 @@
     margin-bottom: @marginBottom - 5px;
     max-width: 100%;
   }
-}
 
-.breadcrumbs {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-}
+  &-breadcrumbs {
+    text-transform: uppercase;
+    font-family: @headlineFont;
+    font-size: 11px;
+  }
 
-.author {
-  margin-bottom: 15px;
-  font-family: @emphasisFont;
-  font-style: italic;
+  &-author {
+    margin-bottom: 14px;
+    font-family: @emphasisFont;    
+    font-style: italic;
+    font-size: 14px;
+    color: #3A3B39;
+  }
 }
 
 //////////////////////////////////////////////////////
@@ -46,20 +48,21 @@
     height: auto;    
     float: left;
 
-    h3 {
-      position: relative;
-      text-transform: none;
-      font-family: @emphasisFont;
+    &-category {
+      margin-bottom: 3px;
+      font-family: @emphasisFont;        
+      text-transform: none;        
+      position: relative;  
       font-style: italic;
       font-weight: 300;
-      font-size: 14px;
+      font-size: 14px;      
 
       &:after {
         .contentAfter("//"; 0px 4px);
       }
     }
 
-    span {
+    &-excerpt {
       font-weight: 600;
     }
 
@@ -87,6 +90,7 @@
     }
 
     &-title {
+      line-height: 1.1em;
       border-bottom: none;
       margin-bottom: 5px;
       padding: 0;    
