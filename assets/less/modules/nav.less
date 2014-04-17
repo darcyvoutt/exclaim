@@ -30,27 +30,46 @@
   font-size: 13px;
   display: block;
   float: left;  
-  width: 77%;
+  width: 76%;
   padding: 0;
-  margin: 0;
+  margin: 0 1% 0 0;
 
   .tabletPortrait({
     display: none;
-    });
+  });
 
   &-item {
+    @iconSize: 15px;
     border-right: @border;
     list-style-type: none;
+    position: relative;
     display: block;
     float: right;
+
+    &:after {      
+      @icon: "icon-arrowright";        
+      background: url("../images/icons/@{icon}.png") center center no-repeat;
+      background-size: 100%;
+      top: 50% - @iconSize;
+      position: absolute;      
+      height: @iconSize;
+      width: @iconSize;
+      display: block;
+      content: "";      
+      right: 10px;
+
+      .retinaImage({
+        background-image: url("../images/icons/@{icon}@2x.png");          
+      });
+    }
 
     &:first-child { border-right: none; }
 
     a {
       text-decoration: none;
       line-height: 40px;
+      padding: 0 35px 0 15px;
       display: block;
-      padding: 0 15px;
 
       &:hover {
         background: @linkColor;
@@ -72,23 +91,25 @@
   font-weight: 600;
   font-size: 14px;  
   display: block;  
-  float: left;  
+  float: left;    
+  width: 23%;
+
+  text-indent: 15px;
   padding: 0;
-  width: 23%;  
+  margin: 0;
 
   .tabletPortrait({
     width: 100%;
   });
 
-  &:after { 
-    .arrowDown();     
-    z-index: 1;
-  }
-
   &-list {
     line-height: @navHeight - 5px;
     list-style-type: none;  
-    text-indent: 15px;  
+
+    &:after { 
+      .arrowDown();
+      z-index: 1; 
+    }
 
     a {
       text-decoration: none;
@@ -97,20 +118,32 @@
       z-index: 10;
       width: 100%;
       padding: 0;
+      margin: 0;
     }
 
     ul {      
+      margin: 0 0 0 -1px;
       position: absolute;
       background: white;
       text-indent: 0;
       width: 100%;
-      padding: 0;
-      margin: 0;      
+      padding: 0;        
       top: 100%;
       left: 0;  
 
       li {
-        border: @border;
+        border-right: @border;
+        border-left: @border;
+        border-top: @border;
+        width: 96.5%;
+
+        a { padding: 8px 15px; }        
+
+        a:hover { background: @linkColor; }
+
+        &:last-child { 
+          border-bottom: @border; 
+        }
       }
     }
   }
