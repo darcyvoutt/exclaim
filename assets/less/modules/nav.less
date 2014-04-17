@@ -79,7 +79,7 @@
 // Sections List
 //////////////////////////////////////////////////////
 
-.sections {    
+.sections {
   border: @border;
   font-family: @headlineFont;
   text-transform: uppercase;
@@ -120,8 +120,7 @@
 
     ul {      
       margin: 0 0 0 -1px;
-      position: absolute;
-      background: white;
+      position: absolute;      
       text-indent: 0;
       width: 100%;
       padding: 0;        
@@ -129,10 +128,13 @@
       left: 0;  
 
       li {
+        background: #fff;
         border-right: @border;
         border-left: @border;
         border-top: @border;
         width: 96%;
+
+        .tabletPortrait({ width: 100.5%; });
 
         a { padding: 8px 15px; }        
 

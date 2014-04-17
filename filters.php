@@ -14,56 +14,57 @@
       
       <!-- Filter Options -->
       <h2 class="filters-mobileTitle slide-trigger">Filters</h2>
-      <span class="filters-label">Filters</span>
-      <ul class="filters-options">        
-        <li class="filters-options-item">
-          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Genre</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li class="filters-options-search">
-              <input type="text" class="typeahead" placeholder="Genre" />
-            </li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-          </ul>
-        </li>
 
-        <li class="filters-options-item">
-          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tags</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li class="filters-options-search">
-              <input type="text" class="typeahead" placeholder="Tags" />
-            </li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-          </ul>
-        </li>
+        <span class="filters-label">Filters</span>
+        <ul class="filters-options">        
+          <li class="filters-options-item">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Genre</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="filters-options-search">
+                <input type="text" class="typeahead" placeholder="Genre" />
+              </li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+            </ul>
+          </li>
 
-        <li class="filters-options-item">
-          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Date</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li class="filters-options-search">
-              <input type="text" class="typeahead" placeholder="Date" />
-            </li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-          </ul>
-        </li>
+          <li class="filters-options-item">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tags</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="filters-options-search">
+                <input type="text" class="typeahead" placeholder="Tags" />
+              </li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+            </ul>
+          </li>
 
-        <li class="filters-options-item">
-          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Order</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li class="filters-options-search">
-              <input type="text" class="typeahead" placeholder="Order" />
-            </li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-          </ul>
-        </li>
-      </ul>      
+          <li class="filters-options-item">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Date</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="filters-options-search">
+                <input type="text" class="typeahead" placeholder="Date" />
+              </li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+            </ul>
+          </li>
 
-    </div> <!-- // End of .nav-filters -->
+          <li class="filters-options-item">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Order</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="filters-options-search">
+                <input type="text" class="typeahead" placeholder="Order" />
+              </li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+            </ul>
+          </li>
+        </ul>          
 
-  </div> <!-- // End of .nav -->
+    </div> <!-- // End of .filter-content -->
+
+  </div> <!-- // End of .filters -->
 
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/filters.js"></script>

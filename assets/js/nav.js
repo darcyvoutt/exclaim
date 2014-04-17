@@ -30,8 +30,3 @@ var tabletSize = 768;
 $(document).ready(function(){
   $('.slide-trigger').collapsable();
 });
-
-// Stop dropdown from closing on clicked or keydown (used by typeahead)
-$('.filters-options-search').on("click keydown", function(event) {
-  event.stopPropagation();
-});      

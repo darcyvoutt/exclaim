@@ -1,4 +1,12 @@
 //////////////////////////////////////////////////////
+// Stop dropdown from closing on clicked or keydown (used by typeahead)
+//////////////////////////////////////////////////////
+
+$('.filters-options-search').on("click keydown", function(event) {
+  event.stopPropagation();
+});   
+
+//////////////////////////////////////////////////////
 // Filtered Options
 //////////////////////////////////////////////////////
 
@@ -31,12 +39,12 @@ $(document).ready(function () {
   $('.filters-selected-button').on('click', function () {
     $('.filters-selected').css({display: 'none'});
   });
-});
-
+});   
 
 //////////////////////////////////////////////////////
 // TEMP FOR TYPEAHEAD TESTING
 //////////////////////////////////////////////////////
+
 var substringMatcher = function(strs) {
   return function findMatches(q, cb) {
     var matches, substringRegex;
