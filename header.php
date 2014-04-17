@@ -35,12 +35,16 @@
         <input type="text" />
       </div>
       <div class="social">
+      <!-- // Due to css constraints, this lists needs to be inserted inverted -->
         <ul>
-          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
-          <li><a href="#"><img src="http://bit.ly/1pum0Nr" alt="Social Link" /></a></li>
+          <li data-social="email"><a href="#"></a></li>
+          <li data-social="sharethis"><a href="#"></a></li>
+          <li data-social="instagram"><a href="#"></a></li>
+          <li data-social="google"><a href="#"></a></li>
+          <li data-social="youtube"><a href="#"></a></li>
+          <li data-social="rss"><a href="#"></a></li>
+          <li data-social="twitter"><a href="#"></a></li>
+          <li data-social="facebook"><a href="#"></a></li>
         </ul>
       </div>
     </div>
@@ -57,7 +61,6 @@
       <!-- Main Nav 
       // Due to css constraints, this lists needs to be inserted inverted
       -->
-
       <ul class="menu">
         <li class="menu-item"><a href="#">Features</a></li>
         <li class="menu-item"><a href="#">Reviews</a></li>        
