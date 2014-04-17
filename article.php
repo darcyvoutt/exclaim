@@ -32,8 +32,8 @@
     <div class="article-subscribe">
       <span class="article-subscribe-label">Get It</span>
       <ul class="article-subscribe-social">
-        <li data-social="email"><a href="#"></a></li>
-        <li data-social="rss"><a href="#"></a></li>
+        <li data-social="email" data-tooltip="Join the Mailing List"><a href="#"></a></li>
+        <li data-social="rss" data-tooltip="Follow our Feed"><a href="#"></a></li>
       </ul>
     </div>
 
