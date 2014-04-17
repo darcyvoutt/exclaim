@@ -30,15 +30,15 @@
     <div class="widget-title">List Widget</div>
     <div class="widget-content">
       <ul class="widgetList">
+        
         <li class="widgetList-item">
           <!-- List Item -->
           <a href="#">
             <div class="widgetList-item-category">Reviews</div>
-            <p>The Afghan Whigs / Crocodiles 
-              <span class="widgetList-item-details">
-                Forest Swords Virgin Mod Club, Toronto ON, March 29
-              </span>
-            </p>
+            <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
+            <div class="widgetList-item-details">
+              Phoenix Concert Theatre, Toronto, ON, October 3
+            </div>
           </a>
         </li>
 
@@ -46,11 +46,10 @@
           <!-- List Item -->
           <a href="#">
             <div class="widgetList-item-category">Reviews</div>
-            <p>The Afghan Whigs / Crocodiles 
-              <span class="widgetList-item-details">
-                Forest Swords Virgin Mod Club, Toronto ON, March 29
-              </span>
-            </p>
+            <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
+            <div class="widgetList-item-details">
+              Phoenix Concert Theatre, Toronto, ON, October 3
+            </div>
           </a>
         </li>
 
@@ -58,13 +57,13 @@
           <!-- List Item -->
           <a href="#">
             <div class="widgetList-item-category">Reviews</div>
-            <p>The Afghan Whigs / Crocodiles 
-              <span class="widgetList-item-details">
-                Forest Swords Virgin Mod Club, Toronto ON, March 29
-              </span>
-            </p>
+            <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
+            <div class="widgetList-item-details">
+              Phoenix Concert Theatre, Toronto, ON, October 3
+            </div>
           </a>
         </li>
+
         <li class="widgetList-more">
           <a href="#">More <span class="emphasis">from artist</span></a>
         </li>
