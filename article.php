@@ -14,6 +14,8 @@
 
     <img src="http://audioinkradio.com/wp-content/uploads/2012/01/Red-Hot-Chili-Peppers.jpg" alt="Red Hot" />
 
+    <span class="article-rating">7</span>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui malesuada, imperdiet purus sed, 
     fringilla velit. Ut id feugiat erat. Duis purus dui, vehicula eget erat eu, hendrerit dictum erat. Vivamus 
     laoreet condimentum dapibus. Sed imperdiet eros id nunc pharetra, vel luctus sapien posuere. Curabitur 
@@ -29,7 +31,7 @@
 
     <div class="article-subscribe">
       <span class="article-subscribe-label">Get It</span>
-      <ul>
+      <ul class="article-subscribe-social">
         <li data-social="email"><a href="#"></a></li>
         <li data-social="rss"><a href="#"></a></li>
       </ul>
