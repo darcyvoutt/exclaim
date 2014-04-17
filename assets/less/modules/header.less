@@ -38,26 +38,28 @@
   }
 }
 
-.social {    
-  line-height: 24px;
+.social {  
+  @size: 24px;  
+  height: @size;
   display: block;
   float: right;  
 
-  li {
-    @size: 24px;
-    list-style-type: none;
+  li {    
     position: relative;
-    margin-right: 8px;
+    list-style-type: none;
+    margin: 0 8px 0 0; 
     display: block;
+    height: @size;
+    width: @size;
     float: right;
 
     a { 
       display: block;
-      height: @size;
-      width: @size;
+      height: 100%;        
+      width: 100%;      
     }
 
-    &[data-social] {      
+    &[data-social] {    
       background: center center no-repeat;
       height: @size;
       width: @size;      

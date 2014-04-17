@@ -27,6 +27,14 @@
     ac blandit neque. Nullam ut facilisis lacus. Duis et <a href="#">blandit massa</a>, eget ultricies lectus. 
     Nulla ultricies odio sit amet turpis tincidunt, id congue mi laoreet.</p>
 
+    <div class="article-subscribe">
+      <span class="article-subscribe-label">Get It</span>
+      <ul>
+        <li data-social="email"><a href="#"></a></li>
+        <li data-social="rss"><a href="#"></a></li>
+      </ul>
+    </div>
+
   </div> <!-- // End of .article -->
 
   <div class="comments">

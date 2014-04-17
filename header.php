@@ -34,8 +34,8 @@
       <div class="search">
         <input type="text" placeholder="Search Exclaim..." />
       </div>
-      <div class="social">
       <!-- // Due to css constraints, this lists needs to be inserted inverted -->
+      <div class="social">      
         <ul>
           <li data-social="email"><a href="#"></a></li>
           <li data-social="sharethis"><a href="#"></a></li>

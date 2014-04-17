@@ -9,7 +9,7 @@
   width: 100%;
 
   img {
-    margin-bottom: @marginBottom - 5px;
+    margin-bottom: 20px;
     max-width: 100%;
   }
 
@@ -25,6 +25,20 @@
     font-style: italic;
     font-size: 14px;
     color: #3A3B39;
+  }
+
+  &-subscribe {
+    .social();
+    float: left;
+
+    &-label {
+      font-family: @headlineFont;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 13px;      
+      float: left;
+    }
   }
 }
 
