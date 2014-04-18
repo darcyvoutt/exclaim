@@ -5,7 +5,7 @@
 @actionsHeight:   20px;   // Action buttons
 @metaHeight:      18px;   // Meta info section
 @imgSize:         65px;   // Avatar image size
-@spacing:         10px;   // Space above/below comment
+@spacing:         20px;   // Space above/below comment
 
 //////////////////////////////////////////////////////
 // Commenting Structure
@@ -19,16 +19,19 @@
   width: 100%;
 
   ol, ul {
-    list-style-type: none;
+    list-style-type: none;    
     padding: 0;
+    margin: 0;
 
     li ol, 
     li ul {  
-      @spacing: 10px;
       border-top: @borderDotted;
       padding: @spacing 0 0 15%;
-      margin-top: @spacing;
       clear: both;
+
+      .tabletPortrait({
+        padding-left: 10%;
+      });
     }
   }
 }
@@ -40,7 +43,6 @@
 .comments-title {
   border-bottom: @borderDotted;
   padding-bottom: 10px;
-  margin-bottom: 10px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -91,10 +93,10 @@
 
 .comment-reply {
   .comment();
-  padding-top: @spacing * 2;
+  padding-top: @spacing;
 
   &:first-child {
-    padding-top: @spacing;
+    padding-top: 0;
   }
 
   &:last-child {
@@ -126,7 +128,7 @@
 }
 
 .comment-content {
-  margin-bottom: @spacing * 2;
+  margin-bottom: @spacing;
   display: block;
   float: right;
   width: 84%;
