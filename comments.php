@@ -24,33 +24,39 @@
         <li class="comments-login-item"><button data-social="twitter-lg">Twitter</button></li>
         <li class="comments-login-item"><button data-social="exclaim-lg">Exclaim</button></li>
       </ul>
+
       <div class="formRow">
         <div class="formRow-label"><label for="username">Name:</label></div>
         <div class="formRow-input">
           <input id="username" name="username" type="text" placeholder="Your Name" />
         </div>
       </div>
+
       <div class="formRow">
         <div class="formRow-label"><label for="email">Email:</label></div>
         <div class="formRow-input">
           <input id="email" name="email" type="text" placeholder="example@email.com" />
         </div>
       </div>
+      
       <div class="formRow">
         <div class="formRow-label"><label for="website">Website:</label></div>
         <div class="formRow-input">
           <input id="website" name="website" type="text" placeholder="www.example.com" />
         </div>
       </div>
+      
       <div class="formRow">
         <div class="formRow-textarea">
           <textarea name="message" id="message" placeholder="Join the conversation..."></textarea>
         </div>
       </div>
+      
       <div class="formRow">
         <div class="formRow-submit">
           <input type="submit" class="submit" name="Submit" />
         </div>
       </div>
+      
     </div>
   </div>

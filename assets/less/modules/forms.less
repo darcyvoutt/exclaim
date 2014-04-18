@@ -2,8 +2,9 @@
 // Input Styling
 //////////////////////////////////////////////////////
 
-input {
-  border: @border;
+input, textarea {
+  font-family: @emphasisFont;
+  border: 1px solid #0B0B0A;
   padding: 8px 10px;  
   font-size: 12px;
 }
@@ -15,12 +16,27 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  font-family: @headlineFont;
+  text-transform: uppercase;    
+  background: #000000;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 6px; 
+  border: none;
+
+  &:hover {
+    background: @linkColor;
+    color: #000000;
+  } 
 }
 
-::-webkit-input-placeholder { color: @fontColor; }
-:-moz-placeholder { color: @fontColor; }
-::-moz-placeholder { color: @fontColor; }
-:-ms-input-placeholder { color: @fontColor; }
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder { 
+  color: @fontColor; 
+}
 
 
 //////////////////////////////////////////////////////

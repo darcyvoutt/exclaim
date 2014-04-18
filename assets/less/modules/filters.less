@@ -72,10 +72,15 @@
   border: 1px solid rgba(0,0,0,0.3);  
   background: rbga(255,255,255,0.6);
   height: @filterHeight;
-  position: relative;
-  padding-left: 15px;
+  padding: 0 0 0 15px;
+  position: relative;  
   display: none;
   width: 100%;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .filters-selected-button {
@@ -202,9 +207,11 @@
     width: 100%;
   }
 
-  .placeholder({    
-    text-transform: uppercase;
-  });
+  &-label {
+    font-family: @headlineFont;
+    text-transform: uppercase; 
+    color: #fff;   
+  }
 }
 
 //////////////////////////////////////////////////////
@@ -270,5 +277,5 @@ h2.filters-mobileTitle {
     display: block;
     });
 
-  &:after { .arrowDown(); }
+  &:after {  }
 }

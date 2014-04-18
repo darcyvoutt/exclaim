@@ -29,12 +29,13 @@
   });
 
   input {
-    height: 25px;
+    border: none;
+    height: 26px;
     width: 205px;  
   }
 
   &:after {
-    .svgIcon(20px; "icon-search"; top; 5%; right; 10px);
+    .svgIcon(18px; "icon-search"; top; 4px; right; 5px);
   }
 }
 
@@ -42,7 +43,7 @@
   @size: 24px;  
   cursor: pointer;  
   display: block;
-  height: @size;
+  height: inherit;
   float: right;  
   
   ul { 
@@ -113,7 +114,6 @@
       // .retinaImage({ background-image: url("@{icons}/sharethis@2x.png"); });
     }
 
-
     &:last-child {
       margin-left: 0px;
     } 
@@ -128,14 +128,11 @@
   margin: 0;
   
   a {
-    @logo: "logo";
-    background: url("../images/@{logo}.png"); 
+    background: url("../images/logo.svg"); 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
     text-indent: -999em;
-
-    .retinaImage({ background: url("../images/@{logo}@2x.png"); });
     
     margin-right: @marginRight;
     width: 28.6458333%;

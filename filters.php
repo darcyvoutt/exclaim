@@ -21,6 +21,7 @@
             <a data-toggle="dropdown" href="#" class="dropdown-toggle">Genre</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li class="filters-options-search">
+                <div class="filters-options-search-label">Genre</div>
                 <input type="text" class="typeahead" placeholder="Genre" />
               </li>
               <li><a href="#">Option</a></li>
@@ -32,6 +33,7 @@
             <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tags</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li class="filters-options-search">
+                <div class="filters-options-search-label">Tags</div>
                 <input type="text" class="typeahead" placeholder="Tags" />
               </li>
               <li><a href="#">Option</a></li>
@@ -43,6 +45,7 @@
             <a data-toggle="dropdown" href="#" class="dropdown-toggle">Date</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li class="filters-options-search">
+                <div class="filters-options-search-label">Date</div>
                 <input type="text" class="typeahead" placeholder="Date" />
               </li>
               <li><a href="#">Option</a></li>
@@ -54,6 +57,7 @@
             <a data-toggle="dropdown" href="#" class="dropdown-toggle">Order</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li class="filters-options-search">
+                <div class="filters-options-search-label">Order</div>
                 <input type="text" class="typeahead" placeholder="Order" />
               </li>
               <li><a href="#">Option</a></li>

@@ -27,31 +27,33 @@
 //////////////////////////////////////////////////////
 
 .header {
-  .clearfix();
-  width: 100%;
+  display: block;
+  width: 100%; 
 
   &-content {
     .siteWidth();
-    margin-bottom: @marginBottom;
+    padding-bottom: @marginBottom;
+    margin-top: @marginBottom;
     display: block;
-    height: @navHeight;    
+  }
+}
+
+.headerBar {   
+  overflow: hidden;
+  padding: 12px 0;
+  display: block;
+  width: 100%;
+
+
+  &-content {
+    .siteWidth();  
+    display: block;    
   }
 }
 
 .subHeader {
   .siteWidth();
   margin: 0 auto;
-}
-
-.headerBar {   
-  margin-bottom: @marginBottom;
-  overflow: hidden;
-  padding: 12px 0;
-  height: 48px;  
-
-  &-content {
-    .siteWidth();    
-  }
 }
 
 //////////////////////////////////////////////////////

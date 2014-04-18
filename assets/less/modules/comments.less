@@ -223,18 +223,10 @@
 }
 
 .comment-button { 
-  text-transform: uppercase;  
-  background: @linkColor;  
-  font-weight: 600;  
-  height: 100%;
   padding: 0 6px;
+  height: 100%;
   border: none;
-  float: right;
-  
-  &:hover {
-    background: #000000;
-    color: #ffffff;
-  }
+  float: right;  
 }
 
 //////////////////////////////////////////////////////
@@ -247,13 +239,17 @@
   input {
     padding: 0;
 
-    &[type=submit] {
-      box-shadow: inset 0 0 0 2px #fff;
-      border: @border;
+    &[type=submit] {  
       padding: 5px 10px;
       background: #000;
+      border: none;
       float: right;
       color: #fff;
+
+      &:hover {
+        background: @linkColor;
+        color: @fontColor;
+      }
     }
   }
 

@@ -135,28 +135,6 @@
 }
 
 //////////////////////////////////////////////////////
-// Arrow Down
-//////////////////////////////////////////////////////
-
-.arrowDown() {
-  @size: 20px; 
-  @icon: "icon-dropdown";
-  background: url("../images/icons/@{icon}.png") center center no-repeat;
-  background-color: #000000;
-  position: absolute;          
-  display: block;  
-  height: 100%;
-  width: 40px;
-  content: "";
-  right: 0;
-  top: 0;
-
-  .retinaImage({
-    background-image: url("../images/icons/@{icon}@2x.png");          
-  });
-}
-
-//////////////////////////////////////////////////////
 // Double Border
 //////////////////////////////////////////////////////
 
@@ -196,14 +174,13 @@
 .pngIcon(@size; @icon; @yaxis; @topBottom; @xaxis; @leftRight) {      
   background: url("../images/icons/@{icon}.png") center center no-repeat;
   background-size: 100%;
+  @{xaxis}: @leftRight;
+  @{yaxis}: @topBottom;  
   position: absolute;
   display: block;
   height: @size;
   width: @size;
   content: "";
-  
-  @{yaxis}: @topBottom;
-  @{xaxis}: @leftRight;
 
   .retinaImage({
     background-image: url("../images/icons/@{icon}@2x.png");          
@@ -213,14 +190,13 @@
 .svgIcon(@size; @icon; @yaxis; @topBottom; @xaxis; @leftRight) {       
   background: url("../images/icons/@{icon}.svg") center center no-repeat;
   background-size: 100%;
+  @{xaxis}: @leftRight;
+  @{yaxis}: @topBottom;  
   position: absolute;
   display: block;
   height: @size;
   width: @size;
-  content: "";
-
-  @{yaxis}: @topBottom;
-  @{xaxis}: @leftRight;
+  content: "";  
 }
 
 //////////////////////////////////////////////////////
