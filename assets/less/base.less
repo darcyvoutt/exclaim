@@ -21,6 +21,8 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+
+  a:hover { background: @linkColor; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,10 +47,9 @@ a {
   padding: 0 2px;
   color: #000;
 
-  &:hover {
-    background: @linkColor;
+  &:hover {    
     text-decoration: none;
-    color: #000000;
+    color: #000;
   }
 
   img {
