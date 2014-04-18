@@ -1,7 +1,8 @@
  <div class="comments">
     <div class="comments-title">
+      <!-- // Add "is-collapsed" besides "comments-title" to change arrow -->
       <h3>Comments</h3>
-      <span class="comments-number">35</span>
+      <span class="comments-title-number">35</span>
     </div>
     <ul>
       <li class="comment"><?php include('comment.php') ?></li>

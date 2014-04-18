@@ -191,7 +191,9 @@
 // Icons After
 //////////////////////////////////////////////////////
 
-.iconAfter(@size; @icon; @top; @right) {       
+// .iconAfter(@size; @icon; @top; @right)
+
+.pngIcon(@size; @icon; @yaxis; @topBottom; @xaxis; @leftRight) {      
   background: url("../images/icons/@{icon}.png") center center no-repeat;
   background-size: 100%;
   position: absolute;
@@ -199,8 +201,9 @@
   height: @size;
   width: @size;
   content: "";
-  right: @right;
-  top: @top;
+  
+  @{yaxis}: @topBottom;
+  @{xaxis}: @leftRight;
 
   .retinaImage({
     background-image: url("../images/icons/@{icon}@2x.png");          
@@ -215,13 +218,9 @@
   height: @size;
   width: @size;
   content: "";
-  
+
   @{yaxis}: @topBottom;
   @{xaxis}: @leftRight;
-
-  .retinaImage({
-    background-image: url("../images/icons/@{icon}@2x.svg");          
-  });
 }
 
 //////////////////////////////////////////////////////

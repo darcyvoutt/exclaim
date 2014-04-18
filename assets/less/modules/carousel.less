@@ -1,5 +1,6 @@
 .carousel {
   margin-bottom: @marginBottom;
+  overflow: hidden;
   color: #ffffff;
   width: 100%;
 
@@ -64,38 +65,30 @@
 
 
 //////////////////////////////////////////////////////
-// Slider Button Mixin
+// Slider Buttons
 //////////////////////////////////////////////////////
 
+@buttonMargin: 2%;
+@buttonSize: 22px;
+
 .sliderButtons(@icon; @size) {
-  background: url("../images/icons/@{icon}.png") center center no-repeat;
+  background: url("../images/icons/@{icon}.svg") center center no-repeat;
   background-size: 100%;
   z-index: 9999;
   height: @size;
   width: @size;  
   top: 85%;
 
-  .retinaImage({
-    background-image: url("../images/icons/@{icon}@2x.png");          
-  });
-
   &:before { content: ""; }
 }
 
-//////////////////////////////////////////////////////
-// Slider Button 
-//////////////////////////////////////////////////////
-
-@buttonMargin: 2%;
-@buttonSize: 22px;
-
 .slick-next {
-  .sliderButtons("icon-arrowright-white"; @buttonSize);
+  .sliderButtons("icon-arrowRight-white"; @buttonSize);
   right: @buttonMargin;  
 }
 
 .slick-prev {
-  .sliderButtons("icon-arrowleft-white"; @buttonSize);
+  .sliderButtons("icon-arrowLeft-white"; @buttonSize);
   left: @buttonMargin;  
 }
 

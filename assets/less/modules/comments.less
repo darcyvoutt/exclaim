@@ -1,4 +1,12 @@
 //////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
+
+@actionsHeight:     20px;   // Action buttons
+@metaHeight:        18px;   // Meta info section
+@imgSize:           65px;   // Avatar image size
+
+//////////////////////////////////////////////////////
 // Commenting Structure
 //////////////////////////////////////////////////////
 
@@ -37,7 +45,7 @@
   // cursor: pointer;
 
   &:after {
-    .svgIcon(20px; "icon-arrowUp"; bottom; 8px; right; 0);
+    .svgIcon(20px; "icon-arrowUp"; bottom; 10px; right; 0);
   }
 
   h3 {
@@ -46,22 +54,26 @@
     padding: 0;
     margin: 0;
   }
+
+  &-number {
+    @height: 20px; 
+    @width: 35px;
+    
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    height: @height;
+    width: @width;
+    color: #fff;
+
+    border-radius: 15px;
+    background: #000;
+  }
 }
 
-.comments-number {
-  @height: 20px; 
-  @width: 35px;
-
-  vertical-align: middle;
-  display: inline-block;
-  text-align: center;
-  margin-left: 10px;
-  height: @height;
-  width: @width;
-  color: #fff;
-
-  border-radius: 15px;
-  background: #000;
+.is-collapsed.comments-title:after {
+  .svgIcon(20px; "icon-arrowDown"; bottom; 10px; right; 0);
 }
 
 //////////////////////////////////////////////////////
@@ -88,8 +100,6 @@
 //////////////////////////////////////////////////////
 // Comment Layout
 //////////////////////////////////////////////////////
-
-@imgSize: 65px;
 
 .comment-avatar {
   display: block;
@@ -132,20 +142,22 @@
 }
 
 .comment-name {
+  font-family: @headlineFont;
   text-transform: uppercase;
+  line-height: @metaHeight;
   vertical-align: bottom;
   display: inline-block;
-  margin: 0 8px 0 0;
+  margin: 0 10px 0 0;
   font-size: 18px;
-  margin: 0;
 }
 
 .comment-date {
-  vertical-align: bottom;
-  display: inline-block;
   font-family: @emphasisFont;
+  line-height: @metaHeight;
+  vertical-align: bottom;
+  display: inline-block;  
   font-style: italic;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 //////////////////////////////////////////////////////
@@ -164,29 +176,57 @@
 //////////////////////////////////////////////////////
 
 .comment-actions {
-  display: block;
+  line-height: @actionsHeight;
+  font-family: @headlineFont;
+  text-transform: uppercase;  
+  height: @actionsHeight;
+  font-size: 12px;
+  display: block;  
   width: 100%;
   float: left;
 }
 
 .comment-replies {
-  margin-right: 5px;
+  line-height: @actionsHeight;  
+  margin-right: 10px;
+  color: #3A3B39;
   float: right;
 
-  .comments-number {
-    margin-right: 5px;
-    height: 20px;
-    width: 25px;    
+  .comments-number {   
+    background: url("../images/icons/icon-bubble.svg") center center no-repeat;
+    background-size: 100% 100%;
+    border-radius: @actionsHeight;
+    display: inline-block;    
+    position: relative;
+    text-align: center;    
+    margin-right: 6px;    
+    color: #ffffff;    
+    height: 100%;        
+    top: -1px;
+
+    line-height: 18px;
+    height: 21.5px;
+    width: 24px;
+
+    span { 
+      display: inline-block;
+    }
   }    
 }
 
-.comment-button {
-  text-transform: uppercase;
-  background: @linkColor;
-  font-weight: 600;
-  font-size: 12px;
+.comment-button { 
+  text-transform: uppercase;  
+  background: @linkColor;  
+  font-weight: 600;  
+  height: 100%;
+  padding: 0 6px;
   border: none;
   float: right;
+  
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+  }
 }
 
 //////////////////////////////////////////////////////
