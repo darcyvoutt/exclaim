@@ -20,9 +20,9 @@
     <div class="comments-form">
       <ul class="comments-login">
         <li class="comments-login-item"><span>Login</span></li>
-        <li class="comments-login-item"><button>Facebook</button></li>
-        <li class="comments-login-item"><button>Twitter</button></li>
-        <li class="comments-login-item"><button>Exclaim</button></li>
+        <li class="comments-login-item"><button data-social="facebook-lg">Facebook</button></li>
+        <li class="comments-login-item"><button data-social="twitter-lg">Twitter</button></li>
+        <li class="comments-login-item"><button data-social="exclaim-lg">Exclaim</button></li>
       </ul>
       <div class="formRow">
         <div class="formRow-label"><label for="username">Name:</label></div>

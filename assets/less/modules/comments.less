@@ -26,11 +26,11 @@
     li ol, 
     li ul {  
       border-top: @borderDotted;
-      padding: @spacing 0 0 15%;
+      padding: @spacing 0 0 8%;
       clear: both;
 
       .tabletPortrait({
-        padding-left: 10%;
+        padding-left: 5%;
       });
     }
   }
@@ -275,5 +275,30 @@
 
   span {
     margin-right: 5px;
+  }
+
+  button[data-social] {    
+    background: center center no-repeat;    
+    text-indent: -9999px;
+    border: none;
+    height: 22px;
+    width: 90px;
+  }
+
+  @icons: "../images/social";
+
+  button[data-social="facebook-lg"] { 
+    background-image: url("@{icons}/facebook-lg.gif"); 
+    // .retinaImage({ background-image: url("@{icons}/facebook-lg@2x.gif"); });
+  }
+
+  button[data-social="twitter-lg"] { 
+    background-image: url("@{icons}/twitter-lg.gif"); 
+    // .retinaImage({ background-image: url("@{icons}/twitter-lg@2x.gif"); });
+  }
+
+  button[data-social="exclaim-lg"] { 
+    background-image: url("@{icons}/exclaim-lg.gif"); 
+    // .retinaImage({ background-image: url("@{icons}/exclaim-lg@2x.gif"); });
   }
 }
