@@ -12,24 +12,29 @@
   }
 
   &-title {
+    font-family: @headlineFont;     
+    text-transform: uppercase;    
     border-bottom: @border;
-    text-transform: uppercase;
     padding: 10px 0 5px 0;
     font-weight: 600;
     font-size: 16px;
-    margin: 0 10px;      
+    margin: 0 10px;
+    display: block;    
 
-    h3 {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 18px;
-      padding: 0;
-      margin: 0;    
+    &-date {
+      font-family: @emphasisFont;      
+      text-transform: none;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
     }
   }
 
-  &-content {
-    padding: 10px;
+  &-content {    
+    img, a img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -49,7 +54,7 @@
 .widgetList {
   list-style-type: none;
   margin: -8px 0 0 0;
-  padding: 0;
+  padding: 8px;
 
   &-item {
     border-bottom: @borderDotted;
@@ -98,7 +103,7 @@
     text-transform: uppercase;
     margin-top: 10px;
     background: #000;
-    font-size: 12px;
+    font-size: 11px;
 
     a {
       font-family: @headlineFont;
@@ -106,7 +111,10 @@
       display: block;
       color: #fff;
 
-      &:hover { color: @fontColor; }
+      &:hover { 
+        background: @linkColor;
+        color: @fontColor; 
+      }
 
       &:after {
         .contentAfter(">>"; 0px 4px);

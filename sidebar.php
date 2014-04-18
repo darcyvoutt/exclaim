@@ -2,9 +2,7 @@
 
   <!-- Carousel Widget -->
   <div class="widget">
-    <div class="widget-title">
-      <h3>Picks</h3>
-    </div>
+    <div class="widget-title">Picks</div>
     <div class="widget-carousel">
       <?php include('carousel.php'); ?>
     </div>
@@ -12,11 +10,13 @@
 
   <!-- Standard Widget -->
   <div class="widget">
-    <div class="widget-title">
-      <h3>Title Here<span>March 2014</span></h3>
+    <div class="widget-title">Latest Issue:
+      <span class="widget-title-date">March 2014</span>
     </div>
     <div class="widget-content">
-      <p>Content goes here.</p>
+      <a href="#">
+        <img src="assets/images/magazine.png" alt="Latest Issue" />
+      </a>      
     </div>
   </div>
 
