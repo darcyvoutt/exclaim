@@ -10,6 +10,8 @@
         <ul>
           <li class="comment-reply"><?php include('comment.php') ?></li>
           <li class="comment-reply"><?php include('comment.php') ?></li>
+          <li class="comment-reply"><?php include('comment.php') ?></li>
+          <li class="comment-reply"><?php include('comment.php') ?></li>
         </ul>
       </li>
       <li class="comment"><?php include('comment.php') ?></li>

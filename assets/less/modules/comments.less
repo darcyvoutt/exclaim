@@ -2,9 +2,10 @@
 // Variables
 //////////////////////////////////////////////////////
 
-@actionsHeight:     20px;   // Action buttons
-@metaHeight:        18px;   // Meta info section
-@imgSize:           65px;   // Avatar image size
+@actionsHeight:   20px;   // Action buttons
+@metaHeight:      18px;   // Meta info section
+@imgSize:         65px;   // Avatar image size
+@spacing:         10px;   // Space above/below comment
 
 //////////////////////////////////////////////////////
 // Commenting Structure
@@ -25,7 +26,7 @@
     li ul {  
       @spacing: 10px;
       border-top: @borderDotted;
-      padding: @spacing 0 0 8%;
+      padding: @spacing 0 0 15%;
       margin-top: @spacing;
       clear: both;
     }
@@ -82,7 +83,7 @@
 
 .comment {
   border-bottom: @borderDotted;
-  padding-top: 10px;
+  padding-top: @spacing;
   display: block;
   width: 100%;
   .clearfix();
@@ -90,6 +91,11 @@
 
 .comment-reply {
   .comment();
+  padding-top: @spacing * 2;
+
+  &:first-child {
+    padding-top: @spacing;
+  }
 
   &:last-child {
     border-bottom: none;
@@ -120,7 +126,7 @@
 }
 
 .comment-content {
-  margin-bottom: 10px;
+  margin-bottom: @spacing * 2;
   display: block;
   float: right;
   width: 84%;
