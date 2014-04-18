@@ -207,6 +207,23 @@
   });
 }
 
+.svgIcon(@size; @icon; @yaxis; @topBottom; @xaxis; @leftRight) {       
+  background: url("../images/icons/@{icon}.svg") center center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  display: block;
+  height: @size;
+  width: @size;
+  content: "";
+  
+  @{yaxis}: @topBottom;
+  @{xaxis}: @leftRight;
+
+  .retinaImage({
+    background-image: url("../images/icons/@{icon}@2x.svg");          
+  });
+}
+
 //////////////////////////////////////////////////////
 // Input Placeholder Styling
 //////////////////////////////////////////////////////

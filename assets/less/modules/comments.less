@@ -30,20 +30,14 @@
 
 .comments-title {
   border-bottom: @borderDotted;
+  padding-bottom: 10px;
   margin-bottom: 10px;
   position: relative;
+  display: block;
+  // cursor: pointer;
 
   &:after {
-    // Turn into mixin
-    @size: 20px;
-    background: #000000;
-    position: absolute;
-    display: block;
-    height: @size;
-    width: @size;
-    content: "";
-    right: 0;
-    top: calc(@size * 0.25);
+    .svgIcon(20px; "icon-arrowUp"; bottom; 8px; right; 0);
   }
 
   h3 {
