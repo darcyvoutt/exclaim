@@ -4,7 +4,7 @@
 
 .navigation {
   .clearfix();
-  width: 69.7916667%;
+  width: 73.9583333%;
   height: @navHeight;
   display: block;  
   float: left;
@@ -42,7 +42,7 @@
     float: right;
 
     &:after {            
-      .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 10px);
+      .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 6px);
     }
 
     &:first-child { border-right: none; }
@@ -50,7 +50,7 @@
     a {
       text-decoration: none;
       line-height: 40px;
-      padding: 0 35px 0 15px;
+      padding: 0 30px 0 15px;
       display: block;
 
       &:hover {
@@ -115,7 +115,9 @@
       margin: 0;
     }
 
-    ul {      
+    ul {    
+      border: @border;  
+      border-top: none;
       margin: 0 0 0 -1px;
       position: absolute;      
       text-indent: 0;
@@ -125,24 +127,26 @@
       left: 0;  
 
       li {        
-        border-right: @border;
-        border-left: @border;
         border-top: @border;
         background: #fff;
-        width: 96.5%;
+        width: inherit;;
 
         &:first-child { border-top: none; }
 
-        .tabletPortrait({ width: 100.5%; });
+        a { 
+          padding: 8px 15px; 
 
-        a { padding: 8px 15px; }        
-
-        a:hover { background: @linkColor; }
-
-        &:last-child { 
-          border-bottom: @border; 
-        }
+          &:hover { background: @linkColor; }
+        }         
       }
+    }
+
+    .visible-mobile {
+      display: none;
+
+      .tabletPortrait({
+        display: block;
+      });
     }
   }
 }

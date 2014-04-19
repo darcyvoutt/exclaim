@@ -32,10 +32,11 @@
 <div class="header">
   <div class="headerBar">
     <div class="headerBar-content">
+
       <div class="search">
         <input type="text" placeholder="Search Exclaim..." />
       </div>
-      <!-- // Due to css constraints, this lists needs to be inserted inverted -->
+
       <div class="social">      
         <ul>
           <li data-social="email"><a href="#"></a></li>
@@ -48,12 +49,14 @@
           <li data-social="facebook"><a href="#"></a></li>
         </ul>
       </div>
+
       <div class="links">
         <ul>
           <li><a href="#">Contests</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
+
     </div>
   </div>     
 
@@ -72,7 +75,7 @@
         <li class="menu-item"><a href="#">Features</a></li>
         <li class="menu-item"><a href="#">Reviews</a></li>        
         <li class="menu-item"><a href="#">Streams</a></li>                
-        <li class="menu-item"><a href="#">News</a></li>        
+        <li class="menu-item"><a href="#">News</a></li>                       
       </ul>
       
       <!-- Sections Select -->
@@ -83,6 +86,8 @@
             <li><a href="#">Videogames</a></li>
             <li><a href="#">Film</a></li>
             <li><a href="#">Art</a></li>
+            <li class="visible-mobile"><a href="#">Contests</a></li>        
+            <li class="visible-mobile"><a href="#">Contact</a></li> 
           </ul>
         </li>
       </ul>
