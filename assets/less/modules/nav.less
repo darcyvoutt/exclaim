@@ -9,9 +9,9 @@
   display: block;  
   float: left;
 
-  .tabletPortrait({
-    width: 100%;
-    });
+  .mobileLandscape({    
+    display: none
+  });
 }
 
 //////////////////////////////////////////////////////
@@ -24,12 +24,12 @@
   height: @navHeight;
   font-weight: 600;
   display: block;
-  float: left;  
+  float: right;  
   width: 76%;
   padding: 0;
   margin: 0 1% 0 0;
 
-  .tabletPortrait({
+  .mobileLandscape({
     display: none;
   });
 
@@ -67,21 +67,23 @@
 .sections {
   .uppercaseFont(14px);  
   height: @navHeight - 5px;
+  background: #ffffff;
   position: relative;
   font-weight: 600;
+  max-width: 160px;
   border: @border;
   display: block;  
   z-index: 999;
-  float: left;  
+  float: right;
   width: 23%;  
+
+  .mobileLandscape({
+    display: none;
+  });
 
   text-indent: 15px;
   padding: 0;
-  margin: 0;
-
-  .tabletPortrait({
-    width: 100%;
-  });
+  margin: 0;  
 
   &-list {
     line-height: @navHeight - 6px;
@@ -156,8 +158,74 @@
 //////////////////////////////////////////////////////
 
 .dropdown-menu {
-  box-shadow: none;
+  border-radius: 0;
+  box-shadow: none;  
   border: none;
   padding: 0;
   margin: 0;
+}
+
+//////////////////////////////////////////////////////
+// Mobile Navigation
+//////////////////////////////////////////////////////
+
+.navigation-mobile {
+  @size: 30px;  
+  list-style-type: none;  
+  position: absolute;
+  display: none;
+  height: @size;
+  width: @size;    
+  right: 10px;
+  padding: 0;
+  margin: 0;
+  top: 7px;
+
+    .mobileLandscape({
+      display: block;
+      });
+
+  &-list.open > a span:after {
+    display: block;
+  }
+
+  span {     
+    background: url("../images/icons/icon-mobile.svg") center center no-repeat;
+    text-indent: -9999px;
+    position: relative;
+    display: block; 
+    height: @size;
+    width: @size;
+
+    &:after {
+      @size: 8px;
+      border-right: @size solid transparent; 
+      border-left: @size solid transparent;       
+      border-bottom: @size solid #000000;          
+      position: absolute;
+      z-index: 999999;
+      display: none;
+      content: "";                  
+      right: 6px; 
+      top: 70%;
+      height: 0; 
+      width: 0;              
+    }
+  }
+
+  ul {
+    min-width: calc(320px - 10px);
+    background: #000000;
+    position: absolute;
+    display: none;    
+    right: -5px;
+    left: auto;    
+    z-index: 999;
+    top: 98%;
+
+    a {color: #fff;}    
+
+    li {
+    }
+  }
 }

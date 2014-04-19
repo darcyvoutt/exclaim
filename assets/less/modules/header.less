@@ -169,20 +169,18 @@
     margin-right: @marginRight;
     width: 24.4791667%;
     max-width: 235px;    
-    height: 45px;
+    height: 100%;
 
     display: block;
     float: left;
 
     .tabletPortrait({
-      margin-right: 0;
-      width: 100%;
-      });
-  }
+      max-width: 185px; 
+    });
 
-  .mobileLandscape({
-    margin: 0 auto;
-    width: 150px;
-    height: auto;
-      });
+    .mobileLandscape({
+      width: 163px;
+      height: auto;
+    });
+  }
 }

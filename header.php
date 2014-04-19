@@ -65,36 +65,11 @@
     <h1 class="logo">
       <a href="index.php">Exclaim!</a>
     </h1> <!-- // End of .logo -->
+  
+    <?php include('nav.php') ?>
+    
+    <?php include('navMobile.php') ?>
 
-    <div class="navigation">
-      
-      <!-- Main Nav 
-      // Due to css constraints, this lists needs to be inserted inverted
-      -->
-      <ul class="menu">
-        <li class="menu-item"><a href="#">Features</a></li>
-        <li class="menu-item"><a href="#">Reviews</a></li>        
-        <li class="menu-item"><a href="#">Streams</a></li>                
-        <li class="menu-item"><a href="#">News</a></li>                       
-      </ul>
-      
-      <!-- Sections Select -->
-      <ul class="sections">
-        <li class="sections-list">
-          <a data-toggle="dropdown" href="#" class="dropdown-toggle">Music</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li><a href="#">Videogames</a></li>
-            <li><a href="#">Film</a></li>
-            <li><a href="#">Art</a></li>
-            <li class="visible-mobile"><a href="#">Contests</a></li>        
-            <li class="visible-mobile"><a href="#">Contact</a></li> 
-          </ul>
-        </li>
-      </ul>
-
-    </div> <!-- // End of .navigation -->
-
-  </div> <!-- // End of .header-content -->
 </div> <!-- // End of .header -->
 
 <div class="wrap">

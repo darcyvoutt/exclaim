@@ -2,23 +2,25 @@
 // Global Variables
 //////////////////////////////////////////////////////
 
+@siteWidth: 960px;
+
 .siteWidth {
   .clearfix();
-  max-width: 960px;
+  max-width: @siteWidth;
   margin: 0 auto;
 
   .tabletPortrait({
-    padding: 0 1.5%;
+    padding: 0 @marginRight;
     });
 }
 
 .wrap {
   .siteWidth();
   background: white;
-  max-width: calc(960px + (20px * 2));
+  max-width: calc(@siteWidth + (20px * 2));
 
   .tabletPortrait({
-    padding: 0px;
+    padding: 0;
     });
 }
 
@@ -32,9 +34,12 @@
 
   &-content {
     .siteWidth();
-    padding-bottom: @marginBottom;
     margin-top: @marginBottom;
     display: block;
+
+    .mobileLandscape({
+      margin-top: 0;
+    });
   }
 }
 
@@ -54,6 +59,7 @@
 .subHeader {
   .siteWidth();
   margin: 0 auto;
+  display: block;
 }
 
 //////////////////////////////////////////////////////
