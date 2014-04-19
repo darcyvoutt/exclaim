@@ -22,9 +22,10 @@
         <h3>News</h3>
       </div>
 
-      <?php include("streamitem.php"); ?>
-      <?php include("streamitem.php"); ?>
-      <?php include("streamitem.php"); ?>
+      <?php include("streamitem.php") ?>
+      <?php include("streamitem.php") ?>
+      <?php include("streamitem.php") ?>
+      
     </div> 
    
     <!-- Stream -->
@@ -33,8 +34,8 @@
         <h3>News</h3>
       </div>
       
-      <?php include("streamitem.php"); ?>
-      <?php include("streamitem.php"); ?>
+      <?php include("streamitem.php") ?>
+      <?php include("streamitem.php") ?>
       
     </div>
 

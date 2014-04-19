@@ -2,7 +2,8 @@
     <div class="comments-title">
       <!-- // Add "is-collapsed" besides "comments-title" to change arrow -->
       <h3>Comments</h3>
-      <span class="comments-title-number">35</span>
+      <span class="comments-title-number">99+</span>
+      <!-- If over 99 comments should change to "99+" due to size of comment bubble. -->
     </div>
     <ul>
       <li class="comment"><?php include('comment.php') ?></li>

@@ -41,8 +41,8 @@
 //////////////////////////////////////////////////////
 
 .comments-title {
-  border-bottom: @borderDotted;
-  padding-bottom: 10px;
+  border-bottom: @border;
+  padding-bottom: 5px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -52,26 +52,24 @@
   }
 
   h3 {
-    vertical-align: middle;
+    vertical-align: bottom;
     display: inline-block;
     padding: 0;
     margin: 0;
   }
 
   &-number {
-    @height: 20px; 
-    @width: 35px;
-    
-    vertical-align: middle;
+    background: url("../images/icons/icon-bubble.svg") center center no-repeat;
+    background-size: 100% 100%;               
     display: inline-block;
-    text-align: center;
+    position: relative;    
+    text-align: center;    
     margin-left: 10px;
-    height: @height;
-    width: @width;
+    line-height: 35px;
+    bottom: -13px;
+    height: 40px;
+    width: 35px;
     color: #fff;
-
-    border-radius: 15px;
-    background: #000;
   }
 }
 
@@ -230,7 +228,7 @@
 //////////////////////////////////////////////////////
 
 .comments-form {
-  padding-top: 10px;
+  padding-top: @marginBottom * 3;
 
   input {
     padding: 6px 12px;
