@@ -233,7 +233,7 @@
   padding-top: 10px;
 
   input {
-    padding: 0;
+    padding: 6px 12px;
 
     &[type=submit] {  
       padding: 5px 10px;
@@ -253,11 +253,15 @@
     background: url("../images/commentsback.png");
     background-position: center center;
     background-repeat: no-repeat;
+
+    &:focus {
+      background: none;
+    }
   }
 }
 
 ul.comments-login {  
-  margin-bottom: @marginBottom;
+  margin-bottom: @marginBottom * 2;
   list-style-type: none;
   line-height: 12px;  
   display: block; 
@@ -268,10 +272,11 @@ ul.comments-login {
 .comments-login-item {
   vertical-align: middle;
   display: inline-block;
+  margin-right: 8px;
 
   span {
     .headlineFont(12px);
-    margin-right: 5px;
+    margin-right: @marginRight;
     font-weight: 600;
   }
 
