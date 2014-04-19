@@ -12,12 +12,10 @@
   }
 
   &-title {
-    font-family: @headlineFont;     
-    text-transform: uppercase;    
+    .headlineFont(16px);  
     border-bottom: @border;
     padding: 10px 0 5px 0;
     font-weight: 600;
-    font-size: 16px;
     margin: 0 10px;
     display: block;    
 
@@ -100,14 +98,12 @@
   }
 
   &-more {
-    text-transform: uppercase;
+    .headlineFont(11px);
     margin-top: 10px;
     background: #000;
-    font-size: 11px;
 
-    a {
-      font-family: @headlineFont;
-            padding: 5px 12px;
+    a {      
+      padding: 5px 12px;
       display: block;
       color: #fff;
 

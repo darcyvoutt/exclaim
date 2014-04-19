@@ -48,6 +48,12 @@
           <li data-social="facebook"><a href="#"></a></li>
         </ul>
       </div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </div>     
 

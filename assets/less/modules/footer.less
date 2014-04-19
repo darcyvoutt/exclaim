@@ -1,10 +1,20 @@
+//////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
+
+@fontSize:    12px;
+
+//////////////////////////////////////////////////////
+// Footer Classes
+//////////////////////////////////////////////////////
+
 .footer {
   background: #000000;
 }
 
 .footer-content {
   padding: 50px 5px;
-  font-size: 12px;
+  font-size: @fontSize;
   color: #EFEFEF;
 
   ul {
@@ -24,7 +34,7 @@
 }
 
 .footer-content-emphasis {
-  text-transform: uppercase;
+  .headlineFont(@fontSize);
   font-weight: 600;
   margin: 0;
 }

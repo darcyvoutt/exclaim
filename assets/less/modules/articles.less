@@ -14,9 +14,7 @@
   }
 
   &-breadcrumbs {
-    text-transform: uppercase;
-    font-family: @headlineFont;
-    font-size: 11px;
+    .headlineFont(11px);
   }
 
   &-author {
@@ -34,12 +32,10 @@
     width: 100%;
 
     &-label {
-      font-family: @headlineFont;
-      text-transform: uppercase;  
+      .headlineFont(13px);  
       line-height: @lineHeight;    
       margin-right: 15px;
       font-weight: 600;
-      font-size: 13px;
       display: block;
       float: left;
     }

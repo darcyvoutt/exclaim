@@ -11,12 +11,10 @@
 
 .filters {
   .clearfix();
-  margin: 0 0 @marginBottom 0;
-  font-family: @headlineFont;
-  text-transform: uppercase;  
+  .headlineFont(13px);
+  margin: 0 0 @marginBottom 0;  
   position: relative;
   font-weight: 500;
-  font-size: 13px;  
   padding: 0;
 
   border-bottom: @border;
@@ -41,11 +39,10 @@
 //////////////////////////////////////////////////////
 
 .filters-label {
-  text-transform: uppercase;
+  .headlineFont(11px);
   line-height: @filterHeight;
   padding: 0 25px 0 0;
   font-weight: 600;
-  font-size: 11px;
   display: block;
   float: left;
 
@@ -207,9 +204,13 @@
     width: 100%;
   }
 
+  .placeholder({
+    .headlineFont(12px);
+  });
+
+
   &-label {
-    font-family: @headlineFont;
-    text-transform: uppercase; 
+    .headlineFont(13px);
     color: #fff;   
   }
 }

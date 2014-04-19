@@ -150,13 +150,11 @@
 }
 
 .comment-name {
-  font-family: @headlineFont;
-  text-transform: uppercase;
+  .headlineFont(18px);
   line-height: @metaHeight;
   vertical-align: bottom;
   display: inline-block;
   margin: 0 10px 0 0;
-  font-size: 18px;
 }
 
 .comment-date {
@@ -184,11 +182,9 @@
 //////////////////////////////////////////////////////
 
 .comment-actions {
-  line-height: @actionsHeight;
-  font-family: @headlineFont;
-  text-transform: uppercase;  
+  .headlineFont(12px);
+  line-height: @actionsHeight;  
   height: @actionsHeight;
-  font-size: 12px;
   display: block;  
   width: 100%;
   float: left;
@@ -260,9 +256,13 @@
   }
 }
 
-.comments-login {
+ul.comments-login {  
+  margin-bottom: @marginBottom;
   list-style-type: none;
-  padding: 0;
+  line-height: 12px;  
+  display: block; 
+  height: 22px;
+  width: 100%;
 }
 
 .comments-login-item {
@@ -270,7 +270,9 @@
   display: inline-block;
 
   span {
+    .headlineFont(12px);
     margin-right: 5px;
+    font-weight: 600;
   }
 
   button[data-social] {    

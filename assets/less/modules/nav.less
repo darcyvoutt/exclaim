@@ -19,12 +19,10 @@
 //////////////////////////////////////////////////////
 
 .menu {
-  font-family: @headlineFont;
-  text-transform: uppercase;
+  .headlineFont(13px);
   line-height: @navHeight;
   height: @navHeight;
   font-weight: 600;
-  font-size: 13px;
   display: block;
   float: left;  
   width: 76%;
@@ -67,13 +65,11 @@
 //////////////////////////////////////////////////////
 
 .sections {
-  border: @border;
-  font-family: @headlineFont;
-  text-transform: uppercase;
+  .headlineFont(14px);  
   height: @navHeight - 5px;
   position: relative;
   font-weight: 600;
-  font-size: 14px;  
+  border: @border;
   display: block;  
   z-index: 999;
   float: left;  
