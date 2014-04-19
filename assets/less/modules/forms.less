@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////
 
 input, textarea {
-  font-family: @emphasisFont;
+  font-family: @baseFont;
   border: 1px solid #0B0B0A;
   padding: 8px 10px;  
   font-size: 14px;
@@ -17,7 +17,7 @@ button {
   -moz-appearance: none;
   appearance: none;
 
-  .headlineFont(12px);
+  .uppercaseFont(12px);
   background: #000000;
   font-weight: 600;
   color: #ffffff;
@@ -51,7 +51,7 @@ button {
   &:last-child { margin-bottom: 0; }
 
   &-label {
-    .headlineFont(13px);
+    .uppercaseFont(13px);
     margin-right: @marginRight;
     line-height: @height;
     display: block;  

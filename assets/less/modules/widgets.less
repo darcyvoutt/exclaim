@@ -12,7 +12,7 @@
   }
 
   &-title {
-    .headlineFont(16px);  
+    .uppercaseFont(16px);  
     border-bottom: @border;
     padding: 10px 0 5px 0;
     font-weight: 600;
@@ -20,7 +20,7 @@
     display: block;    
 
     &-date {
-      font-family: @emphasisFont;      
+      font-family: @baseFont;      
       text-transform: none;
       font-style: italic;
       font-weight: 500;
@@ -72,7 +72,7 @@
 
     &-category {
       text-transform: none;
-      font-family: @emphasisFont;
+      font-family: @baseFont;
       font-style: italic;
       font-weight: 300;
       font-size: 12px;
@@ -91,14 +91,14 @@
     }
 
     &-details {      
-      font-family: @headlineFont;
+      font-family: @uppercaseFont;
       line-height: 14px;
       font-size: 10px;
     }    
   }
 
   &-more {
-    .headlineFont(11px);
+    .uppercaseFont(11px);
     margin-top: 10px;
     background: #000;
 

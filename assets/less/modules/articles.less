@@ -14,7 +14,7 @@
   }
 
   &-breadcrumbs {
-    .headlineFont(12px);
+    .uppercaseFont(12px);
     list-style-type: none;
     font-weight: 600;
     padding: 0;
@@ -38,7 +38,7 @@
 
   &-author {
     margin-bottom: 14px;
-    font-family: @emphasisFont;    
+    font-family: @baseFont;    
     font-style: italic;
     font-size: 14px;
     color: #3A3B39;
@@ -51,7 +51,7 @@
     width: 100%;
 
     &-label {
-      .headlineFont(13px);  
+      .uppercaseFont(13px);  
       line-height: @lineHeight;    
       margin-right: 15px;
       font-weight: 600;
@@ -71,7 +71,7 @@
   &-rating {
     @size: 60px;    
     box-shadow: inset 0 0 0 2px #ffffff;
-    font-family: @headlineFont;    
+    font-family: @uppercaseFont;    
     border-radius: @size;
     background: #000000;
     text-align: center;
@@ -111,12 +111,13 @@
       background: @linkColor;
     }
 
-    &-category {
-      margin-bottom: 3px;
-      font-family: @emphasisFont;        
+    &-category {      
+      font-family: @baseFont;        
       text-transform: none;        
       position: relative;  
-      font-style: italic;      
+      font-style: italic;
+      margin-bottom: 3px;
+      font-weight: 100;    
       font-size: 12px;      
 
       &:after {
@@ -125,10 +126,10 @@
     }
 
     &-excerpt {      
-      font-family: @emphasisFont;      
-      text-transform: uppercase;
-      font-weight: 100;
-      font-size: 14px;
+      font-family: @titleFont;
+      text-transform: none;
+      font-weight: 400;
+      font-size: 16px;
     }
 
     &:last-child {

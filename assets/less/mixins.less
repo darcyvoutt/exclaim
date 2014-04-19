@@ -10,9 +10,9 @@
 @marginBottom: 10px;
 
 // Fonts
-@baseFont: 'Roboto Slab', serif;
-@headlineFont: 'Montserrat', sans-serif;
-@emphasisFont: 'Droid Serif', serif;
+@titleFont: 'Roboto Slab', serif;
+@uppercaseFont: 'Montserrat', sans-serif;
+@baseFont: 'Droid Serif', serif;
 
 // Font Colors
 @linkColor: #F8EE62;
@@ -26,8 +26,8 @@
 // Font Mixins
 //////////////////////////////////////////////////////
 
-.headlineFont(@size) {
-  font-family: @headlineFont;
+.uppercaseFont(@size) {
+  font-family: @uppercaseFont;
   text-transform: uppercase;
   font-size: @size; 
 }
