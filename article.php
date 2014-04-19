@@ -12,7 +12,9 @@
       <li>Mar 28, 2014</li>
     </ul>
 
-    <h1 class="article-title">The Red Hot Chilli Pepers are back in Toronto May 24</h1>
+    <h1 class="article-title">Freddie Gibbs & Madlib</h1>
+
+    <h2 class="article-subtitle">‘Piñata’</h2>
 
     <div class="article-author">By Joseph Hose</div>
 
