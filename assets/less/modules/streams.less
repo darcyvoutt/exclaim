@@ -6,10 +6,7 @@
   .flexbox(row, wrap, align-items, flex-start);
 
   .tabletPortrait({
-     .flexbox(column, wrap, align-items, flex-start);
-     
-     // Firefox fallback as it does not support wrap
-     // wrap issue to be fixed March 18, 2014 in v28
+     .flexbox(column, wrap, align-items, flex-start);  
      display: block; 
      width: 100%; 
   });
@@ -17,7 +14,7 @@
 
 .stream { 
   .doubleBorder();
-  margin: 0 2.5% @marginBottom 0;
+  margin: 0 @marginRight @marginBottom 0;
   padding: 5px 10px;
   .flex(1);
 
@@ -57,12 +54,31 @@
 // Header above the stream
 //////////////////////////////////////////////////////
 
+.streams-buttons {
+  .flexbox(row, wrap, align-items, flex-start);
+
+  .mobileLandscape({
+     .flexbox(column, wrap, align-items, flex-start);  
+     display: block; 
+     width: 100%; 
+  });
+}
+
 .stream-button {
-  .stream();
-  .headlineFont(14px);
-  margin-bottom: @marginBottom;  
+  .doubleBorder();
+  .headlineFont(14px);  
+  margin: 0 @marginRight @marginBottom 0;
   background: #000;
-  padding: 3px;
+  padding: 3px;    
+  .flex(1);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  .tabletPortrait({
+    font-size: 12px;
+  });
 
   a {
     text-align: center;    
