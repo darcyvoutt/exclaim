@@ -2,9 +2,6 @@
 // Global Variables
 //////////////////////////////////////////////////////
 
-// Navigation
-@navHeight: 45px;
-
 // Margins
 @marginRight: 1.5625%;
 @marginBottom: 10px;
@@ -58,7 +55,7 @@
 } // Use: .mobileLandscape({ .. });
 
 .mobilePortrait(@rules) {
-  @media screen and (max-width: 321px) { @rules(); }
+  @media screen and (max-width: 320px) { @rules(); }
   // Based on iPhone 3+4 portrait · width: 320px
   // The additional pixel is ensure 320px is included
 } // Use: .mobilePortrait({ .. });

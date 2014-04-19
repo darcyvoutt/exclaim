@@ -1,231 +1,190 @@
 //////////////////////////////////////////////////////
-// Navigation Wrap
+// Variables
 //////////////////////////////////////////////////////
 
-.navigation {
-  .clearfix();
-  width: 73.9583333%;
+@navHeight:     45px;
+
+//////////////////////////////////////////////////////
+// .navBar
+//////////////////////////////////////////////////////
+
+.navbar {
+  .uppercaseFont(13px);      
+  margin-bottom: @marginBottom;    
+  position: relative;
   height: @navHeight;
-  display: block;  
-  float: left;
+  border-radius: 0;
+  min-height: 0px;    
+  background: #ffffff;
+  z-index: 999;
 
-  .mobileLandscape({    
-    display: none
-  });
-}
+  &-nav {
+    margin: 0 !important;
 
-//////////////////////////////////////////////////////
-// Nav
-//////////////////////////////////////////////////////
+    .mobileLandscape({
+      border: @border;
+    });
 
-.menu {
-  .uppercaseFont(13px);
-  line-height: @navHeight;
-  height: @navHeight;
-  font-weight: 600;
-  display: block;
-  float: right;  
-  width: 76%;
-  padding: 0;
-  margin: 0 1% 0 0;
-
-  .mobileLandscape({
-    display: none;
-  });
-
-  &-item {
-    @iconSize: 15px;
-    border-right: @border;
-    list-style-type: none;
-    position: relative;
-    display: block;
-    float: right;
-
-    &:after {            
-      .svgIcon(@iconSize; "icon-arrowRight"; top; calc(48% - @iconSize); right; 8px);
+    li a {
+      line-height: @navHeight;
+      padding-bottom: 0;
+      padding-top: 0;
     }
-
-    &:first-child { border-right: none; }
+  }
+  
+  &-logo {
+    display: block;
+    height: 100%;
+    margin: 0;
 
     a {
-      text-decoration: none;
-      line-height: 40px;
-      padding: 0 30px 0 15px;
+      background: url("../images/logo.svg"); 
+      background-position: center center;
+      background-repeat: no-repeat;
+      line-height: @navHeight;
+      background-size: 100%;
+      text-indent: -999em;                
+      display: block;
+      width: 235px;    
+      height: auto;      
+      float: left;  
+
+      .tabletPortrait({
+        position: relative;
+        max-width: 185px; 
+        left: 10px;           
+      });
+
+      .mobileLandscape({
+        width: 163px;           
+      });
+    }
+
+    .navbar-brand {
+      margin: 0 !important;
+      padding: 0;
+    }
+  }
+
+  &-toggle {
+    background: url("../images/icons/icon-mobile.svg") center center no-repeat;
+    height: 25px;
+    width: 25px;
+
+    &:hover {
+      background: url("../images/icons/icon-mobile.svg") center center no-repeat;
+    }
+  }
+
+  &-link {
+    @iconSize: 15px;    
+    border-right: @border;      
+    list-style-type: none;    
+    height: @navHeight;
+    position: relative;
+    display: block;
+
+    .mobileLandscape({
+      border-bottom: @border;
+    });
+
+    a {    
+      padding: 0 calc(@iconSize * 2) 0 15px !important;
+      color: @fontColor !important;
+      line-height: @navHeight;      
       display: block;
 
       &:hover {
-        background: @linkColor;
+        background: @linkColor !important;
       }
+    }  
+
+    &:after {            
+      .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 8px);
     }
   }
-}
 
-//////////////////////////////////////////////////////
-// Sections List
-//////////////////////////////////////////////////////
+  // Sections Dropdown
 
-.sections {
-  .uppercaseFont(14px);  
-  height: @navHeight - 5px;
-  background: #ffffff;
-  position: relative;
-  font-weight: 600;
-  max-width: 160px;
-  border: @border;
-  display: block;  
-  z-index: 999;
-  float: right;
-  width: 23%;  
-
-  .mobileLandscape({
-    display: none;
-  });
-
-  text-indent: 15px;
-  padding: 0;
-  margin: 0;  
-
-  &-list {
-    line-height: @navHeight - 6px;
-    list-style-type: none;  
+  .sections {
+    @caretWidth: 45px;
+    .uppercaseFont(14px); 
+    padding-right: @caretWidth;    
+    margin-left: 10px;
+    background: #ffffff;
+    height: @navHeight;
     position: relative;
+    font-weight: 600;
+    border: @border !important;    
 
-    &:before { 
-      .svgIcon(20px; "icon-dropdown-white"; top; 10px; right; 9px);
-      z-index: 2; 
-    }
-
-    &:after {
+    .caret {
+      width: @caretWidth;
       background: #000000;
-      position: absolute;
-      display: block;      
-      height: 100%;
-      width: 40px;
+      position: absolute;  
+      height: @navHeight;  
+      display: block;            
       content: "";
       z-index: 1;
-      right: 0;
-      top: 0;
-    }    
+      left: 100%;
+      top: -1px; 
+      
+      &:after { 
+        .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; 12px);
+        z-index: 2;
+      } 
+    }
+  }
 
-    a {
-      text-decoration: none;
-      position: relative;
-      display: block;
-      z-index: 10;
-      width: 100%;
-      padding: 0;
+  .container-fluid { 
+    padding: 0; 
+
+    .navbar-collapse {
       margin: 0;
     }
-
-    ul {    
-      border: @border;  
-      border-top: none;
-      margin: 0 0 0 -1px;
-      position: absolute;      
-      text-indent: 0;
-      width: 100%;
-      padding: 0;        
-      top: 100%;
-      left: 0;  
-
-      li {        
-        border-top: @border;
-        background: #fff;
-        width: inherit;;
-
-        &:first-child { border-top: none; }
-
-        a { 
-          padding: 8px 15px; 
-
-          &:hover { background: @linkColor; }
-        }         
-      }
-    }
-
-    .visible-mobile {
-      display: none;
-
-      .tabletPortrait({
-        display: block;
-      });
-    }
-  }
-}
-
-//////////////////////////////////////////////////////
-// Dropdown Fixes - Bootstrap Issues
-//////////////////////////////////////////////////////
-
-.dropdown-menu {
-  border-radius: 0;
-  box-shadow: none;  
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-//////////////////////////////////////////////////////
-// Mobile Navigation
-//////////////////////////////////////////////////////
-
-.navigation-mobile {
-  @size: 30px;  
-  list-style-type: none;  
-  position: absolute;
-  display: none;
-  height: @size;
-  width: @size;    
-  right: 10px;
-  padding: 0;
-  margin: 0;
-  top: 7px;
-
-    .mobileLandscape({
-      display: block;
-      });
-
-  &-list.open > a span:after {
-    display: block;
   }
 
-  span {     
-    background: url("../images/icons/icon-mobile.svg") center center no-repeat;
-    text-indent: -9999px;
-    position: relative;
-    display: block; 
-    height: @size;
-    width: @size;
+  // Mobile Menu
+
+  &-collapse {    
+    background: #ffffff;    
+    padding: 0;    
+    margin: 0; 
+
+    .navbar-nav {      
+      margin: 0;
+    }   
 
     &:after {
-      @size: 8px;
-      border-right: @size solid transparent; 
-      border-left: @size solid transparent;       
-      border-bottom: @size solid #000000;          
+      border-bottom: 5px solid #000000;    
+      border-right: 5px solid transparent; 
+      border-left: 5px solid transparent;       
       position: absolute;
       z-index: 999999;
       display: none;
-      content: "";                  
-      right: 6px; 
-      top: 70%;
+      content: "";
+      top: -10px; 
+      right: 0; 
       height: 0; 
-      width: 0;              
+      width: 0; 
+    }
+
+    .sections {       
+      margin-left: 0; 
+
+      .caret { top: 0; }
     }
   }
 
-  ul {
-    min-width: calc(320px - 10px);
-    background: #000000;
-    position: absolute;
-    display: none;    
-    right: -5px;
-    left: auto;    
-    z-index: 999;
-    top: 98%;
+  &-collapse.in {
+    overflow: initial;
 
-    a {color: #fff;}    
-
-    li {
+    .dropdown-menu {
+      position: absolute;
+      background: #fff;
+      z-index: 99999;
+      width: 100%;
+      margin: 0;
+      left: 0;      
     }
   }
 }

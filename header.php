@@ -62,13 +62,7 @@
 
   <div class="header-content">  
     
-    <h1 class="logo">
-      <a href="index.php">Exclaim!</a>
-    </h1> <!-- // End of .logo -->
-  
     <?php include('nav.php') ?>
-    
-    <?php include('navMobile.php') ?>
 
 </div> <!-- // End of .header -->
 
