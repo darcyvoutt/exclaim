@@ -6,7 +6,11 @@
 
   <div class="article">
 
-    <div class="article-breadcrumbs">Music > Music News > Mar 28, 2014</div>
+    <ul class="article-breadcrumbs">
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Music News</a></li>
+      <li>Mar 28, 2014</li>
+    </ul>
 
     <h1 class="article-title">The Red Hot Chilli Pepers are back in Toronto May 24</h1>
 
