@@ -14,7 +14,7 @@
       <span class="widget-title-date">March 2014</span>
     </div>
     <div class="widget-content">
-      <a href="#">
+      <a href="article.php">
         <img src="assets/images/magazine.png" alt="Latest Issue" />
       </a>      
     </div>
@@ -33,7 +33,7 @@
         
         <li class="widgetList-item">
           <!-- List Item -->
-          <a href="#">
+          <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
             <div class="widgetList-item-details">
@@ -44,7 +44,7 @@
 
         <li class="widgetList-item">
           <!-- List Item -->
-          <a href="#">
+          <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
             <div class="widgetList-item-details">
@@ -55,7 +55,7 @@
 
         <li class="widgetList-item">
           <!-- List Item -->
-          <a href="#">
+          <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
             <div class="widgetList-item-details">
@@ -65,7 +65,7 @@
         </li>
 
         <li class="widgetList-more">
-          <a href="#">More <span class="emphasis">from artist</span></a>
+          <a href="article.php">More <span class="emphasis">from artist</span></a>
         </li>
       </ul>
     </div>
