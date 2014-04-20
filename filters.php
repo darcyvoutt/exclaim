@@ -72,3 +72,4 @@
 
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/filters.js"></script>
+<script src="assets/js/typeahead.js"></script>
