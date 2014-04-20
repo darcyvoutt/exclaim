@@ -8,183 +8,239 @@
 // .navBar
 //////////////////////////////////////////////////////
 
-.navbar {
-  .uppercaseFont(13px);      
-  margin-bottom: @marginBottom;    
-  position: relative;
-  height: @navHeight;
-  border-radius: 0;
-  min-height: 0px;    
-  background: #ffffff;
-  z-index: 999;
+.mainNav {
+  display: block;
+  padding: 0;
+  margin: 0; 
 
-  &-nav {
-    margin: 0 !important;
+  .navbar {
+    .uppercaseFont(13px);      
+    margin-bottom: @marginBottom;    
+    position: relative;
+    height: @navHeight;
+    border-radius: 0;
+    min-height: 0px;    
+    background: #ffffff;
+    z-index: 999;
 
-    .mobileLandscape({
-      border: @border;
-    });
-
-    li a {
-      line-height: @navHeight;
-      padding-bottom: 0;
-      padding-top: 0;
+    &-header {      
+      margin: 0;
     }
-  }
-  
-  &-logo {
-    display: block;
-    height: 100%;
-    margin: 0;
 
-    a {
-      background: url("../images/logo.svg"); 
-      background-position: center center;
-      background-repeat: no-repeat;
-      line-height: @navHeight;
-      background-size: 100%;
-      text-indent: -999em;                
-      display: block;
-      width: 235px;    
-      height: auto;      
-      float: left;  
-
-      .tabletPortrait({
-        position: relative;
-        max-width: 185px; 
-        left: 10px;           
-      });
+    &-nav {
+      margin-bottom: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;    
 
       .mobileLandscape({
-        width: 163px;           
+        border: @border;
       });
-    }
 
-    .navbar-brand {
-      margin: 0 !important;
-      padding: 0;
-    }
-  }
+      li a {      
+        line-height: @navHeight;
+        padding-bottom: 0;
+        padding-top: 0;
 
-  &-toggle {
-    background: url("../images/icons/icon-mobile.svg") center center no-repeat;
-    height: 25px;
-    width: 25px;
-
-    &:hover {
-      background: url("../images/icons/icon-mobile.svg") center center no-repeat;
-    }
-  }
-
-  &-link {
-    @iconSize: 15px;    
-    border-right: @border;      
-    list-style-type: none;    
-    height: @navHeight;
-    position: relative;
-    display: block;
-
-    .mobileLandscape({
-      border-bottom: @border;
-    });
-
-    a {    
-      padding: 0 calc(@iconSize * 2) 0 15px !important;
-      color: @fontColor !important;
-      line-height: @navHeight;      
-      display: block;
-
-      &:hover {
-        background: @linkColor !important;
+        &:hover { background: none; }
       }
     }  
-
-    &:after {            
-      .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 8px);
-    }
-  }
-
-  // Sections Dropdown
-
-  .sections {
-    @caretWidth: 45px;
-    .uppercaseFont(14px); 
-    padding-right: @caretWidth;    
-    margin-left: 10px;
-    background: #ffffff;
-    height: @navHeight;
-    position: relative;
-    font-weight: 600;
-    border: @border !important;    
-
-    .caret {
-      width: @caretWidth;
-      background: #000000;
-      position: absolute;  
-      height: @navHeight;  
-      display: block;            
-      content: "";
-      z-index: 1;
-      left: 100%;
-      top: -1px; 
-      
-      &:after { 
-        .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; 12px);
-        z-index: 2;
-      } 
-    }
-  }
-
-  .container-fluid { 
-    padding: 0; 
-
-    .navbar-collapse {
+    
+    &-logo {
+      display: block;    
+      height: 100%;    
+      float: left;
       margin: 0;
-    }
-  }
 
-  // Mobile Menu
+      a {
+        background: url("../images/logo.svg"); 
+        background-position: center center;
+        background-repeat: no-repeat;
+        line-height: @navHeight;
+        background-size: 100%;
+        text-indent: -999em;                
+        display: block;
+        width: 235px;    
+        height: auto;      
+        float: left;  
 
-  &-collapse {    
-    background: #ffffff;    
-    padding: 0;    
-    margin: 0; 
+        .tabletPortrait({
+          position: relative;
+          max-width: 185px; 
+          left: 10px;           
+        });
 
-    .navbar-nav {      
-      margin: 0;
-    }   
-
-    &:after {
-      border-bottom: 5px solid #000000;    
-      border-right: 5px solid transparent; 
-      border-left: 5px solid transparent;       
-      position: absolute;
-      z-index: 999999;
-      display: none;
-      content: "";
-      top: -10px; 
-      right: 0; 
-      height: 0; 
-      width: 0; 
+        .mobileLandscape({
+          width: 163px;           
+        });
+      }    
     }
 
-    .sections {       
-      margin-left: 0; 
+    &-toggle {
+      background: url("../images/icons/icon-mobile.svg") center center no-repeat;
+      margin-right: 5px;
+      margin-top: 10px;
+      height: 25px;
+      width: 25px;
+      padding: 0; 
 
-      .caret { top: 0; }
+      &:hover {
+        background: url("../images/icons/icon-mobile.svg") center center no-repeat;
+      }
     }
-  }
 
-  &-collapse.in {
-    overflow: initial;
+    &-link {
+      @iconSize: 15px;    
+      border-right: @border;      
+      list-style-type: none;    
+      height: @navHeight;
+      position: relative;
+      display: block;
 
-    .dropdown-menu {
-      position: absolute;
-      background: #fff;
-      z-index: 99999;
-      width: 100%;
-      margin: 0;
-      left: 0;      
+      // Remove second last border from list
+      // due to Bootstrap structure last is dropdown
+      &:nth-last-child(2) {
+        border-right: none;
+      }
+
+      .mobileLandscape({
+        border-bottom: @border;
+      });
+
+      a {    
+        padding: 0 calc(@iconSize * 2) 0 15px !important;
+        color: @fontColor !important;
+        line-height: @navHeight;      
+        display: block;
+
+        &:hover {
+          background: @linkColor !important;
+        }
+      }  
+
+      &:after {            
+        .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 8px);
+
+        .mobileLandscape({
+          display: none;
+        });
+      }
+    }
+
+    // Sections Dropdown
+
+    .sections {
+      @caretWidth: 45px;
+      .uppercaseFont(14px); 
+      padding-right: @caretWidth;    
+      background: #ffffff;
+      height: @navHeight;
+      position: relative;
+      font-weight: 600;
+      border: @border !important;
+
+      &:hover {
+        background: @linkColor;
+      }
+
+      .mobileLandscape({
+        border: none !important;
+        margin: 0;
+      });
+
+      .caret {
+        width: @caretWidth;
+        background: #000000;
+        position: absolute;  
+        height: @navHeight;  
+        display: block;            
+        content: "";
+        z-index: 1;
+        left: 100%;
+        top: 0; 
+        
+        &:after { 
+          .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; 8px);
+        } 
+      }
+    }
+
+    .container-fluid { 
+      padding: 0; 
+
+      .navbar-collapse {
+        margin: 0;
+      }
+
+      .navbar-brand {
+        margin-left: 0;
+        padding: 0;      
+      }
+    }
+
+    // Mobile Menu
+
+    &-collapse {    
+      background: #ffffff;    
+      padding: 0;    
+      margin: 0; 
+
+      .mobileLandscape({
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        });    
+
+      &:before {
+        @size: 10px;
+
+        .mobileLandscape({       
+          border-bottom: @size solid #000000;    
+          border-right: @size solid transparent; 
+          border-left: @size solid transparent;       
+          position: absolute;      
+          display: block;
+          z-index: 9999;
+          content: "";            
+          right: 8px; 
+          top: -2px; 
+          height: 0; 
+          width: 0;
+        });
+      }
+    }
+
+    &-collapse.in {
+      overflow: initial;
+
+      .dropdown-menu {
+        position: absolute;
+        line-height: 12px;
+        background: #fff;
+        z-index: 99999;        
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        top: 90%;
+        left: 0;         
+
+        li {
+          border-bottom: 1px solid #fff;           
+          background: #000000;
+          position: relative;
+          border-right: none;        
+          min-width: 200px;
+          font-size: 14px;
+          display: block;        
+          width: 100%;
+
+          &:last-child { border: none; }  
+
+          a {                    
+          line-height: 30px;
+          color: #ffffff;
+          }
+        } 
+      }
     }
   }
 }
