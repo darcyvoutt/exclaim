@@ -98,66 +98,76 @@
 // Stream Content
 //////////////////////////////////////////////////////
 
+.fontStyle(@family; @weight; @style; @size) {
+  line-height: 12px;
+  font-family: @baseFont;
+  font-weight: @weight;
+  font-style: @style;
+  font-size: @size;
+}
+
+// Stream
+
 .streamItem {
-  margin: 0 0 10px 0;
+  margin: 0 0 @marginBottom 0;
   position: relative;
   overflow: hidden;
+
+  .mobileLandscape({
+    margin-bottom: @marginBottom * 1.5;
+  });
+
+  &:hover {
+    background: @linkColor;
+  }
 
   &:last-child {
     margin-bottom: 5px;
   }
 
   img {
-    @height: 180px;
-    max-height: @height;
-    min-height: @height * 0.9; 
+    height: auto;
+    width: 100%; 
 
-    position: relative;
-    left: -50%;
-
-    .tabletPortrait({
-      max-height: @height * 1.4;
-      left: 0;
-      });
+    .mobileLandscape({
+      margin-right: @marginRight;
+      min-height: 50px;
+      max-width: 34%;    
+      height: auto;    
+      float: left;
+    });
   }
 
-  a:hover > &-content {
-    background: rgba(248, 236, 100, 0.8);
-    color: @fontColor;
-  }
+  &-content {    
+    display: block;
+    padding: 3px;
 
-  &-content {
-    background: rgba(0,0,0,0.8);
-    position: absolute;
-    overflow: hidden;
-    max-height: 80%;
-    color: #ffffff;
-    padding: 8px;
-    z-index: 999;
-    width: 100%;
-    bottom: 0;
-
-    span {
+    .mobileLandscape({
+      width: 64.4375%;
       display: block;
-      max-height: 200px
-    }
+      float: left;
+    });
   }
 
-  &-category {
-    font-family: @baseFont;
-    font-style: italic;
+  &-category {    
+    .fontStyle(@baseFont; 300; italic; 11px);
+    padding: 0;
+    margin: 0;    
 
     &:after {
       .contentAfter("//"; 0px 3px);
     }
   }
 
-  &-title {
-    text-transform: uppercase;
-    font-weight: 600;
+  @titleFontSize: 14px;
+
+  &-title {   
+    .fontStyle(@titleFont; 300; normal; @titleFontSize); 
   }
 
   &-subtitle {
+    .fontStyle(@titleFont; 300; normal; @titleFontSize); 
+
     &:before {
       .contentBefore(open-quote; 0px);
     }
@@ -167,17 +177,19 @@
     }
   }
 
-  &-meta {
-    font-family: @baseFont;
-    font-style: italic;
-    font-size: 11px;
+  &-info {
+    .fontStyle(@titleFont; 300; normal; @titleFontSize); 
   }
 
-  &-noContent {
+  &-meta {
+    .fontStyle(@baseFont; 300; italic; 11px); 
+    margin-top: 5px;
+    display: block;
+  }
+
+  &-noContent {    
+    .fontStyle(@titleFont; 300; italic; @titleFontSize); 
     background: rgba(0,0,0,0.8);
-    font-family: @baseFont;
-    font-style: italic;
-    font-size: 14px;
     color: #ffffff;
     padding: 10px;
   }
