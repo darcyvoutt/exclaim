@@ -26,42 +26,57 @@
         <!-- List Item -->
         <li class="streamSingle-item">          
           <a href="#">
+          
             <img src="assets/images/stream2.jpg" alt="">
-            <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
-            <span class="streamSingle-item-details">
-              Forest Swords Virgin Mod Club, Toronto ON, March 29
-            </span>
-            <p class="streamSingle-item-excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
-            </p>
+
+            <div class="streamSingle-item-content">            
+              <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
+              <span class="streamSingle-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+              <p class="streamSingle-item-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
+              </p>
+            </div>
+
           </a>
         </li>
 
         <!-- List Item -->
         <li class="streamSingle-item">          
           <a href="#">
+          
             <img src="assets/images/stream1.jpg" alt="">
-            <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
-            <span class="streamSingle-item-details">
-              Forest Swords Virgin Mod Club, Toronto ON, March 29
-            </span>
-            <p class="streamSingle-item-excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
-            </p>
+
+            <div class="streamSingle-item-content">            
+              <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
+              <span class="streamSingle-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+              <p class="streamSingle-item-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
+              </p>
+            </div>
+
           </a>
         </li>
 
         <!-- List Item -->
         <li class="streamSingle-item">          
           <a href="#">
+          
             <img src="assets/images/stream2.jpg" alt="">
-            <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
-            <span class="streamSingle-item-details">
-              Forest Swords Virgin Mod Club, Toronto ON, March 29
-            </span>
-            <p class="streamSingle-item-excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
-            </p>
+
+            <div class="streamSingle-item-content">            
+              <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
+              <span class="streamSingle-item-details">
+                Forest Swords Virgin Mod Club, Toronto ON, March 29
+              </span>
+              <p class="streamSingle-item-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel augue ac quam placerat pharetra ac id enim. Fusce lectus diam, tempus pellentesque purus ut, laoreet elementum.
+              </p>
+            </div>
+
           </a>
         </li>
 

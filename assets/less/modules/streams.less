@@ -188,9 +188,10 @@
 //////////////////////////////////////////////////////
 
 .streamSingle {
+  @imgWidth: 20%;
   .widgetList();  
   padding-bottom: 5px;
-  margin-top: 10px;
+  margin: @marginBottom 0;
 
   a {
     .clearfix();
@@ -199,11 +200,10 @@
   }
 
   img {
+    margin-right: @marginRight;
     min-height: 50px;
     max-width: 20%;    
-    height: auto;
-
-    margin-right: @marginRight;
+    height: auto;    
     float: left;
   }
 
@@ -213,18 +213,35 @@
 
     &:first-child { border-top: 1px solid #000; }
 
-    &-details {
-      margin: 8px 0 5px 0;
-      display: block;      
+    &-content {   
+      width: 78.4375%;
+      display: block;
+      float: left;
+    }
+
+    &-details {      
+      font-family: @baseFont;
+      text-transform: none;
+      margin: 8px 0 5px 0;      
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+      display: block;            
     }
 
     &-title {
+      font-family: @titleFont;      
       text-transform: none;
+      font-weight: 300;
+      font-size: 22px;
+      padding-top: 0;
+      margin-top: 0;
     }
 
     &-excerpt {
       text-transform: none;
       font-weight: 300;
+      font-size: 15px;
     }
   }
 }

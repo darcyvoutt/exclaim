@@ -20,6 +20,11 @@
     </div>
   </div>
 
+  <!-- Standard Widget -->
+  <div class="widget">
+    <img src="assets/images/calendar.png" alt="Calendar">
+  </div>
+
   <!-- Ads -->
   <a href="#" alt="Ads" class="ad-sidebar">
     <img src="assets/images/ad-sidebar.png" alt="Ad Test" />
