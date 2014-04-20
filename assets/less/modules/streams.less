@@ -4,6 +4,7 @@
 
 .streams {
   .flexbox(row, wrap, align-items, flex-start);
+  z-index: 1;
 
   .tabletPortrait({
      .flexbox(column, wrap, align-items, flex-start);  
@@ -127,7 +128,7 @@
 
   img {
     height: auto;
-    width: 100%; 
+    width: 100%;     
 
     .mobileLandscape({
       margin-right: @marginRight;
@@ -189,7 +190,8 @@
 
   &-noContent {    
     .fontStyle(@titleFont; 300; italic; @titleFontSize); 
-    background: rgba(0,0,0,0.8);
+    background: lighten(@fontColor, 30%);
+    line-height: 22px;
     color: #ffffff;
     padding: 10px;
   }
@@ -216,7 +218,7 @@
     min-height: 50px;
     max-width: 34%;    
     height: auto;    
-    float: left;
+    float: left;    
   }
 
   &-item {

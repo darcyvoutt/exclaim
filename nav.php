@@ -1,17 +1,17 @@
-<div class="mainNav">
+<div class="navigation">
   <nav class="navbar" role="navigation">
     <div class="container-fluid">
 
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" 
-                data-target="#bs-example-navbar-collapse-1">
+                data-target="#nav">
         </button>
         <h1 class="navbar-logo">
           <a class="navbar-brand" href="index.php">Exclaim!</a>
         </h1>
       </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="nav">
 
         <ul class="nav navbar-nav navbar-right">
           <form role="search" class="visibile-mobile">

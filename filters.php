@@ -10,66 +10,88 @@
       <button class="filters-selected-button">Go</button>
     </div>
 
+
+    <!-- Filter Options -->
     <div class="filters-content">
-      
-      <!-- Filter Options -->
-      <h2 class="filters-mobileTitle slide-trigger">Filters</h2>
+      <nav class="navbar" role="filters">
+        <div class="container-fluid">
 
-        <span class="filters-label">Filters</span>
-        <ul class="filters-options">        
-          <li class="filters-options-item">
-            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Genre</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li class="filters-options-search">
-                <div class="filters-options-search-label">Genre</div>
-                <input type="text" class="typeahead" placeholder="Genre" />
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                    data-target="#filters">
+            </button>
+            <span class="filters-label">Filters</span>
+          </div>
+
+          <div class="collapse navbar-collapse" id="filters">
+  
+            <ul class="nav navbar-nav navbar-right filters-options">
+              
+              <!-- Filter List Option | Genre -->
+              <li class="dropdown filters-options-item">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Genre</a>
+                <ul class="dropdown-menu" role="filter-option">
+                  <li class="filters-options-search">
+                    <div class="filters-options-search-label">Genre</div>
+                    <input type="text" class="typeahead" placeholder="Date" />
+                  </li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                </ul>
               </li>
-              <li><a href="#">Option</a></li>
-              <li><a href="#">Option</a></li>
-            </ul>
-          </li>
 
-          <li class="filters-options-item">
-            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tags</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li class="filters-options-search">
-                <div class="filters-options-search-label">Tags</div>
-                <input type="text" class="typeahead" placeholder="Tags" />
+              <!-- Filter List Option | Tags -->
+              <li class="dropdown filters-options-item">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Tags</a>
+                <ul class="dropdown-menu" role="filter-option">
+                  <li class="filters-options-search">
+                    <div class="filters-options-search-label">Tags</div>
+                    <input type="text" class="typeahead" placeholder="Date" />
+                  </li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                </ul>
               </li>
-              <li><a href="#">Option</a></li>
-              <li><a href="#">Option</a></li>
-            </ul>
-          </li>
 
-          <li class="filters-options-item">
-            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Date</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li class="filters-options-search">
-                <div class="filters-options-search-label">Date</div>
-                <input type="text" class="typeahead" placeholder="Date" />
+              <!-- Filter List Option | Date -->
+              <li class="dropdown filters-options-item">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Date</a>
+                <ul class="dropdown-menu" role="filter-option">
+                  <li class="filters-options-search">
+                    <div class="filters-options-search-label">Date</div>
+                    <input type="text" class="typeahead" placeholder="Date" />
+                  </li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                </ul>
               </li>
-              <li><a href="#">Option</a></li>
-              <li><a href="#">Option</a></li>
-            </ul>
-          </li>
 
-          <li class="filters-options-item">
-            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Order</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li class="filters-options-search">
-                <div class="filters-options-search-label">Order</div>
-                <input type="text" class="typeahead" placeholder="Order" />
+              <!-- Filter List Option | Order -->
+              <li class="dropdown filters-options-item">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Order</a>
+                <ul class="dropdown-menu" role="filter-option">
+                  <li class="filters-options-search">
+                    <div class="filters-options-search-label">Order</div>
+                    <input type="text" class="typeahead" placeholder="Date" />
+                  </li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Options</a></li>
+                </ul>
               </li>
-              <li><a href="#">Option</a></li>
-              <li><a href="#">Option</a></li>
+          
             </ul>
-          </li>
-        </ul>          
 
-    </div> <!-- // End of .filter-content -->
+          </div>
+        </div>
+      </nav>
+    </div>
 
-  </div> <!-- // End of .filters -->
+</div>
 
-<script src="assets/js/nav.js"></script>
+<!-- Scripts -->
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/typeahead.js"></script>

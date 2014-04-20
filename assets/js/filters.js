@@ -20,7 +20,7 @@ $(document).ready(function() {
 // Reveal the filtered options
 $(document).ready(function () {
   // Clicking on an option in the dropdown
-  $('.dropdown-menu li a').on('click', function () {
+  $('.filters-options-item ul li a').on('click', function () {
     $('.filters-selected').fadeIn( '150' , function () {
       $(this).css({display : 'block'});
     });

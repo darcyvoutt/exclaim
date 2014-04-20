@@ -51,6 +51,11 @@
   // Based on iPad portrait · width: 768px
 } // Use: .tabletPortrait({ .. }); 
 
+.betweenMobileTablet(@rules) {
+  @media screen and (min-width: 601px) and (max-width: 767px) { @rules(); }
+  // Based on Android (Nexus 4) landscape · width: 600px
+} // Use: .mobileLandscape({ .. });
+
 .mobileLandscape(@rules) {
   @media screen and (max-width: 600px) { @rules(); }
   // Based on Android (Nexus 4) landscape · width: 600px
@@ -59,7 +64,6 @@
 .mobilePortrait(@rules) {
   @media screen and (max-width: 320px) { @rules(); }
   // Based on iPhone 3+4 portrait · width: 320px
-  // The additional pixel is ensure 320px is included
 } // Use: .mobilePortrait({ .. });
 
 //////////////////////////////////////////////////////
