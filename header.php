@@ -5,22 +5,33 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   
-  <title>Exclaim HTML Markup</title>
+  <title>Exclaim HTML Markup</title>  
 
-  <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>
+  <?php
 
-  <!-- Less -->
-  <script type="text/javascript">
-    less = {
-      env: "development",
-      async: false,
-      fileAsync: false,
-    };
-  </script>
-  <link rel="stylesheet/less" href="assets/less/styles.less" />
+  $production = "no";
+
+  if ($production == "yes") { ?>
+  
+    <link rel="stylesheet" type="text/css" href="assets/less/styles.css">    
+
+  <?php } else { ?>
+
+    <!-- Less -->
+    <script type="text/javascript">
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+      };
+    </script>
+    <link rel="stylesheet/less" href="assets/less/styles.less" />
+    <script src="assets/js/libraries/less-1.7.0.min.js"></script> 
+
+  <?php } ?>
 
   <!-- Scripts -->
-  <script src="assets/js/libraries/less-1.7.0.min.js"></script>    
+  <script src="assets/js/libraries/jquery-1.11.0.min.js"></script>  
   <script src="assets/js/bootstrap/typeahead.js"></script>
   <script src="assets/js/bootstrap/bootstrap.js"></script>
 
