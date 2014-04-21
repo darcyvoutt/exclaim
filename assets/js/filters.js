@@ -39,4 +39,4 @@ $(document).ready(function () {
   $('.filters-selected-button').on('click', function () {
     $('.filters-selected').css({display: 'none'});
   });
-});   
+});

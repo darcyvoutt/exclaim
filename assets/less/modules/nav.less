@@ -11,6 +11,10 @@
 .visibile-mobile {
   display: none;
 
+  .betweenMobileTablet({
+    display: block;
+  });
+
   .mobileLandscape({
     display: block;
   });
@@ -19,6 +23,10 @@
 //////////////////////////////////////////////////////
 // Main Navigation
 //////////////////////////////////////////////////////
+
+.nav .open {
+  background: @linkColor;
+}
 
 .navigation {
   display: block;
@@ -64,6 +72,10 @@
       margin-bottom: 0 !important;
       margin-right: 0 !important;
       margin-left: 0 !important;    
+
+      .betweenMobileTablet({
+        border: @border;
+      });
 
       .mobileLandscape({
         border: @border;
@@ -134,6 +146,10 @@
       &:nth-last-child(2) {
         border-right: none;
       }
+      
+      .betweenMobileTablet({
+        border-bottom: @border;
+      });
 
       .mobileLandscape({
         border-bottom: @border;
@@ -148,6 +164,10 @@
         &:hover {
           background: @linkColor !important;
 
+          .betweenMobileTablet({
+            border-bottom: @border;
+          });
+
           .mobileLandscape({
             border-bottom: @border;
           });
@@ -156,6 +176,10 @@
 
       &:after {            
         .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 8px);
+
+        .betweenMobileTablet({
+          display: none;
+        });
 
         .mobileLandscape({
           display: none;
@@ -169,15 +193,20 @@
       @caretWidth: 45px;
       .uppercaseFont(14px); 
       padding-right: @caretWidth;    
+      border: @border !important;
       background: #ffffff;
       height: @navHeight;
       position: relative;
-      font-weight: 600;
-      border: @border !important;
+      font-weight: 600;      
 
       &:hover {
         background: @linkColor;
       }
+
+      .betweenMobileTablet({ 
+        border: none !important;
+        margin: 0;
+      });
 
       .mobileLandscape({
         border: none !important;
@@ -188,15 +217,26 @@
         width: @caretWidth;
         background: #000000;
         position: absolute;  
-        height: @navHeight;  
-        display: block;            
+        height: @navHeight - 1px;  
+        display: block;              
         content: "";
         z-index: 1;
         left: 100%;
         top: 0; 
+
+        border: none !important;
+        margin: 0 !important;
+
+        .betweenMobileTablet({
+          height: @navHeight + 1px;
+        });
+
+        .mobileLandscape({
+          height: @navHeight + 1px;
+        });
         
         &:after { 
-          .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; 8px);
+          .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; calc(@caretWidth * 0.225));
         } 
       }
     }
@@ -225,6 +265,12 @@
       margin: 0;
       top: 100%;
       right: -3px;
+
+      .betweenMobileTablet({
+        width: 100%;
+        top: 90%;
+        right: 0;
+      });
 
       .mobileLandscape({
         width: 100%;
@@ -263,14 +309,34 @@
       padding: 0;    
       margin: 0; 
 
+      .betweenMobileTablet({
+        position: absolute;
+        width: 100%;
+        top: 75%;
+      });
+
       .mobileLandscape({
         position: absolute;
         width: 100%;
         top: 75%;
-        });    
+      });    
 
       &:before {
         @size: 10px;
+
+        .betweenMobileTablet({
+          border-bottom: @size solid #000000;    
+          border-right: @size solid transparent; 
+          border-left: @size solid transparent;       
+          position: absolute;      
+          display: block;
+          z-index: 9999;
+          content: "";            
+          right: 8px; 
+          top: -2px; 
+          height: 0; 
+          width: 0;
+        });
 
         .mobileLandscape({       
           border-bottom: @size solid #000000;    
