@@ -17,7 +17,7 @@
       fileAsync: false,
     };
   </script>
-  <link rel="stylesheet/less" href="assets/less/style.less" />
+  <link rel="stylesheet/less" href="assets/less/styles.less" />
 
   <!-- Scripts -->
   <script src="assets/js/libraries/less-1.7.0.min.js"></script>    
