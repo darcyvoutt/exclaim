@@ -26,6 +26,7 @@
         <li class="comments-login-item"><button data-social="exclaim-lg">Exclaim</button></li>
       </ul>
 
+    <div class="comments-writing">
       <div class="formRow">
         <div class="formRow-label"><label for="username">Name:</label></div>
         <div class="formRow-input">
@@ -58,6 +59,7 @@
           <input type="submit" class="submit" name="Submit" />
         </div>
       </div>
+    </div>
       
     </div>
   </div>

@@ -259,18 +259,20 @@
 }
 
 ul.comments-login {  
+  .clearfix();
   margin-bottom: @marginBottom * 2;
-  list-style-type: none;
+  list-style-type: none;  
   line-height: 12px;  
+  overflow: hidden;
   display: block; 
-  height: 22px;
   width: 100%;
 }
 
 .comments-login-item {
+  margin: 0 @marginBottom calc(@marginBottom * 0.5) 0;
   vertical-align: middle;
-  display: inline-block;
-  margin-right: 8px;
+  display: block;  
+  float: left;
 
   span {
     .uppercaseFont(12px);
@@ -302,4 +304,8 @@ ul.comments-login {
     background-image: url("@{icons}/exclaim-lg.gif"); 
     // .retinaImage({ background-image: url("@{icons}/exclaim-lg@2x.gif"); });
   }
+}
+
+.comments-writing {
+  display: block;  
 }

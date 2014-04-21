@@ -57,12 +57,20 @@ button {
     display: block;  
     float: left;  
     width: 15%;
+
+    .mobileLandscape({
+      display: none;
+    });
   }
 
   &-input {   
     display: block;         
     width: 83.4375%;
     float: left;
+
+    .mobileLandscape({
+      width: 100%;
+    });
 
     input {
       height: @height;

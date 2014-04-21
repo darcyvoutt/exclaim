@@ -129,7 +129,7 @@
     border-right: @border;
     position: relative;
     display: block;    
-    float: left;
+    float: right;
 
     ul { background: none !important; }
 
@@ -137,26 +137,32 @@
       border-bottom: 1px solid #ffffff;
       background: #000000;
       border-right: none;
+      float: none !important;
     });
 
     .mobileLandscape({
       border-bottom: 1px solid #ffffff;
       background: #000000;          
       border-right: none;
+      float: none !important;
     });
+
+    .tabletPortrait({
+      float: left;
+    });    
 
     &:last-child {
       border-bottom: none;
-    }
-
-    .tabletPortrait({
-        float: none;
-      });    
+    }    
 
     a {
       line-height: @filterHeight;
       padding: 0 45px 0 22px;      
       display: block;
+
+      .tabletPortrait({ 
+        padding: 0 35px 0 15px;
+      });
 
       .betweenMobileTablet({
         color: #ffffff;
@@ -168,6 +174,10 @@
 
       &:after {
         .svgIcon(20px; "icon-arrowDown"; top; 12px; right; 10px);
+
+        .tabletPortrait({
+          .svgIcon(18px; "icon-arrowDown"; top; 12px; right; 5px);
+        });
         
         .betweenMobileTablet({                    
           .contentAfter("+"; 0);
@@ -236,9 +246,10 @@
   &-search {
     border: 1px solid lighten(#000000, 50%) !important;
     background: #fff !important;   
-    padding: 10px; 
+    padding: 8px; 
 
     input, span {
+      padding: 5px;
       height: 24px;
       width: 100%;
     }

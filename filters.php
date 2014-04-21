@@ -33,7 +33,7 @@
                 <ul class="dropdown-menu" role="filter-option">
                   <li class="filters-options-search">
                     <div class="filters-options-search-label">Genre</div>
-                    <input type="text" class="typeahead" placeholder="Date" />
+                    <input type="text" class="typeahead" placeholder="Genre" />
                   </li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
@@ -47,7 +47,7 @@
                 <ul class="dropdown-menu" role="filter-option">
                   <li class="filters-options-search">
                     <div class="filters-options-search-label">Tags</div>
-                    <input type="text" class="typeahead" placeholder="Date" />
+                    <input type="text" class="typeahead" placeholder="Tags" />
                   </li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
@@ -59,10 +59,6 @@
               <li class="dropdown filters-options-item">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">Date</a>
                 <ul class="dropdown-menu" role="filter-option">
-                  <li class="filters-options-search">
-                    <div class="filters-options-search-label">Date</div>
-                    <input type="text" class="typeahead" placeholder="Date" />
-                  </li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
@@ -73,10 +69,6 @@
               <li class="dropdown filters-options-item">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">Order</a>
                 <ul class="dropdown-menu" role="filter-option">
-                  <li class="filters-options-search">
-                    <div class="filters-options-search-label">Order</div>
-                    <input type="text" class="typeahead" placeholder="Date" />
-                  </li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
