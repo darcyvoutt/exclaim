@@ -5,22 +5,6 @@
 @navHeight:     45px;
 
 //////////////////////////////////////////////////////
-// Global Hiding & Revealing Classes
-//////////////////////////////////////////////////////
-
-.visible-mobile {
-  display: none;
-
-  .betweenMobileTablet({
-    display: block;
-  });
-
-  .mobileLandscape({
-    display: block;
-  });
-}
-
-//////////////////////////////////////////////////////
 // Main Navigation
 //////////////////////////////////////////////////////
 
@@ -184,7 +168,7 @@
 
     // Sections Dropdown
 
-    .sections {
+    .sections {      
       @caretWidth: 45px;
       .uppercaseFont(14px); 
       padding-right: @caretWidth;    
@@ -251,7 +235,7 @@
 
     // Dropdown Menu Style
 
-    .dropdown-menu {
+    .dropdown-menu {      
       box-shadow: none;
       position: absolute;
       line-height: 12px;
@@ -273,7 +257,22 @@
         right: 0;
       });
 
-      li { 
+      // Hiding menu options from desktop
+      // This pulls from a mixin with equal properties
+      // Note: still needs cleaner implementation, but works
+      .visible-mobile { 
+        display: none;
+
+        .betweenMobileTablet({
+          display: block;
+          });
+
+        .mobileLandscape({
+          display: block;
+          });
+       }
+
+      li {             
         border-bottom: 1px solid #fff;           
         background: #000000;
         position: relative;
@@ -285,7 +284,7 @@
 
         &:last-child { border: none; }  
 
-        a {                    
+        a {                          
           line-height: 30px;
           color: #ffffff;
 
@@ -298,8 +297,7 @@
     }
 
     // Mobile Menu
-
-    &-collapse {    
+    &-collapse {   
       background: #ffffff;    
       padding: 0;    
       margin: 0; 

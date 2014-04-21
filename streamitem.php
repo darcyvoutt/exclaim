@@ -6,7 +6,7 @@ to center the image. Therefore a new image does not need to be cropped.
 
 <div class="streamItem">
   <a href="article.php">
-  <img src="assets/images/stream2.jpg" alt="Image" />
+  <img src="assets/images/temp/stream2.jpg" alt="Image" />
   
   <div class="streamItem-content">
     <div class="streamItem-category">Video</div>

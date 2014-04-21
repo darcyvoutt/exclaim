@@ -22,25 +22,43 @@
 @borderDotted: 1px dotted #000;
 
 //////////////////////////////////////////////////////
-// Font Mixins
+// Clearfix & Debugs
 //////////////////////////////////////////////////////
 
-.uppercaseFont(@size) {
-  font-family: @uppercaseFont;
-  text-transform: uppercase;
-  font-size: @size; 
+.clearfix {
+  zoom: 1;
+  
+  &:before { 
+    content: ''; 
+    display: block; 
+  }
+  
+  &:after { 
+    content: ''; 
+    display: table; 
+    clear: both; 
+  }
+}
+
+.debug, .debug:before, .debug:after {
+  border: 1px solid red;
 }
 
 //////////////////////////////////////////////////////
-// Browser Prefix
+// Global Hiding & Revealing Classes
 //////////////////////////////////////////////////////
 
-.browserPrefix(@property; @value) {
-  -webkit-@{property}:  @value;
-  -moz-@{property}:     @value;
-  -ms-@{property}:      @value;
-  @{property}:          @value;
-}
+.visible-mobile { 
+  display: none;
+
+  .betweenMobileTablet({
+    display: block;
+    });
+
+  .mobileLandscape({
+    display: block;
+    });
+ }
 
 //////////////////////////////////////////////////////
 // Mixins for @media queries
@@ -67,6 +85,27 @@
 } // Use: .mobilePortrait({ .. });
 
 //////////////////////////////////////////////////////
+// Browser Prefix
+//////////////////////////////////////////////////////
+
+.browserPrefix(@property; @value) {
+  -webkit-@{property}:  @value;
+  -moz-@{property}:     @value;
+  -ms-@{property}:      @value;
+  @{property}:          @value;
+}
+
+//////////////////////////////////////////////////////
+// Font Mixins
+//////////////////////////////////////////////////////
+
+.uppercaseFont(@size) {
+  font-family: @uppercaseFont;
+  text-transform: uppercase;
+  font-size: @size; 
+}
+
+//////////////////////////////////////////////////////
 // Retina Image Support
 //////////////////////////////////////////////////////
 
@@ -78,29 +117,6 @@
     background-size: 100%;
     @rules();     
   }
-}
-
-//////////////////////////////////////////////////////
-// Clearfix & Debugs
-//////////////////////////////////////////////////////
-
-.clearfix {
-  zoom: 1;
-  
-  &:before { 
-    content: ''; 
-    display: block; 
-  }
-  
-  &:after { 
-    content: ''; 
-    display: table; 
-    clear: both; 
-  }
-}
-
-.debug, .debug:before, .debug:after {
-  border: 1px solid red;
 }
 
 //////////////////////////////////////////4////////////
@@ -181,8 +197,6 @@
 //////////////////////////////////////////////////////
 // Icons After
 //////////////////////////////////////////////////////
-
-// .iconAfter(@size; @icon; @top; @right)
 
 .pngIcon(@size; @icon; @yaxis; @topBottom; @xaxis; @leftRight) {      
   background: url("../images/icons/@{icon}.png") center center no-repeat;

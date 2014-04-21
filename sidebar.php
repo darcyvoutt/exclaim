@@ -15,19 +15,19 @@
     </div>
     <div class="widget-content">
       <a href="article.php">
-        <img src="assets/images/magazine.png" alt="Latest Issue" />
+        <img src="assets/images/temp/magazine.png" alt="Latest Issue" />
       </a>      
     </div>
   </div>
 
   <!-- Standard Widget -->
   <div class="widget">
-    <img src="assets/images/calendar.png" alt="Calendar">
+    <img src="assets/images/temp/calendar.png" alt="Calendar">
   </div>
 
   <!-- Ads -->
   <a href="#" alt="Ads" class="ad-sidebar">
-    <img src="assets/images/ad-sidebar.png" alt="Ad Test" />
+    <img src="assets/images/temp/ad-sidebar.png" alt="Ad Test" />
   </a> <!-- // End of .ad-leaderboard -->
 
   <!-- List Widget -->

@@ -1,7 +1,7 @@
 <div class="carousel">
   <div class="carousel-item">
     <div class="carousel-image">
-      <img src="assets/images/boondocks.jpg" alt="Slide 1" />
+      <img src="assets/images/temp/boondocks.jpg" alt="Slide 1" />
     </div>
     <div class="carousel-content">
       <a href="article.php">
@@ -14,7 +14,7 @@
 
   <div class="carousel-item">
     <div class="carousel-image">
-      <img src="assets/images/drake.jpg" alt="Slide 2" />
+      <img src="assets/images/temp/drake.jpg" alt="Slide 2" />
     </div>
     <div class="carousel-content">
       <a href="article.php">
