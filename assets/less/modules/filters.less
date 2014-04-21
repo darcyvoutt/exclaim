@@ -129,7 +129,7 @@
     border-right: @border;
     position: relative;
     display: block;    
-    float: right;
+    float: left;
 
     ul { background: none !important; }
 
@@ -249,8 +249,10 @@
     padding: 8px; 
 
     input, span {
-      padding: 5px;
-      height: 24px;
+      @inputHeight: 24px;
+      line-height: @inputHeight;
+      height: @inputHeight;
+      padding: 5px;      
       width: 100%;
     }
 

@@ -34,12 +34,14 @@
   width: 100%;   
 
   &-content {
-    .siteWidth();
-    margin-top: @marginBottom;
+    .siteWidth();    
+    padding-bottom: @marginBottom;
+    padding-top: @marginBottom;
     display: block;
+    .clearfix();
 
     .mobileLandscape({
-      margin-top: 0;
+      padding-top: 0;
     });
   }
 }

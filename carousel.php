@@ -26,6 +26,7 @@
   </div>
 </div>
 
+<script src="assets/js/libraries/slick.min.js"></script>
 <script>
   $(document).ready(function() {
     $('.carousel').slick({

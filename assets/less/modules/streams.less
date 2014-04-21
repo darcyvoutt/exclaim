@@ -3,11 +3,11 @@
 //////////////////////////////////////////////////////
 
 .streams {
-  .flexbox(row, wrap, align-items, flex-start);
+  .flexbox(row, nowrap, align-items, flex-start);
   z-index: 1;
 
   .tabletPortrait({
-     .flexbox(column, wrap, align-items, flex-start);  
+     .flexbox(column, nowrap, align-items, flex-start);  
      display: block; 
      width: 100%; 
   });
@@ -56,10 +56,10 @@
 //////////////////////////////////////////////////////
 
 .streams-buttons {
-  .flexbox(row, wrap, align-items, flex-start);
+  .flexbox(row, nowrap, align-items, flex-start);
 
   .mobileLandscape({
-     .flexbox(column, wrap, align-items, flex-start);  
+     .flexbox(column, nowrap, align-items, flex-start);  
      display: block; 
      width: 100%; 
   });

@@ -8,7 +8,7 @@
 // Global Hiding & Revealing Classes
 //////////////////////////////////////////////////////
 
-.visibile-mobile {
+.visible-mobile {
   display: none;
 
   .betweenMobileTablet({
@@ -35,7 +35,7 @@
 
   .navbar {
     .uppercaseFont(13px);      
-    margin-bottom: @marginBottom;    
+    margin-bottom: 0; 
     background: #ffffff;
     position: relative;
     height: @navHeight;
@@ -48,11 +48,6 @@
       border-bottom: 2px solid @borderColor;
       border-top: 1px solid @borderColor;
       padding: 10px 15px;
-
-      .placeholder({    
-        font-style: italic;
-        color: #888;
-      });
 
       &:after {
         .svgIcon(18px; "icon-search"; top; 28px; right; 24px);

@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse" id="nav">
 
         <ul class="nav navbar-nav navbar-right">
-          <form role="search" class="visibile-mobile">
+          <form role="search" class="visible-mobile">
             <input type="text" placeholder="Search Exclaim...">
           </form>
 

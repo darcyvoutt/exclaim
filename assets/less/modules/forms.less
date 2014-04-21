@@ -5,8 +5,12 @@
 input, textarea {
   font-family: @baseFont;
   border: 1px solid #0B0B0A;
-  padding: 8px 10px;  
+  padding: 4px 6px;  
   font-size: 14px;
+
+  .placeholder({
+    color: #888; 
+  });
 }
 
 input[type="button"], 
@@ -29,14 +33,6 @@ button {
     color: #000000;
   } 
 }
-
-::-webkit-input-placeholder,
-:-moz-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder { 
-  color: @fontColor; 
-}
-
 
 //////////////////////////////////////////////////////
 // FormRow
