@@ -128,7 +128,15 @@
 
   img {
     height: auto;
-    width: 100%;     
+    width: 100%;   
+
+    .betweenMobileTablet({
+      margin-right: @marginRight;
+      min-height: 50px;
+      max-width: 34%;    
+      height: auto;    
+      float: left;
+    });  
 
     .mobileLandscape({
       margin-right: @marginRight;
@@ -142,6 +150,12 @@
   &-content {    
     display: block;
     padding: 3px;
+
+    .betweenMobileTablet({
+      width: 64.4375%;
+      display: block;
+      float: left;
+    });
 
     .mobileLandscape({
       width: 64.4375%;
