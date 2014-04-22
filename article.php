@@ -18,9 +18,11 @@
 
     <div class="article-author">By Joseph Hose</div>
 
-    <img src="http://audioinkradio.com/wp-content/uploads/2012/01/Red-Hot-Chili-Peppers.jpg" alt="Red Hot" />
+    <div class="article-image">
+      <img src="assets/images/temp/boondocks.jpg" alt="Red Hot" width="100%" />
+    </div>
 
-    <span class="article-rating">7</span>
+    <!-- <div class="article-rating">7</div> -->
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis 
     dui malesuada, imperdiet purus sed, fringilla velit. Ut id feugiat erat.
@@ -31,6 +33,8 @@
     ipsum augue, in imperdiet nulla aliquam vel. Vestibulum vel elit ege augue 
     iaculis semper. Maecenas sodales purus ullamcorper suscipit fringilla. 
     Suspendisse a eleifend sapien.</p>
+
+    <img src="assets/images/temp/drake.jpg" />
 
     <blockquote>Viral mumblecore pour-over sartorial. Cardigan fashion axe Thundercats, 
     pickled freegan +1 pork belly master cleanse Helvetica.
