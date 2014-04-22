@@ -20,11 +20,11 @@
 
   &-content {    
     background: rgba(0,0,0,0.6);
+    z-index: @zindexOverlay;
     position: absolute;
     overflow: hidden;
     padding: 20px 8%;
     min-height: 26%;
-    z-index: 999;
     width: 100%;    
     bottom: 0;
 
@@ -76,10 +76,10 @@
 
 .sliderButtons(@icon; @size) {
   background: url("../images/icons/@{icon}.svg") center center no-repeat;
+  z-index: @zindexOverlay;
   background-size: 100%;  
   height: @size;
-  width: @size;  
-  z-index: 99;
+  width: @size;    
   top: 85%;
 
   &:before { content: ""; }
