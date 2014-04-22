@@ -20,6 +20,7 @@
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
+        <a href="#"><b class="icon"></b></a>
       </div>
 
       <?php include("streamitem.php") ?>
@@ -32,6 +33,7 @@
     <div class="stream">
       <div class="stream-title">
         <h3>Streams</h3>
+        <a href="#"><b class="icon"></b></a>
       </div>
       
       <?php include("streamitem.php") ?>
@@ -43,6 +45,7 @@
     <div class="stream">
       <div class="stream-title">
         <h3>Reviews</h3>
+        <a href="#"><b class="icon"></b></a>
       </div>
        
       <div class="streamItem">
