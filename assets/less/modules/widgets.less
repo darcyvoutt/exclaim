@@ -37,6 +37,46 @@
 }
 
 //////////////////////////////////////////////////////
+// Widget Buttons: Next & Previous
+//////////////////////////////////////////////////////
+
+.widget-buttons {
+  .widget-prev {    
+    @buttonHeight: 20px;  
+    line-height: @buttonHeight;     
+    font-family: @baseFont;
+    padding: 0 10px 0 15px;      
+    height: @buttonHeight; 
+    text-transform: none;
+    font-style: italic;      
+    position: relative;
+    color: @fontColor;
+    margin: 5px 10px;
+    background: none;
+    font-weight: 200;
+    font-size: 10px;   
+    display: block;  
+    float: left;      
+
+    &:after { .svgIcon(10px; "icon-arrowLeft"; top; 5px; left; 2px); }  
+    &:hover { background: none; }  
+  }
+
+  .widget-next {
+    .widget-prev();
+    padding: 0 15px 0 10px;
+    float: right;
+
+    &:after {
+      .svgIcon(10px; "icon-arrowRight"; top; 5px; right; 2px);
+      left: auto;
+    }
+  }
+
+  .is-inactive { opacity: 0.4; }
+}
+
+//////////////////////////////////////////////////////
 // Carousel Widget
 //////////////////////////////////////////////////////
 

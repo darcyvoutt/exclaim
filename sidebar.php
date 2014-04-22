@@ -14,6 +14,12 @@
       <span class="widget-title-date">March 2014</span>
     </div>
     <div class="widget-content">
+      
+      <div class="widget-buttons">
+        <button class="widget-prev">March 2014</button>
+        <button class="widget-next is-inactive">April 2014</button>
+      </div>
+
       <a href="article.php">
         <img src="assets/images/temp/magazine.png" alt="Latest Issue" />
       </a>      
