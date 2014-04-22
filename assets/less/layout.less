@@ -139,3 +139,19 @@
     .siteWidth();
   }
 }
+
+//////////////////////////////////////////////////////
+// Global Hiding & Revealing Classes
+//////////////////////////////////////////////////////
+
+.visible-mobile { 
+  display: none !important;
+
+  .betweenMobileTablet({
+    display: block !important;
+    });
+
+  .mobileLandscape({
+    display: block !important;
+    });
+ }

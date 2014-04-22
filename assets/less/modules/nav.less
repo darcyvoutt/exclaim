@@ -251,20 +251,6 @@
         right: 0;
       });
 
-      // Hiding menu options from desktop
-      // This pulls from a mixin with equal properties
-      // Note: still needs cleaner implementation, but works
-      .visible-mobile { 
-        display: none;
-
-        .betweenMobileTablet({
-          display: block;
-          });
-
-        .mobileLandscape({
-          display: block;
-          });
-       }
 
       li {             
         border-bottom: 1px solid #fff;           
