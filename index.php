@@ -31,7 +31,7 @@
     <!-- Stream -->
     <div class="stream">
       <div class="stream-title">
-        <h3>News</h3>
+        <h3>Streams</h3>
       </div>
       
       <?php include("streamitem.php") ?>
@@ -42,7 +42,7 @@
     <!-- Stream -->
     <div class="stream">
       <div class="stream-title">
-        <h3>News</h3>
+        <h3>Reviews</h3>
       </div>
        
       <div class="streamItem">
