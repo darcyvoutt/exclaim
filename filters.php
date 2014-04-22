@@ -54,26 +54,6 @@
                   <li><a href="#">Options</a></li>
                 </ul>
               </li>
-
-              <!-- Filter List Option | Date -->
-              <li class="dropdown filters-options-item">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Date</a>
-                <ul class="dropdown-menu" role="filter-option">
-                  <li><a href="#">Options</a></li>
-                  <li><a href="#">Options</a></li>
-                  <li><a href="#">Options</a></li>
-                </ul>
-              </li>
-
-              <!-- Filter List Option | Order -->
-              <li class="dropdown filters-options-item">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Order</a>
-                <ul class="dropdown-menu" role="filter-option">
-                  <li><a href="#">Options</a></li>
-                  <li><a href="#">Options</a></li>
-                  <li><a href="#">Options</a></li>
-                </ul>
-              </li>
           
             </ul>
 
