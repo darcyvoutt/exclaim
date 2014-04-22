@@ -18,10 +18,10 @@
             <input type="text" placeholder="Search Exclaim...">
           </form>
 
-          <li class="navbar-link"><a href="index.php">Features</a></li>
-          <li class="navbar-link"><a href="index.php">Reviews</a></li>        
-          <li class="navbar-link"><a href="index.php">Streams</a></li>                
-          <li class="navbar-link"><a href="index.php">News</a></li>  
+          <li class="navbar-link"><a href="index.php">Features<b class="icon"></b></a></li>
+          <li class="navbar-link"><a href="index.php">Reviews<b class="icon"></b></a></li>        
+          <li class="navbar-link"><a href="index.php">Streams<b class="icon"></b></a></li>
+          <li class="navbar-link"><a href="index.php">News<b class="icon"></b></a></li>  
           
           <li class="dropdown sections">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music

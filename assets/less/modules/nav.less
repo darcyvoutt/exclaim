@@ -146,17 +146,12 @@
           });
         }
       }  
-
-      &:after {            
-        .svgIcon(@iconSize; "icon-arrowRight"; top; calc(50% - @iconSize); right; 8px);
-
-        .betweenMobileTablet({
-          display: none;
-        });
-
-        .mobileLandscape({
-          display: none;
-        });
+      
+      .icon {
+        height: @iconSize;
+        width: @iconSize;
+        bottom: calc(50% - @iconSize);
+        right: 5px;
       }
     }
 
