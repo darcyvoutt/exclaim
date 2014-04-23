@@ -275,6 +275,13 @@ ul.comments-login {
   display: inline-block;  
   margin-right: 5px;
 
+  &:nth-of-type(1) {
+    .mobileLandscape({
+      display: block;
+      width: 100%;
+    });
+  }
+
   span {
     .uppercaseFont(12px);
     margin-right: @marginRight;
