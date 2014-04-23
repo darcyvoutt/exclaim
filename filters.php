@@ -36,10 +36,6 @@
               <li class="dropdown filters-options-item">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">Genre</a>
                 <ul class="dropdown-menu" role="filter-option">
-                  <li class="filters-options-search">
-                    <div class="filters-options-search-label">Genre</div>
-                    <input type="text" class="typeahead" placeholder="Genre" />
-                  </li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>
                   <li><a href="#">Options</a></li>

@@ -21,6 +21,7 @@
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
+        <a href="#"><b class="icon-left"></b></a>
       </div>
 
       <ul class="streamSingle">
