@@ -4,7 +4,7 @@
   <div class="widget">
     <div class="widget-title">Picks</div>
     <div class="widget-carousel">
-      <?php include('carousel.php'); ?>
+      <?php include('carousel_sidebar.php'); ?>
     </div>
   </div>
 
