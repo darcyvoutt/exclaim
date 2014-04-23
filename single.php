@@ -29,7 +29,7 @@
         <li class="streamSingle-item">          
           <a href="#">
 
-            <img src="assets/images/stream2.jpg" alt="">
+            <img src="assets/images/temp/stream2.jpg" alt="">
 
             <div class="streamSingle-item-content">            
               <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles </h4> 
@@ -48,7 +48,7 @@
         <li class="streamSingle-item">          
           <a href="#">
 
-            <img src="assets/images/stream1.jpg" alt="">
+            <img src="assets/images/temp/stream1.jpg" alt="">
 
             <div class="streamSingle-item-content">            
               <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
@@ -67,7 +67,7 @@
         <li class="streamSingle-item">          
           <a href="#">
 
-            <img src="assets/images/stream2.jpg" alt="">
+            <img src="assets/images/temp/stream2.jpg" alt="">
 
             <div class="streamSingle-item-content">            
               <h4 class="streamSingle-item-title">The Afghan Whigs / Crocodiles</h4> 
