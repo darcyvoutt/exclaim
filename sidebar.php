@@ -28,7 +28,7 @@
 
   <!-- Standard Widget -->
   <div class="widget">
-    <img src="assets/images/temp/calendar.png" alt="Calendar">
+    <img src="assets/images/temp/calendar.png" alt="Calendar" />
   </div>
 
   <!-- Ads -->

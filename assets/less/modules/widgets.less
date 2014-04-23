@@ -5,6 +5,7 @@
 .widget {
   .doubleBorder();
   margin-bottom: @marginBottom;
+  overflow: hidden;
   padding: 3px;
 
   &:last-child {
@@ -30,7 +31,8 @@
 
   img, a img {    
     max-width: 100%;
-    margin: auto;
+    display: block;
+    margin: 0 auto;
     height: auto;
   }
 
