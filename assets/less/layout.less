@@ -2,17 +2,17 @@
 // Global Variables
 //////////////////////////////////////////////////////
 
-@siteWidth: 960px;
+@siteWidth:       960px;
+@mobileMargins:   1.5%;
+
+//////////////////////////////////////////////////////
+// Mixins for Layout
+//////////////////////////////////////////////////////
 
 .siteWidth {
   .clearfix();
   max-width: @siteWidth;
   margin: 0 auto;
-
-  .tabletPortrait({
-    padding-right: 1%;
-    padding-left: 1%;
-    });
 }
 
 .wrap {
@@ -20,13 +20,14 @@
   background: white;
   max-width: calc(@siteWidth + (20px * 2));
 
-  .tabletPortrait({
-    padding: 0;
+  .tabletLandscape({
+    padding-right: @mobileMargins;
+    padding-left: @mobileMargins;
   });
 
   .mobileLandscape({
     margin-top: @navHeight;
-    });
+  });
 }
 
 //////////////////////////////////////////////////////
@@ -45,10 +46,17 @@
     display: block;
     .clearfix();
 
+
+    .tabletLandscape({
+      padding-right: @mobileMargins;
+      padding-left: @mobileMargins;
+    });
+
     .mobileLandscape({
       z-index: @zindexNav;
       position: fixed;         
       width: 100%;
+      padding: 0;
       top: 0;
     });
   }
@@ -63,7 +71,12 @@
 
   &-content {
     .siteWidth();  
-    display: block;    
+    display: block;  
+
+    .tabletLandscape({
+      padding-right: @mobileMargins;
+      padding-left: @mobileMargins;
+    });  
   }
 }
 
