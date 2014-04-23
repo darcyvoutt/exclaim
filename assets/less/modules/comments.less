@@ -48,10 +48,6 @@
   display: block;
   cursor: pointer;
 
-  &:after {
-    .svgIcon(20px; "icon-arrowUp"; bottom; 10px; right; 0);
-  }
-
   h3 {
     vertical-align: bottom;
     display: inline-block;
@@ -72,10 +68,22 @@
     width: 35px;
     color: #fff;
   }
+
+  .icon {
+    .svgIcon(20px; "icon-arrowUp"; bottom; 6px; right; 0);    
+  }
+
+  .is-collapsed {
+    .svgIcon(20px; "icon-arrowDown"; bottom; 6px; right; 0);    
+  }
 }
 
-.is-collapsed.comments-title:after {
-  .svgIcon(20px; "icon-arrowDown"; bottom; 10px; right; 0);
+//////////////////////////////////////////////////////
+// Comments Content
+//////////////////////////////////////////////////////
+
+.comments-content {
+  display: none;
 }
 
 //////////////////////////////////////////////////////
