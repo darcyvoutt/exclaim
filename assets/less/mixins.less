@@ -3,25 +3,25 @@
 //////////////////////////////////////////////////////
 
 // Used in: nav.less and layout.less
-@navHeight:     45px;
+@navHeight:         45px;
 
 // Margins
-@marginRight: 1.5625%;
-@marginBottom: 10px;
+@marginRight:       1.5625%;
+@marginBottom:      10px;
 
 // Fonts
-@titleFont: 'Roboto Slab', serif;
-@uppercaseFont: 'Montserrat', sans-serif;
-@baseFont: 'Droid Serif', serif;
+@titleFont:         'Roboto Slab', serif;
+@uppercaseFont:     'Montserrat', sans-serif;
+@baseFont:          'Droid Serif', serif;
 
 // Font Colors
-@linkColor: #F8EE62;
-@fontColor: #000;
-@borderColor: #999;
+@linkColor:         #F8EE62;
+@fontColor:         #000;
+@borderColor:       #999;
 
 // Border
-@border: 1px solid @borderColor;
-@borderDotted: 1px dotted #000;
+@border:            1px solid @borderColor;
+@borderDotted:      1px dotted #000;
 
 // Z-Index Layers
 @zindexModal:       900;
@@ -59,26 +59,31 @@
 .tabletLandscape(@rules) {
   @media screen and (max-width: 1024px) { @rules(); }
   // Based on iPad landscape · width: 1024px
+  // Applies 1024px and lower
 } // Use: .tabletPortrait({ .. });
 
 .tabletPortrait(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
   // Based on iPad portrait · width: 768px
+  // Applies 768px and lower
 } // Use: .tabletPortrait({ .. }); 
 
 .betweenMobileTablet(@rules) {
   @media screen and (min-width: 601px) and (max-width: 767px) { @rules(); }
   // Based on Android (Nexus 4) landscape · width: 600px
+  // Applies between 601px - 767px ONLY
 } // Use: .mobileLandscape({ .. });
 
 .mobileLandscape(@rules) {
   @media screen and (max-width: 600px) { @rules(); }
   // Based on Android (Nexus 4) landscape · width: 600px
+  // Applies 600px and lower
 } // Use: .mobileLandscape({ .. });
 
 .mobilePortrait(@rules) {
   @media screen and (max-width: 320px) { @rules(); }
   // Based on iPhone 3+4 portrait · width: 320px
+  // Applies 320px and lower
 } // Use: .mobilePortrait({ .. });
 
 //////////////////////////////////////////////////////

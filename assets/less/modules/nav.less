@@ -26,6 +26,14 @@
       font-size: 12px;
     });
 
+    .betweenMobileTablet({ 
+      font-size: 13px;
+    });
+
+    .mobileLandscape({
+      font-size: 13px;
+    });
+
     form {
       border-bottom: 2px solid @borderColor;
       border-top: 1px solid @borderColor;
@@ -69,7 +77,7 @@
     
     &-logo {
       display: block;    
-      height: 100%;    
+      height: 100%;
       float: left;
       margin: 0;      
 
@@ -86,7 +94,7 @@
         float: left;  
 
         .tabletLandscape({ 
-          width: 220px;
+          width: 210px;
         });
 
         .tabletPortrait({
@@ -123,17 +131,19 @@
       display: block;
 
       // Remove second last border from list
-      // due to Bootstrap structure last is dropdown
+      // Due to Bootstrap structure last is dropdown
       &:nth-last-child(2) {
         border-right: none;
       }
       
-      .betweenMobileTablet({
+      .betweenMobileTablet({        
         border-bottom: @border;
+        border-right: none;
       });
 
       .mobileLandscape({
         border-bottom: @border;
+        border-right: none;
       });
 
       a {    
@@ -160,6 +170,10 @@
         width: @iconSize;
         bottom: calc(50% - @iconSize);
         right: 5px;
+
+        .tabletPortrait({
+          display: none;
+        });
       }
     }
 
@@ -186,11 +200,15 @@
 
       .betweenMobileTablet({ 
         border: none !important;
+        font-weight: 500;
+        font-size: 13px;
         margin: 0;
       });
 
       .mobileLandscape({
         border: none !important;
+        font-weight: 500;
+        font-size: 13px;
         margin: 0;
       });
 
@@ -247,14 +265,18 @@
       top: 100%;
       right: -3px;
 
-      .betweenMobileTablet({
+      .betweenMobileTablet({              
+        display: block;
         width: 100%;
+        border: 0;
         top: 90%;
         right: 0;
       });
 
-      .mobileLandscape({
+      .mobileLandscape({        
+        display: block;
         width: 100%;
+        border: 0;
         top: 90%;
         right: 0;
       });
@@ -275,6 +297,14 @@
         a {                          
           line-height: 30px;
           color: #ffffff;
+
+          .betweenMobileTablet({
+            padding: 5px 15px 5px 25px;
+            });
+
+          .mobileLandscape({
+            padding: 5px 15px 5px 25px;
+            });
 
           &:hover {
             background: @linkColor;
@@ -309,9 +339,9 @@
           border-bottom: @size solid #000000;    
           border-right: @size solid transparent; 
           border-left: @size solid transparent;       
-          position: absolute;      
-          display: block;
           z-index: @zindexNav;
+          position: absolute;      
+          display: block;          
           content: "";            
           right: 8px; 
           top: -2px; 
@@ -323,9 +353,9 @@
           border-bottom: @size solid #000000;    
           border-right: @size solid transparent; 
           border-left: @size solid transparent;       
-          position: absolute;      
-          display: block;
           z-index: @zindexNav;
+          position: absolute;      
+          display: block;          
           content: "";            
           right: 8px; 
           top: -2px; 
