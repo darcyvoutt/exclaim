@@ -200,8 +200,8 @@
 .streamSingle {
   @imgWidth: 20%;
   .widgetList();  
-  padding-bottom: 5px;
   margin: @marginBottom 0;
+  padding: 0;
 
   a {
     .clearfix();
@@ -218,12 +218,13 @@
 }
 
   &-item {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid @borderColor;
+    padding: 0;
     margin: 0;
 
-    &:first-child { border-top: 1px solid #000; }
+    &:first-child { border-top: 1px solid @borderColor; }
 
-    &-content {   
+    &-content {
       width: 64.4375%;
       display: block;
       float: left;
