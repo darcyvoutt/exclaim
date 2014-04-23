@@ -25,7 +25,6 @@
 
   ul {
     .clearfix();
-    padding: 0;
   }
 
   li {
@@ -131,7 +130,10 @@
     display: block;    
     float: left;
 
-    ul { background: none !important; }
+    ul { 
+      background: none !important; 
+      padding: 0;
+    }
 
     .betweenMobileTablet({      
       border-bottom: 1px solid #ffffff;
@@ -272,15 +274,19 @@
 //////////////////////////////////////////////////////
 
 .filters-selected {
+  @buttonSize: 32px;
+  padding: 10px calc(@buttonSize + 20px) 5px 15px;
   border: 1px solid rgba(0,0,0,0.3);  
   background: rbga(255,255,255,0.6);
-  height: @filterHeight;
-  padding: 0 0 0 15px;
+  min-height: @filterHeight;  
   position: relative;  
   display: none;
-  width: 100%;
+  height: auto;
+  width: 100%;  
 
   &-list {
+    display: block;    
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -293,20 +299,23 @@
     background: #000;
     color: #ffffff; 
     display: block;
-    height: 32px;
-    width: 38px;
+    height: @buttonSize - 6px;
+    width: @buttonSize;
     padding: 0;
     right: 8px;
     top: 6px; 
   }
 
-  &-item {        
-    line-height: @filterHeight;
+  &-item {            
+    @itemHeight: 24px;
+    vertical-align: middle;
+    line-height: @itemHeight;
     background: @linkColor;
+    display: inline-block;
+    height: @itemHeight;
+    margin: 0 5px 5px 0;
     border-radius: 2px;
-    padding: 5px 10px;
-    margin-right: 5px;      
-    display: inline;
+    padding: 0 10px;          
     cursor: pointer;
     font-size: 11px;
 

@@ -6,6 +6,11 @@
         <li class="filters-selected-item">Arcade Fire</li>
         <li class="filters-selected-item">Bars</li>
         <li class="filters-selected-item">Toronto</li>
+        <li class="filters-selected-item">Downtown</li>
+        <li class="filters-selected-item">Rock</li>
+        <li class="filters-selected-item">Music</li>
+        <li class="filters-selected-item">Concerts</li>
+        <li class="filters-selected-item">Events</li>
       </ul>
       <button class="filters-selected-button">Go</button>
     </div>
