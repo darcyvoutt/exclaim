@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-comment</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ArticleView" sketch:type="MSLayerGroup" transform="translate(-832.000000, -1304.000000)" fill="#0A0B09">
+            <path d="M840.933,1325.97 L842.642,1320.85 C840.3,1320.56 838.173,1319.83 836.478,1318.73 C834.159,1317.22 832.882,1315.18 832.882,1312.97 C832.882,1310.71 834.218,1308.63 836.642,1307.11 C838.868,1305.72 841.802,1304.96 844.903,1304.96 C848.003,1304.96 850.938,1305.72 853.165,1307.11 C855.589,1308.63 856.923,1310.71 856.923,1312.97 C856.923,1316.66 853.218,1319.85 847.905,1320.74 L840.933,1325.97" id="icon-comment" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

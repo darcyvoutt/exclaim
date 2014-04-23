@@ -4,7 +4,7 @@
 
 <div class="content">
 
-  <div class="article">
+  <div class="article">    
 
     <ul class="article-breadcrumbs">
       <li><a href="#">Music</a></li>
@@ -66,6 +66,11 @@
         <li data-social="email" data-tooltip="Join the Mailing List"><a href="#"></a></li>
         <li data-social="rss" data-tooltip="Follow our Feed"><a href="#"></a></li>
       </ul>
+    </div>
+
+    <div class="article-share">
+      <a href=""><b class="icon-share"></b></a>      
+      <a href=""><b class="icon-comments"></b></a>
     </div>
 
   </div> <!-- // End of .article -->
