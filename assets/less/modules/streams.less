@@ -7,9 +7,9 @@
   z-index: 1;
 
   .tabletPortrait({
-     .flexbox(column, nowrap, align-items, flex-start);  
-     display: block; 
-     width: 100%; 
+    .flexbox(column, nowrap, align-items, flex-start);  
+    display: block; 
+    width: 100%; 
   });
 }
 
@@ -126,15 +126,7 @@
     height: auto;
     width: 100%;   
 
-    .betweenMobileTablet({
-      margin-right: @marginRight;
-      min-height: 50px;
-      max-width: 34%;    
-      height: auto;    
-      float: left;
-    });  
-
-    .mobileLandscape({
+    .tabletPortrait({
       margin-right: @marginRight;
       min-height: 50px;
       max-width: 34%;    
@@ -147,13 +139,7 @@
     display: block;
     padding: 3px;
 
-    .betweenMobileTablet({
-      width: 64.4375%;
-      display: block;
-      float: left;
-    });
-
-    .mobileLandscape({
+    .tabletPortrait({
       width: 64.4375%;
       display: block;
       float: left;
