@@ -22,6 +22,10 @@
     min-height: 0px;            
     border: none;
 
+    .tabletLandscape({ 
+      font-size: 12px;
+    });
+
     form {
       border-bottom: 2px solid @borderColor;
       border-top: 1px solid @borderColor;
@@ -67,7 +71,7 @@
       display: block;    
       height: 100%;    
       float: left;
-      margin: 0;
+      margin: 0;      
 
       a {
         background: url("../images/logo.svg"); 
@@ -80,6 +84,10 @@
         width: 235px;    
         height: auto;      
         float: left;  
+
+        .tabletLandscape({ 
+          width: 220px;
+        });
 
         .tabletPortrait({
           position: relative;
@@ -159,17 +167,22 @@
 
     .sections {      
       @caretWidth: 45px;
-      .uppercaseFont(14px); 
+      .uppercaseFont(13px); 
       padding-right: @caretWidth;    
       border: @border !important;
       background: #ffffff;
       height: @navHeight;
       position: relative;
+      margin-left: 15px;
       font-weight: 600;      
 
       &:hover {
         background: @linkColor;
       }
+
+      .tabletLandscape({ 
+        font-size: 11px;
+      });
 
       .betweenMobileTablet({ 
         border: none !important;

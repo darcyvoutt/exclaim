@@ -56,6 +56,11 @@
 // Mixins for @media queries
 //////////////////////////////////////////////////////
 
+.tabletLandscape(@rules) {
+  @media screen and (max-width: 1024px) { @rules(); }
+  // Based on iPad landscape · width: 1024px
+} // Use: .tabletPortrait({ .. });
+
 .tabletPortrait(@rules) {
   @media screen and (max-width: 768px) { @rules(); }
   // Based on iPad portrait · width: 768px
