@@ -29,10 +29,11 @@
     }
   }
 
-  img, a img {    
-    max-width: 100%;
+  img {    
+    max-width: 100%;    
+    margin-right: auto;
+    margin-left: auto;
     display: block;
-    margin: 0 auto;
     height: auto;
   }
 
@@ -43,6 +44,10 @@
 //////////////////////////////////////////////////////
 
 .widget-buttons {
+  overflow: hidden;
+  display: block;  
+  width: 100%;  
+  
   .widget-prev {    
     @buttonHeight: 20px;  
     line-height: @buttonHeight;     
