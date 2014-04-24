@@ -1,0 +1,70 @@
+//////////////////////////////////////////////////////
+// Artist Page
+//////////////////////////////////////////////////////
+
+.artist {
+  @content: 47.6190476%;
+  
+  &-content {
+    padding: @marginBottom * 2;
+    overflow: hidden;    
+  }
+
+  &-image {
+    margin-right: @marginRight * 2;
+    width: @content;    
+    display: block;
+    height: auto;
+    float: left;
+
+    img {
+      height: 100%;
+      width: 100%;      
+    }   
+  }
+
+  &-info {    
+    width: calc(100% - (@content + (@marginRight * 2)));
+    display: block;    
+    float: left;
+
+    ul { 
+      margin: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+
+  &-name {
+    margin-bottom: @marginBottom;
+    font-family: @titleFont;
+    font-weight: 300;
+    font-size: 1.8em;
+  }
+
+  &-profiles {
+    .social();
+    display: block;
+    float: left;
+  }
+
+  &-website {
+    .uppercaseFont(10px);
+    line-height: @headerBar;    
+    background: #000000;
+    height: @headerBar;    
+    font-weight: 600;
+    padding: 0 5px; 
+    display: block;
+    float: left;
+
+    a { color: #ffffff; }
+
+    &:hover {
+      background: @linkColor;
+      color: #000000;
+    } 
+  }
+}

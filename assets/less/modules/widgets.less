@@ -96,7 +96,7 @@
 // List Widget
 //////////////////////////////////////////////////////
 
-.widgetList {
+.widgetList {  
   list-style-type: none;
   margin: -8px 0 0 0;
   padding: 8px;
@@ -119,6 +119,9 @@
       }
     }  
 
+  // Image Size
+  @imageSize: 34%;
+
     &-image {
       margin-right: @marginRight * 2;
       min-height: 50px;      
@@ -128,9 +131,8 @@
       width: 34%;
     }
 
-
     &-content {
-      width: 62.875%;
+      width: calc(100% - (@imageSize + (@marginRight * 2)));
       display: block;
       float: left;
     }  
@@ -149,7 +151,8 @@
     }
 
     &-excerpt {      
-      font-family: @baseFont;      
+      font-family: @baseFont;  
+      text-transform: none;    
       margin: 0 0 5px 0;
       line-height: 21px;
       font-weight: 500;

@@ -142,7 +142,7 @@
           </li>
 
           <li class="widgetList-more">
-            <a href="article.php">See more albums</a>
+            <a href="article.php">See more keyword</a>
           </li>
           
         </ul>
