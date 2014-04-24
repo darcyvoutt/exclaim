@@ -107,7 +107,7 @@
     text-transform: uppercase;    
     font-weight: 600;
     margin: 5px 0;
-    
+
     a {
       margin-bottom: 5px;
       padding: 5px 10px;
@@ -117,22 +117,31 @@
       &:hover {
         background: @linkColor;
       }
-    }
+    }  
 
-    img {
-      margin-right: @marginRight;
-      min-height: 50px;
-      max-width: 34%;    
+    &-image {
+      margin-right: @marginRight * 2;
+      min-height: 50px;      
+      display: block;    
       height: auto;    
       float: left;  
+      width: 34%;
     }
 
-    &-category {
-      text-transform: none;
+
+    &-content {
+      width: 62.875%;
+      display: block;
+      float: left;
+    }  
+
+    &-category {      
       font-family: @baseFont;
+      text-transform: none;
       font-style: italic;
+      color: @lightFont;
       font-weight: 300;
-      font-size: 12px;
+      font-size: 12px;      
 
       &:after {
         .contentAfter("//"; 0px 4px);
@@ -153,13 +162,22 @@
       font-size: 10px;
     }   
 
-    &-title {      
+    &-name {      
       font-family: @titleFont;
       text-transform: none;
       font-weight: 600;
     } 
 
+    &-title {
+      margin-bottom: @marginBottom;
+      font-family: @titleFont;      
+      text-transform: none;
+      font-weight: 300;
+      font-size: 1.3em;
+    }
+
     &-info {      
+      margin-bottom: @marginBottom;      
       font-family: @baseFont;      
       text-transform: none;
       margin: 0 0 5px 0;
@@ -168,10 +186,15 @@
       font-size: 13px;
     }    
 
-    &-more {
+    &-readMore {
       font-family: @uppercaseFont;
-      text-transform: uppercase;      
-      font-weight: 600;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 11px;
+
+      &:after {
+        .contentAfter (">>"; 0 0 0 4px);
+      }
     }
   }
 

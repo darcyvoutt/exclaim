@@ -106,7 +106,7 @@
           <!-- List Item -->
           <li class="widgetList-item">            
             <a href="article.php">
-              <div class="widgetList-item-title">Festival Name Here</div>
+              <div class="widgetList-item-name">Festival Name Here</div>
               <div class="widgetList-item-info">
                 Featuring: JFM | Ravi Naimphy | You'll Never Get Heaven | <b>Cancer Bats</b>
               </div>
@@ -126,10 +126,18 @@
           <!-- List Item -->
           <li class="widgetList-item">              
             <a href="article.php">              
-              <img src="assets/images/temp/stream1.jpg" alt="Cancer Bats"> 
-              <div class="widgetList-item-category">Pop</div>
+              
+              <div class="widgetList-item-image">
+                <img src="assets/images/temp/stream1.jpg" alt="Cancer Bats"> 
+              </div>
+              
+              <div class="widgetList-item-content">
+                <div class="widgetList-item-category">Music Videos</div>
+                <div class="widgetList-item-title"><b>Cancer Bats</b> Get Crazy</div>
+                <p class="widgetList-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu sapien, dictum eu sapien id, lacinia elementum sem. Cras fringilla neque tortor, sed molestie arcu dictum sed. Etiam diam arcu, luctus non pretium nec, congue ac enim. Nam arcu sapien, dictum eu sapien id, lacinia elementum sem. Cras fringilla neque tortor. <span class="widgetList-item-readMore">Read More</span>
+                </p>
+              </div>
 
-              <p class="widgetList-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu sapien, dictum eu sapien id, lacinia elementum sem. Cras fringilla neque tortor, sed molestie arcu dictum sed. Etiam diam arcu, luctus non pretium nec, congue ac enim. <span class="widgetList-item-more">Read More</span></p>
             </a>            
           </li>
 
