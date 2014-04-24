@@ -57,12 +57,14 @@
 
   &-number {
     background: url("../images/icons/icon-bubble.svg") center center no-repeat;
-    background-size: 100% 100%;               
+    font-family: @uppercaseFont;
+    background-size: 100% 100%;                 
     display: inline-block;
     position: relative;    
     text-align: center;    
     margin-left: 10px;
     line-height: 35px;
+    font-size: 14px;    
     bottom: -13px;
     height: 40px;
     width: 35px;
@@ -165,11 +167,12 @@
 }
 
 .comment-date {
-  font-family: @baseFont;
   line-height: @metaHeight;
+  font-family: @baseFont;  
   vertical-align: bottom;
-  display: inline-block;  
+  display: inline-block;    
   font-style: italic;
+  color: @lightFont;
   font-size: 11px;
 }
 
@@ -226,10 +229,17 @@
 }
 
 .comment-button { 
+  background: @linkColor;
+  color: @fontColor;
   padding: 0 6px;
   height: 100%;
   border: none;
-  float: right;  
+  float: right;    
+
+  &:hover {
+    background: @fontColor;
+    color: #ffffff;
+  }
 }
 
 //////////////////////////////////////////////////////

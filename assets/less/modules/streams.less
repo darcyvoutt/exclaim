@@ -95,9 +95,8 @@
 // Stream Content
 //////////////////////////////////////////////////////
 
-.fontStyle(@family; @weight; @style; @size) {
-  line-height: 12px;
-  font-family: @baseFont;
+.fontStyle(@family; @weight; @style; @size) {  
+  font-family: @family;
   font-weight: @weight;
   font-style: @style;
   font-size: @size;
@@ -106,7 +105,9 @@
 // Stream
 
 .streamItem {
+  border-bottom: @borderDotted;
   margin: 0 0 @marginBottom 0;
+  padding-bottom: 5px;
   position: relative;
   overflow: hidden;
 
@@ -136,6 +137,7 @@
   }
 
   &-content {    
+    line-height: 1.2em;
     display: block;
     padding: 3px;
 
@@ -148,6 +150,7 @@
 
   &-category {    
     .fontStyle(@baseFont; 300; italic; 11px);
+    color: @lightFont;
     margin: 5px 0 0 0;
     padding: 0;    
 

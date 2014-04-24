@@ -15,10 +15,10 @@
 
         <!-- Desktop Menu -->
         <ul class="nav navbar-nav navbar-right visible-desktop">
-          <li class="navbar-link"><a href="index.php">Features<b class="icon"></b></a></li>
-          <li class="navbar-link"><a href="index.php">Reviews<b class="icon"></b></a></li>        
-          <li class="navbar-link"><a href="index.php">Streams<b class="icon"></b></a></li>
-          <li class="navbar-link"><a href="index.php">News<b class="icon"></b></a></li>  
+          <li class="navbar-link"><a href="index.php">Features<b class="icon-arrowRight"></b></a></li>
+          <li class="navbar-link"><a href="index.php">Reviews<b class="icon-arrowRight"></b></a></li>        
+          <li class="navbar-link"><a href="index.php">Streams<b class="icon-arrowRight"></b></a></li>
+          <li class="navbar-link"><a href="index.php">News<b class="icon-arrowRight"></b></a></li>  
           
           <li class="dropdown sections">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music

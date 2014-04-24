@@ -16,12 +16,13 @@
 
 // Font Colors
 @linkColor:         #F8EE62;
-@fontColor:         #000;
-@borderColor:       #999;
+@fontColor:         #000000;
+@lightFont:         #404041;
+@borderColor:       #999999;
 
 // Border
 @border:            1px solid @borderColor;
-@borderDotted:      1px dotted #000;
+@borderDotted:      1px dotted @lightFont;
 
 // Z-Index Layers
 @zindexModal:       900;
@@ -102,8 +103,9 @@
 //////////////////////////////////////////////////////
 
 .uppercaseFont(@size) {
-  font-family: @uppercaseFont;
+  font-family: @uppercaseFont;  
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: @size; 
 }
 
