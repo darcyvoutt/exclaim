@@ -43,8 +43,11 @@
   <div class="headerBar">
     <div class="headerBar-content">
 
-      <div class="search">
-        <input type="text" placeholder="Search Exclaim..." />
+      <div class="searchBar">
+        <form action="search.php">
+          <input type="text" placeholder="Search Exclaim..." />
+          <a href="search.php"><b class="icon-search"></b></a>
+        </form>
       </div>
 
       <div class="social">      

@@ -42,8 +42,8 @@
     <div class="widget-content">
       <ul class="widgetList">
         
-        <li class="widgetList-item">
-          <!-- List Item -->
+        <!-- List Item -->
+        <li class="widgetList-item">          
           <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
@@ -53,8 +53,8 @@
           </a>
         </li>
 
-        <li class="widgetList-item">
-          <!-- List Item -->
+        <!-- List Item -->
+        <li class="widgetList-item">          
           <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>
@@ -64,8 +64,8 @@
           </a>
         </li>
 
-        <li class="widgetList-item">
-          <!-- List Item -->
+        <!-- List Item -->
+        <li class="widgetList-item">          
           <a href="article.php">
             <div class="widgetList-item-category">Reviews</div>
             <p class="widgetList-item-excerpt">The Afghan Whigs / Crocodiles</p>

@@ -28,7 +28,7 @@
   }
 }
 
-.search {
+.searchBar {
   position: relative;
   display: block;
   float: right;
@@ -41,9 +41,11 @@
     width: 200px;  
   }
 
-  &:after {
-    .svgIcon(18px; "icon-search"; top; 4px; right; 5px);
+  .icon-search {
     z-index: @zindexInputs;
+    bottom: auto;
+    right: 5px;
+    top: 4px;    
   }
 }
 
