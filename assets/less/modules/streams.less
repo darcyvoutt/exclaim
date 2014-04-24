@@ -123,14 +123,16 @@
     margin-bottom: 5px;
   }
 
+  @imageWidthMobile: 34%;
+
   img {
     height: auto;
     width: 100%;   
 
     .tabletPortrait({
-      margin-right: @marginRight;
-      min-height: 50px;
-      max-width: 34%;    
+      max-width: @imageWidthMobile;
+      margin-right: @marginRight;      
+      min-height: 50px;          
       height: auto;    
       float: left;
     });
@@ -142,7 +144,7 @@
     padding: 3px;
 
     .tabletPortrait({
-      width: 64.4375%;
+      width: calc(100% - (@imageWidthMobile + @marginRight));
       display: block;
       float: left;
     });
