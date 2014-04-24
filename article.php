@@ -22,7 +22,7 @@
       <img src="assets/images/temp/boondocks.jpg" alt="Red Hot" width="100%" />
     </div>
 
-    <!-- <div class="article-rating">7</div> -->
+    <div class="article-rating">7</div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis 
     dui malesuada, imperdiet purus sed, fringilla velit. Ut id feugiat erat.
@@ -72,6 +72,25 @@
       <a href=""><b class="icon-share"></b></a>      
       <a href=""><b class="icon-comments"></b></a>
     </div>
+
+    <script>
+      $(document).ready(function() {
+        var jump_speed = 200;
+
+        function toggleShareIt(){
+            if($('.article-share').is(':visible')){
+                $('.article-share').hide();
+            }else{
+                $('.article-share').show();
+            }
+        }
+
+        function goToComments(){
+            var scroll_to = ($('.comments-title').offset().top) - 50;            
+            $('html,body').animate({scrollTop: scroll_to}, jump_speed);
+        }
+      });
+    </script>
 
   </div> <!-- // End of .article -->
 

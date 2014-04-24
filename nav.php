@@ -15,11 +15,6 @@
 
         <!-- Desktop Menu -->
         <ul class="nav navbar-nav navbar-right visible-desktop">
-          <form role="search" class="visible-mobile">
-            <input type="text" placeholder="Search Exclaim...">
-          </form>
-
-
           <li class="navbar-link"><a href="index.php">Features<b class="icon"></b></a></li>
           <li class="navbar-link"><a href="index.php">Reviews<b class="icon"></b></a></li>        
           <li class="navbar-link"><a href="index.php">Streams<b class="icon"></b></a></li>
@@ -40,6 +35,9 @@
 
         <!-- Mobile Menu -->
         <ul class="nav navbar-nav navbar-right visible-mobile">
+          <form role="search">
+            <input type="text" placeholder="Search Exclaim...">
+          </form>
           <li class="navbar-link"><a href="index.php">Contests</a></li>
           <li class="navbar-link"><a href="index.php">Contact</a></li> 
 
