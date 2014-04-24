@@ -19,7 +19,22 @@
     margin-top: 0;    
   }
 
-  .widgetList-item-excerpt {
-    text-transform: none;
+  // Widget List Adjustments
+
+  .widget:last-child {
+    margin-bottom: @marginBottom;
+  }
+
+  .widgetList-item {
+
+    &-excerpt {
+      text-transform: none;
+    }
+    
+    &-details {
+      text-transform: none;
+      font-weight: 500;
+      font-size: 12px;
+    }
   }
 }
