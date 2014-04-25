@@ -1,4 +1,10 @@
 //////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
+
+@imageWidthMobile:      34%;
+
+//////////////////////////////////////////////////////
 // Structure
 //////////////////////////////////////////////////////
 
@@ -128,11 +134,9 @@
     margin-bottom: 5px;
   }
 
-  @imageWidthMobile: 34%;
-
   img {
     height: auto;
-    width: 100%;   
+    width: 100%;
 
     .tabletPortrait({
       max-width: @imageWidthMobile;
@@ -200,6 +204,29 @@
     line-height: 22px;
     color: #ffffff;
     padding: 10px;
+  }
+}
+
+
+//////////////////////////////////////////////////////
+// IE 9 Hacks
+//////////////////////////////////////////////////////
+
+.ie9 {
+  .stream-button {
+    margin-right: 0;
+  }
+
+  .stream {
+    margin-right: 0;
+  }
+
+  .streamItem img {
+    max-width: @imageWidthMobile;
+    margin-right: @marginRight;      
+    min-height: 50px;          
+    height: auto;    
+    float: left;
   }
 }
 

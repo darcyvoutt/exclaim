@@ -1,9 +1,3 @@
-<!-- 
-Produce only a large enough image for mobile display
-the desktop view of which is smaller uses a negative positioning
-to center the image. Therefore a new image does not need to be cropped.
--->
-
 <div class="streamItem">
   <a href="article.php">
   <img src="assets/images/temp/stream2.jpg" alt="Image" />

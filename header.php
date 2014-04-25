@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
 
   <meta charset="utf-8"/>
@@ -13,7 +16,7 @@
 
   if ($production == "yes") { ?>
   
-    <link rel="stylesheet" type="text/css" href="assets/less/styles.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">  
 
   <?php } else { ?>
 
