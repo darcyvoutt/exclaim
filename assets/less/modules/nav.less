@@ -27,11 +27,11 @@
     });
 
     .betweenMobileTablet({ 
-      font-size: 13px;
+      font-size: 12px;
     });
 
     .mobileLandscape({
-      font-size: 13px;
+      font-size: 12px;
     });
 
     form {
@@ -94,7 +94,7 @@
         float: left;  
 
         .tabletLandscape({ 
-          width: 210px;
+          max-width: 185px;
         });
 
         .tabletPortrait({
@@ -103,7 +103,7 @@
         });
 
         .mobileLandscape({
-          width: 163px;
+          max-width: 185px;
           left: 5px;         
         });
       }    
@@ -147,7 +147,7 @@
       });
 
       a {    
-        padding: 0 calc(@iconSize * 2) 0 15px !important;
+        padding: 0 calc(@iconSize * 1.8) 0 15px !important;
         color: @fontColor !important;
         line-height: @navHeight;             
         display: block;
@@ -166,14 +166,10 @@
       }  
       
       .icon-arrowRight {
-        height: @iconSize;
-        width: @iconSize;
         bottom: calc(50% - @iconSize);
-        right: 8px;
-
-        .tabletPortrait({
-          display: none;
-        });
+        height: @iconSize;
+        width: @iconSize;        
+        right: 7px;
       }
     }
 
@@ -187,7 +183,7 @@
       background: #ffffff;
       height: @navHeight;
       position: relative;
-      margin-left: 15px;
+      margin-left: 10px;
       font-weight: 600;      
 
       &:hover {

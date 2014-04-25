@@ -3480,8 +3480,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  border-right: 1px solid #808080;
-  border-left: 1px solid #808080;      
   background-color: #fff;
   color: #000;
 }
