@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--[if IE 10]><html lang="en" class="ie ie10"><![endif]-->
 <!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
