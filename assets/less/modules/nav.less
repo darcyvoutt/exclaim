@@ -26,11 +26,7 @@
       font-size: 12px;
     });
 
-    .betweenMobileTablet({ 
-      font-size: 12px;
-    });
-
-    .mobileLandscape({
+    .lessThanTablet({ 
       font-size: 12px;
     });
 
@@ -58,11 +54,7 @@
       margin-right: 0 !important;
       margin-left: 0 !important;    
 
-      .betweenMobileTablet({
-        border: @border;
-      });
-
-      .mobileLandscape({
+      .lessThanTablet({
         border: @border;
       });
 
@@ -136,15 +128,11 @@
         border-right: none;
       }
       
-      .betweenMobileTablet({        
+      .lessThanTablet({        
         border-bottom: @border;
         border-right: none;
       });
 
-      .mobileLandscape({
-        border-bottom: @border;
-        border-right: none;
-      });
 
       a {    
         padding: 0 calc(@iconSize * 1.8) 0 15px !important;
@@ -155,11 +143,7 @@
         &:hover {
           background: @linkColor !important;
 
-          .betweenMobileTablet({
-            border-bottom: @border;
-          });
-
-          .mobileLandscape({
+          .lessThanTablet({
             border-bottom: @border;
           });
         }
@@ -194,14 +178,7 @@
         font-size: 11px;
       });
 
-      .betweenMobileTablet({ 
-        border: none !important;
-        font-weight: 500;
-        font-size: 13px;
-        margin: 0;
-      });
-
-      .mobileLandscape({
+      .lessThanTablet({ 
         border: none !important;
         font-weight: 500;
         font-size: 13px;
@@ -222,11 +199,7 @@
         border: none !important;
         margin: 0 !important;
 
-        .betweenMobileTablet({
-          height: @navHeight + 1px;
-        });
-
-        .mobileLandscape({
+        .lessThanTablet({
           height: @navHeight + 1px;
         });
         
@@ -261,22 +234,13 @@
       top: 100%;
       right: -3px;
 
-      .betweenMobileTablet({              
+      .lessThanTablet({              
         display: block;
         width: 100%;
         border: 0;
         top: 90%;
         right: 0;
       });
-
-      .mobileLandscape({        
-        display: block;
-        width: 100%;
-        border: 0;
-        top: 90%;
-        right: 0;
-      });
-
 
       li {             
         border-bottom: 1px solid #fff;           
@@ -294,11 +258,7 @@
           line-height: 30px;
           color: #ffffff;
 
-          .betweenMobileTablet({
-            padding: 5px 15px 5px 25px;
-            });
-
-          .mobileLandscape({
+          .lessThanTablet({
             padding: 5px 15px 5px 25px;
             });
 
@@ -316,36 +276,16 @@
       padding: 0;    
       margin: 0; 
 
-      .betweenMobileTablet({
+      .lessThanTablet({
         position: absolute;
         width: 100%;
         top: 75%;
       });
 
-      .mobileLandscape({
-        position: absolute;
-        width: 100%;
-        top: 75%;
-      });    
-
       &:before {
         @size: 10px;
 
-        .betweenMobileTablet({
-          border-bottom: @size solid #000000;    
-          border-right: @size solid transparent; 
-          border-left: @size solid transparent;       
-          z-index: @zindexNav;
-          position: absolute;      
-          display: block;          
-          content: "";            
-          right: 8px; 
-          top: -2px; 
-          height: 0; 
-          width: 0;
-        });
-
-        .mobileLandscape({       
+        .lessThanTablet({
           border-bottom: @size solid #000000;    
           border-right: @size solid transparent; 
           border-left: @size solid transparent;       

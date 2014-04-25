@@ -107,13 +107,9 @@
       width: 58.1%;
   });
 
-  .betweenMobileTablet({
-    width: 100%;
-  });
-
-  .mobileLandscape({
+  .lessThanTablet({
     min-width: 0;
-    width: 100%;    
+    width: 100%;
   });
 }
 
@@ -132,11 +128,7 @@
     width: 40%;
   });
 
-  .betweenMobileTablet({
-    width: 100%;
-  });
-
-  .mobileLandscape({
+  .lessThanTablet({
     width: 100%;
   });
 }
@@ -162,11 +154,7 @@
 .visible-mobile { 
   display: none !important;
 
-  .betweenMobileTablet({
-    display: block !important;
-    });
-
-  .mobileLandscape({
+  .lessThanTablet({
     display: block !important;
     });
  }
@@ -175,11 +163,7 @@
 .visible-desktop { 
   display: block !important;
 
-  .betweenMobileTablet({
-    display: none !important;
-    });
-
-  .mobileLandscape({
+  .lessThanTablet({
     display: none !important;
     });
  }
