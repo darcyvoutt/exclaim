@@ -2,10 +2,6 @@
 // Main Navigation
 //////////////////////////////////////////////////////
 
-.nav .open {
-  // background: @linkColor;
-}
-
 .navigation {
   display: block;
   padding: 0;
@@ -26,18 +22,16 @@
       font-size: 12px;
     });
 
-    .lessThanTablet({ 
-      font-size: 12px;
-    });
-
     form {
       border-bottom: 2px solid @borderColor;
       border-top: 1px solid @borderColor;
+      position: relative;
       padding: 10px 15px;
 
-      &:after {
-        .svgIcon(18px; "icon-search"; top; 28px; right; 24px);
-      } 
+      .icon-search {
+        bottom: calc(50% - 18px);
+        right: 25px;
+      }
 
       input {
         padding: 5px 10px;

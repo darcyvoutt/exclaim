@@ -37,6 +37,7 @@
         <ul class="nav navbar-nav navbar-right visible-mobile">
           <form role="search">
             <input type="text" placeholder="Search Exclaim...">
+            <a href="search.php"><b class="icon-search"></b></a>
           </form>
           <li class="navbar-link"><a href="index.php">Contests</a></li>
           <li class="navbar-link"><a href="index.php">Contact</a></li> 
