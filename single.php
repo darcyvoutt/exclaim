@@ -21,14 +21,14 @@
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
-        <a href="#"><b class="icon-left"></b></a>
+        <a href="index.php"><b class="icon-arrowLeft"></b></a>
       </div>
 
       <ul class="streamSingle">
 
         <!-- List Item -->
         <li class="streamSingle-item">          
-          <a href="#">
+          <a href="article.php">
 
             <img src="assets/images/temp/stream2.jpg" alt="">
 
@@ -47,7 +47,7 @@
 
         <!-- List Item -->
         <li class="streamSingle-item">          
-          <a href="#">
+          <a href="article.php">
 
             <img src="assets/images/temp/stream1.jpg" alt="">
 
@@ -66,7 +66,7 @@
 
         <!-- List Item -->
         <li class="streamSingle-item">          
-          <a href="#">
+          <a href="article.php">
 
             <img src="assets/images/temp/stream2.jpg" alt="">
 

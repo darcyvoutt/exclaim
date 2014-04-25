@@ -20,12 +20,16 @@
     <div class="stream">
       <div class="stream-title">
         <h3>News</h3>
-        <a href="#"><b class="icon-arrowRight"></b></a>
+        <a href="single.php"><b class="icon-arrowRight"></b></a>
       </div>
 
       <?php include("streamitem.php") ?>
       <?php include("streamitem.php") ?>
       <?php include("streamitem.php") ?>
+
+      <div class="stream-more">
+        <a href="article.php">More news</a>
+      </div>
       
     </div> 
    
@@ -33,11 +37,15 @@
     <div class="stream">
       <div class="stream-title">
         <h3>Streams</h3>
-        <a href="#"><b class="icon-arrowRight"></b></a>
+        <a href="single.php"><b class="icon-arrowRight"></b></a>
       </div>
       
       <?php include("streamitem.php") ?>
       <?php include("streamitem.php") ?>
+
+      <div class="stream-more">
+        <a href="article.php">More streams</a>
+      </div>      
       
     </div>
 
@@ -45,7 +53,7 @@
     <div class="stream">
       <div class="stream-title">
         <h3>Reviews</h3>
-        <a href="#"><b class="icon-arrowRight"></b></a>
+        <a href="single.php"><b class="icon-arrowRight"></b></a>
       </div>
        
       <div class="streamItem">

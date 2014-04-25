@@ -199,30 +199,30 @@
         .contentAfter (">>"; 0 0 0 4px);
       }
     }
+  }  
+}
+
+.widgetList-more {
+  .uppercaseFont(11px);
+  margin-top: 10px;
+  background: #000;
+
+  a {      
+    padding: 5px 12px;
+    display: block;
+    color: #fff;
+
+    &:hover { 
+      background: @linkColor;
+      color: @fontColor; 
+    }
+
+    &:after {
+      .contentAfter(">>"; 0px 4px);
+    }
   }
 
-  &-more {
-    .uppercaseFont(11px);
-    margin-top: 10px;
-    background: #000;
-
-    a {      
-      padding: 5px 12px;
-      display: block;
-      color: #fff;
-
-      &:hover { 
-        background: @linkColor;
-        color: @fontColor; 
-      }
-
-      &:after {
-        .contentAfter(">>"; 0px 4px);
-      }
-    }
-
-    .emphasis {
-      font-weight: 600;
-    }
+  .emphasis {
+    font-weight: 600;
   }
 }
