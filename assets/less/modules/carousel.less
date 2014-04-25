@@ -79,7 +79,6 @@
   }
 }
 
-
 //////////////////////////////////////////////////////
 // Slider Buttons
 //////////////////////////////////////////////////////
@@ -187,5 +186,57 @@
     .mobilePortrait({
       top: 28%;
     });
+  }
+}
+
+//////////////////////////////////////////////////////
+// IE 9 Hacks
+//////////////////////////////////////////////////////
+
+.ie9 {
+  .carousel {
+    &-content {
+      padding-right: 2%;
+      padding-left: 2%;
+
+      a {
+
+        .lessThanTablet({
+          width: 450px;
+        });
+
+        .mobileLandscape({
+          width: 300px;
+        });
+
+        .mobilePortrait({
+          width: 200px;
+        });
+      }
+    }
+  }
+
+  .sidebar .carousel {
+    &-content {
+      padding-right: 10%;
+      padding-left: 4%;
+
+      a {
+        margin-top: 2%;
+        width: 205px;
+
+        .lessThanTablet({
+          width: 450px;
+        });
+
+        .mobileLandscape({
+          width: 300px;
+        });
+
+        .mobilePortrait({
+          width: 180px;
+        });
+      }
+    }
   }
 }

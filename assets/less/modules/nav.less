@@ -264,7 +264,7 @@
     }
 
     // Mobile Menu
-    &-collapse {   
+    &-collapse { 
       background: #ffffff;    
       padding: 0;    
       margin: 0; 
@@ -296,6 +296,21 @@
 
     &-collapse.in {
       overflow: initial;      
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////////
+// IE 9 Hacks
+//////////////////////////////////////////////////////
+
+.ie9 {
+  .navigation {
+    .navbar {
+      &-collapse {
+        overflow: visible;
+      }
     }
   }
 }
