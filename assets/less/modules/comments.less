@@ -43,20 +43,22 @@
 
 .comments-title {
   border-bottom: @border;
-  padding-bottom: 5px;
+  padding: 0 0 5px 0;
   position: relative;
+  cursor: pointer;  
   display: block;
-  cursor: pointer;
+  height: 26px;
+  margin: 0;
 
   h3 {
-    vertical-align: bottom;
     display: inline-block;
+    vertical-align: top;    
     padding: 0;
     margin: 0;
   }
 
   &-number {
-    background: url("../images/icons/icon-bubble.svg") center center no-repeat;
+    background: url("../images/icons/icon-bubble.svg") center center no-repeat;    
     font-family: @uppercaseFont;
     background-size: 100% 100%;                 
     display: inline-block;
@@ -64,11 +66,16 @@
     text-align: center;    
     margin-left: 10px;
     line-height: 35px;
-    font-size: 14px;    
-    bottom: -13px;
+    font-size: 14px;
     height: 40px;
     width: 35px;
     color: #fff;
+    top: -6px;
+  }
+
+  .icon-arrowDown {
+    bottom: auto;
+    top: 0;
   }
 }
 

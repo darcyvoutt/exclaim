@@ -1,11 +1,9 @@
  <div class="comments">
-  <!-- <div class="comments-title">       -->
     <div class="comments-title">
       <h3>Comments</h3>
       <span class="comments-title-number">99+</span>
       <b class="icon-arrowDown"></b>
     </div>        
-  <!-- </div> -->
 
   <!-- If over 99 comments should change to "99+" due to size of comment bubble. -->
 
