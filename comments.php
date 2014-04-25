@@ -3,7 +3,7 @@
     <div class="comments-title">
       <h3>Comments</h3>
       <span class="comments-title-number">99+</span>
-      <b class="icon-arrowUp"></b>
+      <b class="icon-arrowDown"></b>
     </div>        
   <!-- </div> -->
 

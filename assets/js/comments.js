@@ -2,10 +2,12 @@ $(document).ready(function() {
   $(".comments-title").click(function() {
     $(".comments-content").slideToggle("200", function() {
 
+      var url = "assets/images/icons/";
+
       if($(".comments-content").is(':visible')){
-          $('b.icon-arrowUp').css('background-image','url(assets/images/icons/icon-arrowDown.svg)');
+          $('.comments-title b').css('background-image','url(' + url + 'icon-arrowUp.svg)');
       } else {
-          $('b.icon-arrowUp').css('background-image','url(assets/images/icons/icon-arrowUp.svg)');
+          $('.comments-title b').css('background-image','url(' + url + 'icon-arrowDown.svg)');
       }
 
     });  
