@@ -11,13 +11,20 @@
       <div class="collapse navbar-collapse" id="nav">
 
         <!-- Desktop Menu -->
-        <ul class="nav navbar-nav navbar-right visible-desktop">
+        <ul class="nav navbar-nav navbar-left visible-desktop">
           <li class="navbar-link"><a href="index.php">Features<b class="icon-arrowRight"></b></a></li>
           <li class="navbar-link"><a href="index.php">Reviews<b class="icon-arrowRight"></b></a></li>        
           <li class="navbar-link"><a href="index.php">Streams<b class="icon-arrowRight"></b></a></li>
-          <li class="navbar-link"><a href="index.php">News<b class="icon-arrowRight"></b></a></li>  
-          
-          <li class="dropdown sections">
+          <li class="navbar-link"><a href="index.php">News<b class="icon-arrowRight"></b></a></li>          
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right visible-desktop">
+          <li class="navbar-link"><a href="index.php">Concert Listings<b class="icon-arrowRight"></b></a></li>
+          <li class="navbar-link"><a href="index.php">Release Dates<b class="icon-arrowRight"></b></a></li>        
+          <li class="navbar-link"><a href="index.php">Top 20<b class="icon-arrowRight"></b></a></li>
+        </ul>
+
+          <!-- <li class="dropdown sections">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music
               <b class="caret"></b>
             </a>
@@ -26,9 +33,7 @@
               <li><a href="index.php">Film</a></li>
               <li><a href="index.php">Art</a></li>              
             </ul>
-          </li>
-        </ul>
-
+          </li> -->
 
         <!-- Mobile Menu -->
         <ul class="nav navbar-nav navbar-right visible-mobile">
