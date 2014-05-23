@@ -5,10 +5,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" 
                 data-target="#nav">
-        </button>
-        <h1 class="navbar-logo">
-          <a class="navbar-brand" href="index.php">Exclaim!</a>
-        </h1>
+        </button>        
       </div>
 
       <div class="collapse navbar-collapse" id="nav">

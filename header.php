@@ -47,6 +47,10 @@
   <div class="headerBar">
     <div class="headerBar-content">
 
+      <h1 class="headerBar-logo">
+        <a href="index.php">Exclaim!</a>
+      </h1>
+
       <div class="searchBar">
         <form action="search.php">
           <input type="text" placeholder="Search Exclaim..." />
