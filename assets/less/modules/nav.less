@@ -55,7 +55,7 @@
       li a {      
         line-height: @navHeight;
         padding-bottom: 0;
-        padding-top: 0;
+        padding-top: 0;        
 
         &:hover { background: none; }
       }
@@ -97,7 +97,7 @@
       a {    
         padding: 0 calc(@iconSize * 1.8) 0 15px !important;
         color: @fontColor !important;
-        line-height: @navHeight;             
+        line-height: @navHeight;                     
         display: block;
 
         &:hover {
@@ -115,59 +115,7 @@
         width: @iconSize;        
         right: 7px;
       }
-    }
-
-    // Sections Dropdown
-
-    .sections {      
-      @caretWidth: 45px;
-      .uppercaseFont(13px); 
-      padding-right: @caretWidth;    
-      border: @border !important;
-      background: #ffffff;
-      height: @navHeight;
-      position: relative;
-      margin-left: 10px;
-      font-weight: 600;      
-
-      &:hover {
-        background: @linkColor;
-      }
-
-      .tabletLandscape({ 
-        font-size: 11px;
-      });
-
-      .lessThanTablet({ 
-        border: none !important;
-        font-weight: 500;
-        font-size: 13px;
-        margin: 0;
-      });
-
-      .caret {
-        width: @caretWidth;
-        z-index: @zindexNav;
-        background: #000000;
-        position: absolute;  
-        height: @navHeight - 1px;  
-        display: block;              
-        content: "";        
-        left: 100%;
-        top: 0; 
-
-        border: none !important;
-        margin: 0 !important;
-
-        .lessThanTablet({
-          height: @navHeight + 1px;
-        });
-        
-        &:after { 
-          .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; calc(@caretWidth * 0.225));
-        } 
-      }
-    }
+    }    
 
     .container-fluid { 
       padding: 0; 
@@ -180,55 +128,7 @@
         margin-left: 0;
         padding: 0;      
       }
-    }
-
-    // Dropdown Menu Style
-
-    .dropdown-menu {      
-      box-shadow: none;
-      position: absolute;
-      line-height: 12px;
-      z-index: @zindexNav;        
-      padding: 0;
-      margin: 0;
-      top: 100%;
-      right: -3px;
-
-      .lessThanTablet({              
-        display: block;
-        width: 100%;
-        border: 0;
-        top: 90%;
-        right: 0;
-      });
-
-      li {             
-        border-bottom: 1px solid #fff;           
-        background: #000000;
-        position: relative;
-        border-right: none;        
-        min-width: 200px;
-        font-size: 14px;
-        display: block;        
-        width: 100%;        
-
-        &:last-child { border: none; }  
-
-        a {                          
-          line-height: 30px;
-          color: #ffffff;
-
-          .lessThanTablet({
-            padding: 5px 15px 5px 25px;
-            });
-
-          &:hover {
-            background: @linkColor;
-            color: #000000;
-          }
-        }
-      } 
-    }
+    }    
 
     // Mobile Menu
     &-collapse { 

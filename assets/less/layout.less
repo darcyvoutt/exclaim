@@ -40,11 +40,13 @@
   width: 100%;   
 
   &-content {
+    .clearfix();
     .siteWidth();    
+    position: relative;
     padding-bottom: @marginBottom;
     padding-top: @marginBottom;
-    display: block;
-    .clearfix();
+    display: block;            
+    z-index: 0;
 
 
     .tabletLandscape({
@@ -62,9 +64,9 @@
   }
 }
 
-.headerBar {   
-  overflow: hidden;
+.headerBar {     
   padding: 15px 0 12px 0;
+  // overflow: hidden;
   display: block;
   width: 100%;
 

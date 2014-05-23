@@ -24,17 +24,6 @@
           <li class="navbar-link"><a href="index.php">Top 20<b class="icon-arrowRight"></b></a></li>
         </ul>
 
-          <!-- <li class="dropdown sections">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">              
-              <li><a href="index.php">Videogames</a></li>
-              <li><a href="index.php">Film</a></li>
-              <li><a href="index.php">Art</a></li>              
-            </ul>
-          </li> -->
-
         <!-- Mobile Menu -->
         <ul class="nav navbar-nav navbar-right visible-mobile">
           <form role="search">
