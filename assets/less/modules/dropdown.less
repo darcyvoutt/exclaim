@@ -1,0 +1,165 @@
+//////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
+
+@caretWidth: 15px;
+
+//////////////////////////////////////////////////////
+// General Dropdown Settings
+//////////////////////////////////////////////////////
+
+.dropdown {        
+  .uppercaseFont(12px); 
+  padding-right: @caretWidth;    
+  position: relative;  
+  margin-left: 10px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;  
+
+  .lessThanTablet({ 
+    border: none !important;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0;
+  });
+
+  .caret {
+    height: @navHeight - 1px;      
+    z-index: @zindexNav;
+    width: @caretWidth;
+    position: absolute;      
+    display: block;              
+    content: "";        
+    left: 100%;
+    top: 0; 
+
+    border: none !important;
+    margin: 0 !important;
+
+    .lessThanTablet({
+      height: @navHeight + 1px;
+    });
+    
+    &:after { 
+      .svgIcon(20px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.5)); right; calc(@caretWidth * 0.225));
+    } 
+  }
+
+  // Dropdown Menu Style
+  &-menu {                     
+    z-index: @zindexNav;        
+    position: absolute;
+    line-height: 12px;
+    box-shadow: none; 
+    right: -3px;
+    padding: 0;
+    margin: 0;
+    top: 100%;     
+
+    background: none;
+    border: none; 
+
+    .lessThanTablet({              
+      display: block;
+      width: 100%;
+      border: 0;
+      top: 90%;
+      right: 0;
+    });
+
+    li {             
+      border-bottom: 1px solid #fff;           
+      background: #000000;
+      position: relative;
+      border-right: none;        
+      min-width: 200px;
+      font-size: 14px;
+      display: block;        
+      width: 100%;        
+
+      &:last-child { border: none; }  
+
+      a {                          
+        line-height: 30px;
+        color: #ffffff;
+
+        .lessThanTablet({
+          padding: 5px 15px 5px 25px;
+          });
+
+        &:hover {
+          background: @linkColor;
+          color: #ffffff;
+        }
+      }
+    } 
+  }
+}
+
+//////////////////////////////////////////////////////
+// Sections - Header Dropdown
+//////////////////////////////////////////////////////
+
+.sections {
+  @sectionHeight: 10px;
+  height: @sectionHeight;  
+  margin: 6px 0 0 20px;  
+  padding: 0;
+
+  .dropdown {
+    z-index: @zindexModal;
+
+    &-menu li { 
+      min-width: 0; 
+      width: 100px;
+
+      .tabletLandscape({ width: 100%; });
+    }
+
+    &.open {   
+      a {
+        background: none;
+        color: #ffffff;
+
+        &:hover { 
+          color: #ffffff;
+        }      
+      } 
+
+      li a:hover {
+        background: #ffffff;
+        color: #000000; 
+      }
+    }   
+
+    a {
+      padding: 0 15px 0 0;
+      color: #ffffff;      
+
+      &:hover {
+        background: none;        
+      }
+    }
+
+    .caret {
+      height: @sectionHeight;
+
+      &:after { 
+        .svgIcon(15px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.25)); right; calc(@caretWidth * 0.225));
+      }
+    }
+
+    ul {
+      margin-left: -10px;
+      min-width: 0;
+      width: 90px;      
+    }
+
+    li {
+      .uppercaseFont(12px);
+      background: #000000;       
+      text-indent: 10px;  
+    }
+  }   
+}
