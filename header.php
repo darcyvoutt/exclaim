@@ -99,6 +99,19 @@
     <h1 class="headerBar-logo visible-mobile">
       <a href="index.php">Exclaim!</a>
     </h1>
+
+    <ul class="nav navbar-left sections">        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">              
+            <li><a href="index.php">Film</a></li>
+            <li><a href="index.php">Gaming</a></li>
+            <li><a href="index.php">Comedy</a></li>              
+          </ul>
+        </li>
+      </ul>
     
     <?php include('nav.php') ?>
 
