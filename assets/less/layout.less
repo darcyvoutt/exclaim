@@ -24,10 +24,6 @@
     padding-right: @mobileMargins;
     padding-left: @mobileMargins;
   });
-
-  .mobileLandscape({
-    margin-top: @navHeight;
-  });
 }
 
 //////////////////////////////////////////////////////
@@ -38,6 +34,10 @@
   display: block;
   height: 115px;
   width: 100%;   
+
+  .lessThanTablet({
+    height: 43px;
+  });
 
   &-content {
     .clearfix();
@@ -54,9 +54,9 @@
       padding-left: @mobileMargins;
     });
 
-    .mobileLandscape({
+    .lessThanTablet({
       z-index: @zindexNav;
-      position: fixed;         
+      position: fixed;               
       width: 100%;
       padding: 0;
       top: 0;

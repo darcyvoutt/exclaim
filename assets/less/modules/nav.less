@@ -23,6 +23,10 @@
       font-size: 12px;
     });
 
+    .lessThanTablet({
+      background: #000000;
+    });
+
     form {
       border-bottom: 2px solid @borderColor;
       border-top: 1px solid @borderColor;
@@ -120,10 +124,6 @@
     .container-fluid { 
       padding: 0; 
 
-      .navbar-collapse {
-        margin: 0;
-      }
-
       .navbar-brand {
         margin-left: 0;
         padding: 0;      
@@ -131,10 +131,15 @@
     }    
 
     // Mobile Menu
-    &-collapse { 
-      background: #ffffff;    
+    &-collapse {       
       padding: 0;    
       margin: 0; 
+
+      .navbar-link, 
+      .sections,
+      form {
+        background: #ffffff;
+      }
 
       .lessThanTablet({
         position: absolute;
@@ -145,10 +150,10 @@
       &:before {
         @size: 10px;
 
-        .lessThanTablet({
-          border-bottom: @size solid #000000;    
+        .lessThanTablet({             
           border-right: @size solid transparent; 
           border-left: @size solid transparent;       
+          border-bottom: @size solid #ffffff; 
           z-index: @zindexNav;
           position: absolute;      
           display: block;          

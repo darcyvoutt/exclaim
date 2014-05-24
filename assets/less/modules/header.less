@@ -13,21 +13,33 @@
 }
 
 //////////////////////////////////////////////////////
+// Header Content
+//////////////////////////////////////////////////////
+
+.header-content {
+  .headerBar-logo {
+    margin: 5px 0 0 0;
+  }
+}
+
+//////////////////////////////////////////////////////
 // HeaderBar
 //////////////////////////////////////////////////////
 
 .headerBar {
   background: #000000;
 
-  .mobileLandscape({
+  .lessThanTablet({
     display: none;
-    });
+  });
 
   .ie9 {
     background: pink;
   }
 
   &-logo {
+    z-index: @zindexModal;
+    position: relative;
     display: block;       
     height: 100%;
     float: left;

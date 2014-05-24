@@ -94,9 +94,15 @@
     </div>
   </div>     
 
-  <div class="header-content">  
+  <div class="header-content"> 
+
+    <h1 class="headerBar-logo visible-mobile">
+      <a href="index.php">Exclaim!</a>
+    </h1>
     
     <?php include('nav.php') ?>
+
+  </div>
 
 </div> <!-- // End of .header -->
 

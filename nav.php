@@ -24,7 +24,23 @@
           <li class="navbar-link"><a href="index.php">Top 20<b class="icon-arrowRight"></b></a></li>
         </ul>
 
+
+
+
         <!-- Mobile Menu -->
+       <ul class="nav navbar-left sections visible-mobile">        
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">              
+              <li><a href="index.php">Film</a></li>
+              <li><a href="index.php">Gaming</a></li>
+              <li><a href="index.php">Comedy</a></li>              
+            </ul>
+          </li>
+        </ul> 
+      
         <ul class="nav navbar-nav navbar-right visible-mobile">
           <form role="search">
             <input type="text" placeholder="Search Exclaim...">

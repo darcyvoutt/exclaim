@@ -10,8 +10,9 @@
 
 .dropdown {        
   .uppercaseFont(12px); 
-  padding-right: @caretWidth;    
-  position: relative;  
+  padding-right: @caretWidth;
+  z-index: @zindexModal;
+  position: relative;    
   margin-left: 10px;
   color: #ffffff;
   padding: 0;
@@ -21,12 +22,11 @@
     border: none !important;
     font-weight: 500;
     font-size: 13px;
-    margin: 0;
   });
 
   .caret {
     height: @navHeight - 1px;      
-    z-index: @zindexNav;
+    z-index: @zindexModal;
     width: @caretWidth;
     position: absolute;      
     display: block;              
@@ -102,13 +102,31 @@
 //////////////////////////////////////////////////////
 
 .sections {
+  @caret: 15px;
   @sectionHeight: 10px;
   height: @sectionHeight;  
-  margin: 6px 0 0 20px;  
+  margin: 6px @caret 0 20px;  
   padding: 0;
+
+  .tabletLandscape({
+    margin-left: 10px;
+    height: auto;    
+  });
 
   .dropdown {
     z-index: @zindexModal;
+
+    ul {
+      margin: 13px 0 0 -10px;
+      min-width: 0;
+      width: 90px;      
+    }
+
+    li {
+      .uppercaseFont(12px);
+      background: #000000;       
+      text-indent: 10px;  
+    }
 
     &-menu li { 
       min-width: 0; 
@@ -146,20 +164,8 @@
       height: @sectionHeight;
 
       &:after { 
-        .svgIcon(15px; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.25)); right; calc(@caretWidth * 0.225));
+        .svgIcon(@caret; "icon-dropdown-white"; top; calc(50% - (@navHeight * 0.25)); right; calc(@caretWidth * 0.225));
       }
-    }
-
-    ul {
-      margin-left: -10px;
-      min-width: 0;
-      width: 90px;      
-    }
-
-    li {
-      .uppercaseFont(12px);
-      background: #000000;       
-      text-indent: 10px;  
     }
   }   
 }
