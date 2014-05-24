@@ -1,4 +1,4 @@
-//////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////
 // Variables
 //////////////////////////////////////////////////////
 
@@ -84,7 +84,11 @@
     font-style: italic;
     border: none;
     height: 26px;
-    width: 200px;  
+    width: 200px;
+
+    .tabletLandscape({ width: 160px; });
+
+    .tabletPortrait({ width: 130px; });
   }
 
   .icon-search {
@@ -195,6 +199,8 @@
       line-height: @headerBar;
       display: inline-block;
       margin-right: 30px; 
+
+      .tabletLandscape({ margin-right: 15px; });
 
       a {    
         color: #C7C7C2;

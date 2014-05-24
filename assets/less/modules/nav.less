@@ -16,12 +16,8 @@
     font-weight: 600;
     border-radius: 0;
     margin-bottom: 0; 
-    min-height: 0px;            
+    min-height: 0px;
     border: none;
-
-    .tabletLandscape({ 
-      font-size: 12px;
-    });
 
     .lessThanTablet({
       background: #000000;
@@ -79,36 +75,43 @@
     }
 
     &-link {
-      @iconSize: 15px;    
+      @iconSize: 15px;          
       border-right: @border;      
       list-style-type: none;    
       height: @navHeight;
       position: relative;
-      display: block;
+      display: block;              
 
-      // Remove second last border from list
-      // Due to Bootstrap structure last is dropdown
       &:last-child {
         border-right: none;
       }
       
       .lessThanTablet({        
         border-bottom: @border;
-        border-right: none;
+        border-right: none;        
       });
 
-
       a {    
-        padding: 0 calc(@iconSize * 1.8) 0 15px !important;
-        color: @fontColor !important;
-        line-height: @navHeight;                     
-        display: block;
+        padding: 0 calc(@iconSize * 1.8) 0 @iconSize;
+        line-height: @navHeight; 
+        color: @fontColor;                          
+        display: block;        
+
+        .tabletLandscape({
+          padding-right: calc(@iconSize * 1.8);
+          padding-left: calc(@iconSize * 0.4);          
+          font-size: 11px;
+        });
+
+        .tabletPortrait({ font-size: 10px; });
+
+        .lessThanTablet({ font-size: 12px; });
 
         &:hover {
           background: @linkColor !important;
 
           .lessThanTablet({
-            border-bottom: @border;
+            border-bottom: @border !important;
           });
         }
       }  
@@ -118,6 +121,26 @@
         height: @iconSize;
         width: @iconSize;        
         right: 7px;
+
+        .tabletPortrait({ 
+          @shrink: 0.9;
+          height: calc(@iconSize * @shrink);
+          width: calc(@iconSize * @shrink);
+        });
+      }
+
+      &.black {
+
+        &:nth-of-type(1n+2) {
+          border-top: 1px solid #ffffff;
+        }
+
+        a {        
+          background: #000000;
+          color: #ffffff;
+
+          &:hover { color: #000000; }
+        }
       }
     }    
 
