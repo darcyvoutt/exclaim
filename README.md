@@ -80,7 +80,6 @@ Add this **.retinaImage();** within a class or mixin allows you to easily add th
     background-image: url("../images/icons/image-@2x.png");          
   });
 
-
 ### Global Hide & Close 
 
 The following classes are to be added within the HTML, they will either hide or reveal content entirely.
