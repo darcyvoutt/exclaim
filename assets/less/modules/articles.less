@@ -132,17 +132,32 @@
   right: 3px;
   top: 10%;
 
-  .icon-share {
-    margin-bottom: 5px;
+  a {
+    margin-bottom: 8px;
+    display: block;
+
+    .tabletLandscape({
+      margin-bottom: 12px;
+    });
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // These classes are used for positioning 
+  // Edit global icon properties in 'icons.less'
+
+  .icon-share {    
     position: relative;    
-    margin: 0 auto;
     display: block;    
+    margin: 0 auto;    
   }
 
   .icon-comments {
     position: relative;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;    
   }
 }
 
