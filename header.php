@@ -44,10 +44,10 @@
 <body>
 
 <div class="header">
-  <div class="headerBar">
-    <div class="headerBar-content">
+  <div class="headerPrimary">
+    <div class="headerPrimary-content">
 
-      <h1 class="headerBar-logo">
+      <h1 class="headerPrimary-logo">
         <a href="index.php">Exclaim!</a>
       </h1>
 
@@ -94,9 +94,9 @@
     </div>
   </div>     
 
-  <div class="header-content"> 
+  <div class="headerSecondary"> 
 
-    <h1 class="headerBar-logo visible-mobile">
+    <h1 class="headerPrimary-logo visible-mobile">
       <a href="index.php">Exclaim!</a>
     </h1>
 

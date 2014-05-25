@@ -2,7 +2,7 @@
 // Variables
 //////////////////////////////////////////////////////
 
-@headerBar:     30px;      
+@headerPrimary:     30px;      
 
 //////////////////////////////////////////////////////
 // Header
@@ -13,29 +13,10 @@
 }
 
 //////////////////////////////////////////////////////
-// Header Content
+// Header Primary
 //////////////////////////////////////////////////////
 
-.header-content {
-  .headerBar-logo {
-    margin: 5px 0 0 0;
-  }
-
-  .sections {
-    margin: 10px 0 0 10px;
-    float: left;
-
-    .dropdown-menu {      
-      margin-top: 9px;      
-    }
-  }
-}
-
-//////////////////////////////////////////////////////
-// HeaderBar
-//////////////////////////////////////////////////////
-
-.headerBar {
+.headerPrimary {
   background: #000000;
 
   .lessThanTablet({
@@ -60,7 +41,7 @@
       background: url("../images/logo.svg"); 
       background-position: center center;
       background-repeat: no-repeat;
-      max-height: @headerBar;
+      max-height: @headerPrimary;
       background-size: 100%;
       text-indent: -999em;                      
       width: @logoWidth;
@@ -205,7 +186,7 @@
     margin: 0;    
 
     li {
-      line-height: @headerBar;
+      line-height: @headerPrimary;
       display: inline-block;
       margin-right: 30px; 
 
@@ -218,6 +199,25 @@
           color: @linkColor;
         }
       }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////
+// Header Secondary
+//////////////////////////////////////////////////////
+
+.headerSecondary {
+  .headerPrimary-logo {
+    margin: 5px 0 0 0;
+  }
+
+  .sections {
+    margin: 10px 0 0 10px;
+    float: left;
+
+    .dropdown-menu {      
+      margin-top: 9px;      
     }
   }
 }

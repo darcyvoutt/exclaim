@@ -38,33 +38,9 @@
   .lessThanTablet({
     height: 43px;
   });
-
-  &-content {
-    .clearfix();
-    .siteWidth();    
-    position: relative;
-    padding-bottom: @marginBottom;
-    padding-top: @marginBottom;
-    display: block;            
-    z-index: 0;
-
-
-    .tabletLandscape({
-      padding-right: @mobileMargins;
-      padding-left: @mobileMargins;
-    });
-
-    .lessThanTablet({
-      z-index: @zindexNav;
-      position: fixed;               
-      width: 100%;
-      padding: 0;
-      top: 0;
-    });
-  }
 }
 
-.headerBar {     
+.headerPrimary {     
   padding: 15px 0 12px 0;
   // overflow: hidden;
   display: block;
@@ -79,6 +55,30 @@
       padding-left: @mobileMargins;
     });  
   }
+}
+
+.headerSecondary {
+  .clearfix();
+  .siteWidth();    
+  position: relative;
+  padding-bottom: @marginBottom;
+  padding-top: @marginBottom;
+  display: block;            
+  z-index: 0;
+
+
+  .tabletLandscape({
+    padding-right: @mobileMargins;
+    padding-left: @mobileMargins;
+  });
+
+  .lessThanTablet({
+    z-index: @zindexNav;
+    position: fixed;               
+    width: 100%;
+    padding: 0;
+    top: 0;
+  });
 }
 
 .subHeader {

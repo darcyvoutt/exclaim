@@ -1,6 +1,6 @@
 <!-- // Used for simply importing -->
 <div class="comment-avatar">
-  <img src="http://www.eonline.com/eol_images/Entire_Site/2014227/rs_634x718-140327145208-634.zoe-saldana.cm.32714.jpg" alt="Avatar" />
+  <img src="assets/images/temp/avatar.jpeg" alt="Avatar" />
 </div>
 <div class="comment-content">
   <div class="comment-meta">
