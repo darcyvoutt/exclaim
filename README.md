@@ -18,15 +18,15 @@ The methodology that is used here is to spilt up the css into files that make it
 
 Within the mixins.less file there are a bunch of variables to be used throughout the classes. The following are a list of the most important ones to be mentioned.
 
-// Colors
+**Colors**
 @linkColor:         #DCECF9;
 
-// Fonts
+**Fonts**
 @titleFont:         'Roboto Slab', serif;
 @uppercaseFont:     'Montserrat', sans-serif;
 @baseFont:          'Droid Serif', serif;
 
-// Z-Index Layers
+**Z-Index Layers**
 @zindexModal:       900;
 @zindexNav:         800;
 @zindexOverlay:     700;
@@ -79,6 +79,7 @@ Add this **.retinaImage();** within a class or mixin allows you to easily add th
 	.retinaImage({
     background-image: url("../images/icons/image-@2x.png");          
   });
+
 
 ### Global Hide & Close 
 
