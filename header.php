@@ -100,7 +100,7 @@
       <a href="index.php">Exclaim!</a>
     </h1>
 
-    <ul class="nav navbar-left sections">        
+    <ul class="nav navbar-left sections visible-mobile">        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music
             <b class="caret"></b>
