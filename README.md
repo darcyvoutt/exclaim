@@ -2,6 +2,14 @@
 
 This document outlines major HTML module structures. Note that the CSS uses LESS CSS, to learn more go to http://lesscss.org/.
 
+Key concepts to understand are:
+
+- [Variables](http://lesscss.org/features/#variables-feature)
+- [Mixins](http://lesscss.org/features/#mixins-feature)
+- [Parametric Mixins](http://lesscss.org/features/#mixins-parametric-feature)
+- [Import](http://lesscss.org/features/#import-options)
+
+
 ## Scalable Modular Accessible CSS (SMACSS)
 
 The methodology that is used here is to spilt up the css into files that make it easier to adjust overtime. Additionally, there is a separation of structural layout and module styling.
@@ -39,31 +47,31 @@ Within the `mixins.less` file there are a bunch of variables to be used througho
 There are a series of mixins that are special for the use of media queries. The purpose is to ensure there is a single source of truth to define the width. 
 
 ```
-	.tabletLandscape(@rules) {
-  	@media screen and (max-width: 1024px) { @rules(); }
-	}
+.tabletLandscape(@rules) {
+	@media screen and (max-width: 1024px) { @rules(); }
+}
 ```
 
 Within any class, you would use this as follows. This will allow you to set media queries inline within any class and not needing to create a separate stylesheet.
 
 ```
-	.content {
-		background: orange;
+.content {
+	background: orange;
 	
-		.tabletLandscape({
-			background: red;
-		});
-	}
+	.tabletLandscape({
+		background: red;
+	});
+}
 ```
 
 Which will compile out as:
 
 ```
-	.content { background: orange; }
+.content { background: orange; }
 
-	@media screen and (max-width: 1024px) {
-		.content { background: red; }
-	}
+@media screen and (max-width: 1024px) {
+	.content { background: red; }
+}
 ```
 
 **All Media Query Mixins**
@@ -83,9 +91,9 @@ The mixing `.svgIcon();` mixin allows you to place an “.svg” based icon anyw
 Add this `.retinaImage();` within a class or mixin allows you to easily add the retina image without having to write all the necessary code. The following is an example in use.
 
 ```
-	.retinaImage({
-  	background-image: url("../images/icons/image-@2x.png");          
-  });
+.retinaImage({
+ 	background-image: url("../images/icons/image-@2x.png");          
+});
 ```
 
 ### Global Hide & Close 
@@ -93,7 +101,7 @@ Add this `.retinaImage();` within a class or mixin allows you to easily add the 
 The following classes are to be added within the HTML, they will either hide or reveal content entirely.
 
 ```
-	<div class=“content visibile-mobile”></div>
+<div class=“content visibile-mobile”></div>
 ```
 
 #### .visibile-mobile
