@@ -16,21 +16,21 @@ The methodology that is used here is to spilt up the css into files that make it
 
 # Variables
 
-Within the mixins.less file there are a bunch of variables to be used throughout the classes. The following are a list of the most important ones to be mentioned.
+Within the `mixins.less file` there are a bunch of variables to be used throughout the classes. The following are a list of the most important ones to be mentioned.
 
 **Colors**
-@linkColor:         #DCECF9;
+- @linkColor:         #DCECF9;
 
 **Fonts**
-@titleFont:         'Roboto Slab', serif;
-@uppercaseFont:     'Montserrat', sans-serif;
-@baseFont:          'Droid Serif', serif;
+- @titleFont:         'Roboto Slab', serif;
+- @uppercaseFont:     'Montserrat', sans-serif;
+- @baseFont:          'Droid Serif', serif;
 
 **Z-Index Layers**
-@zindexModal:       900;
-@zindexNav:         800;
-@zindexOverlay:     700;
-@zindexInputs:      500;
+- @zindexModal:       900;
+- @zindexNav:         800;
+- @zindexOverlay:     700;
+- @zindexInputs:      500;
 
 # Important Mixins
 
@@ -38,12 +38,15 @@ Within the mixins.less file there are a bunch of variables to be used throughout
 
 There are a series of mixins that are special for the use of media queries. The purpose is to ensure there is a single source of truth to define the width. 
 
+```
 	.tabletLandscape(@rules) {
   	@media screen and (max-width: 1024px) { @rules(); }
 	}
+```
 
 Within any class, you would use this as follows. This will allow you to set media queries inline within any class and not needing to create a separate stylesheet.
 
+```
 	.content {
 		background: orange;
 	
@@ -51,14 +54,17 @@ Within any class, you would use this as follows. This will allow you to set medi
 			background: red;
 		});
 	}
+```
 
 Which will compile out as:
 
+```
 	.content { background: orange; }
 
 	@media screen and (max-width: 1024px) {
 		.content { background: red; }
 	}
+```
 
 **All Media Query Mixins**
 
@@ -70,21 +76,25 @@ Which will compile out as:
 
 ## SVG Icon
 
-The mixing **.svgIcon();** mixin allows you to place an “.svg” based icon anywhere in code (within a class or :before/:after pseudo class) and set size and placement using absolute positioning. 
+The mixing `.svgIcon();` mixin allows you to place an “.svg” based icon anywhere in code (within a class or `:before`/`:after` pseudo class) and set size and placement using absolute positioning. 
 
 ## Retina Image 
 
-Add this **.retinaImage();** within a class or mixin allows you to easily add the retina image without having to write all the necessary code. The following is an example in use.
+Add this `.retinaImage();` within a class or mixin allows you to easily add the retina image without having to write all the necessary code. The following is an example in use.
 
+```
 	.retinaImage({
-    background-image: url("../images/icons/image-@2x.png");          
+  	background-image: url("../images/icons/image-@2x.png");          
   });
+```
 
 ### Global Hide & Close 
 
 The following classes are to be added within the HTML, they will either hide or reveal content entirely.
 
+```
 	<div class=“content visibile-mobile”></div>
+```
 
 _.visibile-mobile_
 
