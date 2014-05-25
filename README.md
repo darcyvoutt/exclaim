@@ -1,4 +1,4 @@
-# Exclaim HTML Styleguide
+# Exclaim Styleguide
 
 This document outlines major HTML module structures. Note that the CSS uses LESS CSS, to learn more go to http://lesscss.org/.
 
