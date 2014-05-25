@@ -16,7 +16,7 @@ The methodology that is used here is to spilt up the css into files that make it
 
 # Variables
 
-Within the `mixins.less file` there are a bunch of variables to be used throughout the classes. The following are a list of the most important ones to be mentioned.
+Within the `mixins.less` file there are a bunch of variables to be used throughout the classes. The following are a list of the most important ones to be mentioned.
 
 **Colors**
 - @linkColor:         #DCECF9;
@@ -96,12 +96,12 @@ The following classes are to be added within the HTML, they will either hide or 
 	<div class=“content visibile-mobile”></div>
 ```
 
-_.visibile-mobile_
+#### .visibile-mobile
 
 - **Default** = display: none;
 - **.lessThanTablet** = display: block;
 
-_.visibile-desktop_
+#### .visibile-desktop
 
 - **Default** = display: block;
 - **.lessThanTablet** = display: none;
