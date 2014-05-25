@@ -31,8 +31,8 @@
             <input type="text" placeholder="Search Exclaim...">
             <a href="search.php"><b class="icon-search"></b></a>
           </form>
-          <li class="navbar-link black"><a href="index.php">Contests</a></li>
-          <li class="navbar-link black"><a href="index.php">Contact</a></li> 
+          <li class="navbar-link primary"><a href="index.php">Contests</a></li>
+          <li class="navbar-link primary"><a href="index.php">Contact</a></li> 
           <li class="navbar-link"><a href="index.php">Features</a></li> 
           <li class="navbar-link"><a href="index.php">Reviews</a></li> 
           <li class="navbar-link"><a href="index.php">Streams</a></li> 
