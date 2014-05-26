@@ -3,15 +3,7 @@
 <div class="content">
 
   <?php include('carousel.php') ?>  
-
-  <div class="streams-buttons">
-
-    <div class="stream-button"><a href="#">Concert Listings</a></div>
-    <div class="stream-button"><a href="#">Release Dates</a></div>
-    <div class="stream-button"><a href="#">Top 20</a></div>
-
-  </div>
-
+  
   <?php include('filters.php'); ?>
 
   <div class="streams">
