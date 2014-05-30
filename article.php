@@ -69,28 +69,18 @@
     </div>
 
     <div class="article-share">
-      <a href=""><b class="icon-share"></b></a>      
-      <a href=""><b class="icon-comments"></b></a>
+      <a class="share-options" href="#"><b class="icon-share"></b></a>      
+      <a href="#"><b class="icon-comments"></b></a>
+      <ul class="article-share-channels">
+        <li data-social="facebook"><a href="#"></a></li>
+        <li data-social="facebook"><a href="#"></a></li>
+        <li data-social="facebook"><a href="#"></a></li>
+        <li data-social="facebook"><a href="#"></a></li>
+        <li data-social="facebook"><a href="#"></a></li>
+      </ul>
     </div>
 
-    <script>
-      $(document).ready(function() {
-        var jump_speed = 200;
-
-        function toggleShareIt(){
-            if($('.article-share').is(':visible')){
-                $('.article-share').hide();
-            }else{
-                $('.article-share').show();
-            }
-        }
-
-        function goToComments(){
-            var scroll_to = ($('.comments-title').offset().top) - 50;            
-            $('html,body').animate({scrollTop: scroll_to}, jump_speed);
-        }
-      });
-    </script>
+    <script src="assets/js/share.js"></script> 
 
   </div> <!-- // End of .article -->
 
