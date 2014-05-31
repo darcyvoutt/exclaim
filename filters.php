@@ -47,7 +47,6 @@
                 <a class="dropdown-toggle tags" href="#" data-toggle="dropdown">Tags</a>
                 <ul class="dropdown-menu" role="filter-option">
                   <li class="filters-options-search">
-                    <div class="filters-options-search-label visible-desktop">Tags</div>
                     <input type="text" class="typeahead" placeholder="Tags" />
                   </li>
                   <li><a href="#">Options</a></li>
