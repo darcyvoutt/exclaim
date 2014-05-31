@@ -73,10 +73,10 @@
       <a href="#comments-title"><b class="icon-comments"></b></a>
       <ul class="article-share-channels">
         <li data-social="facebook"><a href="#"></a></li>
-        <li data-social="facebook"><a href="#"></a></li>
-        <li data-social="facebook"><a href="#"></a></li>
-        <li data-social="facebook"><a href="#"></a></li>
-        <li data-social="facebook"><a href="#"></a></li>
+        <li data-social="twitter"><a href="#"></a></li>
+        <li data-social="google"><a href="#"></a></li>
+        <li data-social="sharethis"><a href="#"></a></li>
+        <li data-social="email"><a href="#"></a></li>
       </ul>
     </div>
 

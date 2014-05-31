@@ -143,19 +143,26 @@
   }
 
   &-channels { 
-    .social(); 
-    display: none;
+    .social();         
+    @padding: 10px;
+    @iconSpacing: 5px;              
+
+    padding:  @padding 
+              calc(@padding - @iconSpacing) 
+              @padding 
+              @padding;   
     background: @background;
     position: absolute;
-    min-width: 70px;    
+    min-width: 102px;    
+    display: none;   
     height: 100%;    
     right: 100%;    
-    padding: 0;
     margin: 0;  
     top: 0;  
 
     li {
-      @margin: 3.5px 5px 0; 
+      @margin: 0 @iconSpacing @iconSpacing 0;       
+
       margin: @margin;
       float: left;
 
