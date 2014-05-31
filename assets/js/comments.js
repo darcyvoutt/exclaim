@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {  
   $(".comments-title").click(function() {
     $(".comments-content").slideToggle("200", function() {
 

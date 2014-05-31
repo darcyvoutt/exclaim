@@ -69,8 +69,8 @@
     </div>
 
     <div class="article-share">
-      <a class="share-options" href="#"><b class="icon-share"></b></a>      
-      <a href="#"><b class="icon-comments"></b></a>
+      <a class="share-options"><b class="icon-share"></b></a>      
+      <a href="#comments-title"><b class="icon-comments"></b></a>
       <ul class="article-share-channels">
         <li data-social="facebook"><a href="#"></a></li>
         <li data-social="facebook"><a href="#"></a></li>
@@ -80,7 +80,7 @@
       </ul>
     </div>
 
-    <script src="assets/js/share.js"></script> 
+    <script src="assets/js/article.js"></script> 
 
   </div> <!-- // End of .article -->
 

@@ -1,6 +1,6 @@
  <div class="comments">
     <div class="comments-title">
-      <h3>Comments</h3>
+      <h3 id="comments-title">Comments</h3>
       <span class="comments-title-number">99+</span>
       <b class="icon-arrowDown"></b>
     </div>        
