@@ -41,7 +41,6 @@
           <li class="navbar-link"><a href="index.php">Release Dates</a></li> 
           <li class="navbar-link"><a href="index.php">Top 20</a></li>          
         </ul>
-        </ul>
 
 
       </div>
