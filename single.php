@@ -2,18 +2,6 @@
 
 <div class="content">
 
-  <div id="articleCarousel">
-    <?php include('carousel.php'); ?>
-  </div>
-
-  <div class="streams-buttons">
-
-    <div class="stream-button"><a href="#">Concert Listings</a></div>
-    <div class="stream-button"><a href="#">Release Dates</a></div>
-    <div class="stream-button"><a href="#">Top 20</a></div>
-
-  </div>
-
   <?php include('filters.php'); ?>
 
   <div class="streams">
@@ -81,6 +69,10 @@
             </div>
 
           </a>
+        </li>
+
+        <li class="streamSingle-more">
+          <a href="article.php">Load more articles</a>
         </li>
 
       </ul>

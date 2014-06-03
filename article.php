@@ -72,11 +72,16 @@
       <a class="share-options"><b class="icon-share"></b></a>      
       <a href="#comments-title"><b class="icon-comments"></b></a>
       <ul class="article-share-channels">
-        <li data-social="facebook"><a href="#"></a></li>
-        <li data-social="twitter"><a href="#"></a></li>
-        <li data-social="google"><a href="#"></a></li>
-        <li data-social="sharethis"><a href="#"></a></li>
-        <li data-social="email"><a href="#"></a></li>
+        <li data-share="facebook"><a href="#"></a></li>
+        <li data-share="gplus"><a href="#"></a></li>
+        <li data-share="google"><a href="#"></a></li>
+        <li data-share="email"><a href="#"></a></li>
+        <li data-share="email2"><a href="#"></a></li>
+        <li data-share="stumble"><a href="#"></a></li>
+        <li data-share="tumblr"><a href="#"></a></li>
+        <li data-share="twitter"><a href="#"></a></li>
+        <li data-share="reddit"><a href="#"></a></li>
+        <li data-share="rss"><a href="#"></a></li>
       </ul>
     </div>
 

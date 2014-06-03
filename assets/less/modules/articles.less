@@ -133,15 +133,6 @@
   right: 3px;
   top: 10%;
 
-  a {
-    margin-bottom: 8px;
-    display: block;
-
-    .tabletLandscape({
-      margin-bottom: 12px;
-    });
-  }
-
   &-channels { 
     .social();         
     @padding: 10px;
@@ -150,36 +141,65 @@
     padding:  @padding 
               calc(@padding - @iconSpacing) 
               @padding 
-              @padding;   
+              @padding; 
+
     background: @background;
     position: absolute;
-    min-width: 102px;    
+    min-width: 165px;    
     display: none;   
     height: 100%;    
     right: 100%;    
     margin: 0;  
-    top: 0;  
+    top: 0;
 
-    li {
-      @margin: 0 @iconSpacing @iconSpacing 0;       
+    a { margin-bottom: 0; }  
 
-      margin: @margin;
+    li {      
+      @margin: 0 @iconSpacing @iconSpacing 0;          
+      @iconSize: 60px;
+      @size: 25px;
+
+      max-height: @size;
+      max-width: @size;
+      margin: @margin;      
       float: left;
 
-      &:last-child {
-        margin: @margin;
+      &:last-child { margin: @margin; }
+
+      &[data-share] {            
+        background-image: url("../images/social/social-sprite.png"); 
+        background-repeat: no-repeat;        
+        background-size: 100%;
+        height: @iconSize;
+        width: @iconSize;
+        display: block;
       }
-    }
+
+      &[data-share="facebook"] { background-position: 0 0; }
+      &[data-share="gplus"] { background-position: 0 11.1%; }
+      &[data-share="google"] { background-position: 0 22.2%; }
+      &[data-share="email"] { background-position: 0 33.3%; }
+      &[data-share="email2"] { background-position: 0 44.4%; }
+      &[data-share="stumble"] { background-position: 0 55.5%; }
+      &[data-share="tumblr"] { background-position: 0 66.6%; }
+      &[data-share="twitter"] { background-position: 0 77.7%; }
+      &[data-share="reddit"] { background-position: 0 88.8%; }
+      &[data-share="rss"] { background-position: 0 99.9%; }
+    }    
   }
 
   // These classes are used for positioning 
   // Edit global icon properties in 'icons.less'
 
   .icon-share {    
+    margin: 0 auto 8px auto; 
     position: relative;    
     cursor: pointer;
-    display: block;    
-    margin: 0 auto;    
+    display: block;        
+
+    .tabletLandscape({
+      margin-bottom: 12px;
+    });   
   }
 
   .icon-comments {
@@ -218,7 +238,7 @@
       text-transform: none;        
       position: relative;  
       font-style: italic;
-      margin-bottom: 3px;
+      margin: 0 0 3px 0;
       color: @lightFont;
       font-weight: 100;    
       font-size: 12px;      
@@ -249,7 +269,7 @@
     &-content {
       max-height: 130px;
       overflow: hidden;
-      padding: 8px;
+      margin: 8px;
 
       img {              
         height: auto;

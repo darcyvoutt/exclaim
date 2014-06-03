@@ -76,7 +76,7 @@
         </li>
 
         <li class="widgetList-more">
-          <a href="article.php">More from artist</a>
+          <a href="artist.php">More from artist</a>
         </li>
       </ul>
     </div>
