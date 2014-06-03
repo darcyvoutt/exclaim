@@ -3,8 +3,6 @@
 <div class="content">
 
   <?php include('carousel.php') ?>  
-  
-  <?php include('filters.php'); ?>
 
   <div class="streams">
    
