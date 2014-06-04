@@ -46,17 +46,32 @@
 
   &-profiles {
     .social();
-    display: block;
+    display: block;    
     float: left;
+    margin: 0;
+
+    li {
+      margin: 0 5px 5px 0;
+      float: left;
+      
+      .mobilePortrait({
+        margin-right: 2px;
+
+        &:last-child {
+          margin-right: 0;  
+        }
+      });      
+    }
   }
 
   &-website {
+    @height: 25px;
     .uppercaseFont(10px);
-    line-height: @headerPrimary;    
+    line-height: @height;    
     background: #000000;
-    height: @headerPrimary;    
+    height: @height;    
     font-weight: 600;
-    padding: 0 5px; 
+    padding: 0 8px; 
     display: block;
     float: left;
 
