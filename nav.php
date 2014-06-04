@@ -27,7 +27,7 @@
 
         <!-- Mobile Menu -->
         <ul class="nav navbar-nav navbar-right visible-mobile">
-          <form role="search">
+          <form>
             <input type="text" placeholder="Search Exclaim...">
             <a href="search.php"><b class="icon-search"></b></a>
           </form>

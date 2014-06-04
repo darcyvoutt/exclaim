@@ -125,7 +125,7 @@
 
   <div class="ad-wrap">
     
-    <a href="#" alt="Ads" class="ad-leaderboard">
+    <a href="#" class="ad-leaderboard">
       <img src="assets/images/temp/banner-ad.jpg" alt="Ad Test" />
     </a> 
 

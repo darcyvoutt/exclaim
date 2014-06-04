@@ -14,12 +14,12 @@
 
     <h1 class="article-title">Freddie Gibbs & Madlib</h1>
 
-    <h2 class="article-subtitle">‘Piñata’</h2>
+    <h2 class="article-subtitle">Pinata</h2>
 
     <div class="article-author">By Joseph Hose</div>
 
     <div class="article-image">
-      <img src="assets/images/temp/boondocks.jpg" alt="Red Hot" width="100%" />
+      <img src="assets/images/temp/boondocks.jpg" alt="Red Hot" />
     </div>
 
     <div class="article-rating">7</div>
@@ -34,7 +34,7 @@
     iaculis semper. Maecenas sodales purus ullamcorper suscipit fringilla. 
     Suspendisse a eleifend sapien.</p>
 
-    <img src="assets/images/temp/drake.jpg" />
+    <img src="assets/images/temp/drake.jpg" alt="Drake" />
 
     <blockquote>Viral mumblecore pour-over sartorial. Cardigan fashion axe Thundercats, 
     pickled freegan +1 pork belly master cleanse Helvetica.

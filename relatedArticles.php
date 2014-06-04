@@ -3,7 +3,7 @@
   <div class="widget">
     <a href="article.php">
       <div class="widget-content">      
-        <img src="assets/images/temp/acdc.jpg" />             
+        <img src="assets/images/temp/acdc.jpg" alt="Image" />             
       </div>
       <div class="widget-title">
         <h3 class="widget-category">Category Name</h3>
@@ -29,7 +29,7 @@
   <div class="widget">
     <a href="article.php">
       <div class="widget-content">      
-        <img src="assets/images/temp/acdc.jpg" />             
+        <img src="assets/images/temp/acdc.jpg" alt="Image" />             
       </div>
       <div class="widget-title">
         <h3 class="widget-category">Category Name</h3>

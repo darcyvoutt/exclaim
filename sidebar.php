@@ -32,7 +32,7 @@
   </div>
 
   <!-- Ads -->
-  <a href="#" alt="Ads" class="ad-sidebar">
+  <a href="#" class="ad-sidebar">
     <img src="assets/images/temp/ad-sidebar.png" alt="Ad Test" />
   </a> <!-- // End of .ad-leaderboard -->
 
