@@ -1,8 +1,8 @@
 <?php include ('header.php') ?>
 
-<?php include('relatedArticles.php'); ?>
-
 <div class="content">
+
+  <?php include('relatedArticles.php'); ?>
 
   <div class="article">    
 
