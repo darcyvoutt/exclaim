@@ -1,8 +1,9 @@
 <?php include ('header.php') ?>
 
-<div class="content">
+<?php include('relatedArticles.php'); ?>
 
-  <?php include('relatedArticles.php'); ?>
+<div class="main">
+<div class="content">  
 
   <div class="article">    
 

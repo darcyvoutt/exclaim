@@ -1,6 +1,7 @@
 <?php include ('header.php') ?>
 
-<div class="content">
+<div class="main">
+<div class="content"> 
 
   <?php include('carousel.php') ?>  
 

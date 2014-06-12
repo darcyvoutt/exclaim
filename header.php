@@ -131,6 +131,4 @@
 
   </div>
 
-</div>
-
-  <div class="main">
+</div>  
