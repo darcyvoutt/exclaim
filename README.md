@@ -113,3 +113,19 @@ The following classes are to be added within the HTML, they will either hide or 
 
 - **Default** = display: block;
 - **.lessThanTablet** = display: none;
+
+### Dealing with IE9
+
+The following is how you do special styles for IE9. Continue to write code within the respective modular file. Place the `.ie9` class around the class you need to adjust and write your CSS as normal. This works as the `.ie9` class is applied to the `html` tag.
+
+```
+.content {
+  width: 50%;
+}
+
+.ie {
+  .content {
+    width: 100%;
+  }
+}
+```
